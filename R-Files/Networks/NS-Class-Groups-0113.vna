@@ -1,0 +1,47 @@
+*Tie data
+from to Weight Class
+
+KellyH BobC 1 2
+KellyH EdwinZ 1 2
+BobC EdwinZ 1 2
+
+MichaelR JakeU 1 2
+MichaelR AronB 1 2
+JakeU AronB 1 2
+
+FredS InWooP 1 2
+FredS PoC 1 2
+InWooP PoC 1 2
+
+RomanN StephenP 1 2
+RomanN AaronK 1 2
+StephenP AaronK 1 2
+
+DanielT ArbyB 1 2
+DanielT SheenaT 1 2
+ArbyB SheenaT 1 2
+
+JohnD RileyM 1 2
+JohnD ManaluN 1 2
+RileyM ManaluN 1 2
+
+AlexW NormanO 1 2
+AlexW KeahiahiL 1 2
+NormanO KeahiahiL 1 2
+
+PaulineW SydneyC 1 2
+PaulineW WeiH 1 2
+SydneyC WeiH 1 2
+
+TarynT JustinH 1 2
+TarynT YiwenC 1 2
+JustinH YiwenC 1 2
+
+JustinM FranzA 1 2
+JustinM DarleneA 1 2 
+FranzA DarleneA 1 2
+
+JesseM LiamH 1 2
+JesseM GraysonL 1 2
+LiamH GraysonL 1 2 
+

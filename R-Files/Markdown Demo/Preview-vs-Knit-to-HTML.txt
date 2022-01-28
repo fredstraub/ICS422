@@ -1,0 +1,9 @@
+VERY important to understand difference in environments between Preview and Knitting to HTML. If you do stuff in R console it may be available in Preview but not in Knit to HTML if it was not included in the .Rmd. 
+
+https://stackoverflow.com/questions/43820483/difference-between-r-markdown-and-r-notebook
+------------------------------
+Sean Raleigh Aug 6 '18 at 3:16
+
+knitting creates a new environment and runs all the code there. By way of contrast, the R Notebook uses the Global Environment as is to render the HTML file. In fact, for an R Notebook, changes to the HTML file happen every time the .Rmd document is saved. The Preview button merely opens the HTML file in its current state. No code is run. Preview literally means what it says: it just shows you what has already been done.
+
+Why does this matter? For example, if an R Notebook .Rmd file is opened, but no code chunks are run, then the HTML file will render all the markdown and input code just fine, but no output will appear. Or, suppose you define some variable x in the Console, but not in a code chunk. If you try to use x somewhere in an R Notebook, it will work just fine. Previewing the HTML document will also work just fine. On the other hand, knitting the document will generate an "unknown variable" error because knitting runs all the code in a new environment, and the variable x was never defined in the markdown file anywhere.

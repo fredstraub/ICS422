@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+<key attr.name="label" attr.type="string" for="node" id="label"/>
+<key attr.name="Edge Label" attr.type="string" for="edge" id="edgelabel"/>
+<key attr.name="weight" attr.type="double" for="edge" id="weight"/>
+<key attr.name="department" attr.type="string" for="node" id="department"/>
+<key attr.name="class" attr.type="int" for="node" id="class"/>
+<key attr.name="day" attr.type="string" for="edge" id="day"/>
+<graph edgedefault="undirected">
+<node id="BobC">
+<data key="label">BobC</data>
+<data key="department">ICS</data>
+<data key="class">422</data>
+</node>
+<node id="FredS">
+<data key="label">FredS</data>
+<data key="department">ICS</data>
+<data key="class">422</data>
+</node>
+<node id="JakeU">
+<data key="label">JakeU</data>
+<data key="department">ICS</data>
+<data key="class">422</data>
+</node>
+<node id="KikoW">
+<data key="label">KikoW</data>
+<data key="department">ICS</data>
+<data key="class">422</data>
+</node>
+<node id="DarleneA">
+<data key="label">DarleneA</data>
+<data key="department">ICS</data>
+<data key="class">622</data>
+</node>
+<node id="KeahiahiL">
+<data key="label">KeahiahiL</data>
+<data key="department">CIS</data>
+<data key="class">622</data>
+</node>
+<node id="AronB">
+<data key="label">AronB</data>
+<data key="department">Geography</data>
+<data key="class">622</data>
+</node>
+<node id="JustinM">
+<data key="label">JustinM</data>
+<data key="department">ICS</data>
+<data key="class">422</data>
+</node>
+<node id="RomanN">
+<data key="label">RomanN</data>
+<data key="department">ICS</data>
+<data key="class">422</data>
+</node>
+<node id="DanielT">
+<data key="label">DanielT</data>
+<data key="department">Botany</data>
+<data key="class">422</data>
+</node>
+<node id="NormanO">
+<data key="label">NormanO</data>
+<data key="department">ICS</data>
+<data key="class">622</data>
+</node>
+<node id="RileyM">
+<data key="label">RileyM</data>
+<data key="department">ICS</data>
+<data key="class">622</data>
+</node>
+<node id="GraysonL">
+<data key="label">GraysonL</data>
+<data key="department">ICS</data>
+<data key="class">422</data>
+</node>
+<node id="StephenP">
+<data key="label">StephenP</data>
+<data key="department">ICS</data>
+<data key="class">622</data>
+</node>
+<node id="WeiH">
+<data key="label">WeiH</data>
+<data key="department">ICS</data>
+<data key="class">622</data>
+</node>
+<node id="ManaluN">
+<data key="label">ManaluN</data>
+<data key="department">ICS</data>
+<data key="class">422</data>
+</node>
+<node id="SydneyC">
+<data key="label">SydneyC</data>
+<data key="department">ICS</data>
+<data key="class">422</data>
+</node>
+<node id="TarynT">
+<data key="label">TarynT</data>
+<data key="department">ICS</data>
+<data key="class">622</data>
+</node>
+<node id="JohnD">
+<data key="label">JohnD</data>
+<data key="department">ICS</data>
+<data key="class">622</data>
+</node>
+<node id="KellyH">
+<data key="label">KellyH</data>
+<data key="department">ICS</data>
+<data key="class">422</data>
+</node>
+<node id="FranzA">
+<data key="label">FranzA</data>
+<data key="department">Economics</data>
+<data key="class">622</data>
+</node>
+<node id="AlexW">
+<data key="label">AlexW</data>
+<data key="department">ICS</data>
+<data key="class">422</data>
+</node>
+<node id="LiamH">
+<data key="label">LiamH</data>
+<data key="department">ICS</data>
+<data key="class">422</data>
+</node>
+<node id="EdwinZ">
+<data key="label">EdwinZ</data>
+<data key="department">ICS</data>
+<data key="class">422</data>
+</node>
+<node id="BrennanL">
+<data key="label">BrennanL</data>
+<data key="department">ICS</data>
+<data key="class">422</data>
+</node>
+<node id="JustinH">
+<data key="label">JustinH</data>
+<data key="department">ICS</data>
+<data key="class">422</data>
+</node>
+<node id="JesseM">
+<data key="label">JesseM</data>
+<data key="department">ICS</data>
+<data key="class">622</data>
+</node>
+<node id="MichaelR">
+<data key="label">MichaelR</data>
+<data key="department">ICS</data>
+<data key="class">622</data>
+</node>
+<node id="SheenaT">
+<data key="label">SheenaT</data>
+<data key="department">ICS</data>
+<data key="class">422</data>
+</node>
+<node id="PoC">
+<data key="label">PoC</data>
+<data key="department">Atmospheric</data>
+<data key="class">622</data>
+</node>
+<node id="InWooP">
+<data key="label">InWooP</data>
+<data key="department">ICS</data>
+<data key="class">622</data>
+</node>
+<node id="PaulineW">
+<data key="label">PaulineW</data>
+<data key="department">ICS</data>
+<data key="class">622</data>
+</node>
+<node id="ArbyB">
+<data key="label">ArbyB</data>
+<data key="department">CIS</data>
+<data key="class">622</data>
+</node>
+<node id="YiwenC">
+<data key="label">YiwenC</data>
+<data key="department">ICS</data>
+<data key="class">622</data>
+</node>
+<node id="AaronK">
+<data key="label">AaronK</data>
+<data key="department">Biosciences</data>
+<data key="class">422</data>
+</node>
+<edge id="0" source="BobC" target="FredS">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="1" source="BobC" target="JakeU">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="2" source="FredS" target="JakeU">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="3" source="KikoW" target="DarleneA">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="4" source="KikoW" target="KeahiahiL">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="5" source="DarleneA" target="KeahiahiL">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="6" source="AronB" target="JustinM">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="7" source="AronB" target="RomanN">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="8" source="JustinM" target="RomanN">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="9" source="DanielT" target="NormanO">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="10" source="DanielT" target="RileyM">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="11" source="NormanO" target="RileyM">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="12" source="GraysonL" target="StephenP">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="13" source="GraysonL" target="WeiH">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="14" source="StephenP" target="WeiH">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="15" source="ManaluN" target="SydneyC">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="16" source="ManaluN" target="TarynT">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="17" source="SydneyC" target="TarynT">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="18" source="JohnD" target="KellyH">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="19" source="JohnD" target="FranzA">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="20" source="KellyH" target="FranzA">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="21" source="AlexW" target="LiamH">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="22" source="AlexW" target="EdwinZ">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="23" source="LiamH" target="EdwinZ">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="24" source="BrennanL" target="JustinH">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="25" source="BrennanL" target="JesseM">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="26" source="JustinH" target="JesseM">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="27" source="MichaelR" target="SheenaT">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="28" source="MichaelR" target="PoC">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="29" source="MichaelR" target="InWooP">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="30" source="SheenaT" target="PoC">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="31" source="SheenaT" target="InWooP">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="32" source="PoC" target="InWooP">
+<data key="weight">2.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="33" source="PaulineW" target="ArbyB">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="34" source="PaulineW" target="YiwenC">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="35" source="ArbyB" target="YiwenC">
+<data key="weight">1.0</data>
+<data key="day">1</data>
+</edge>
+<edge id="36" source="KellyH" target="BobC">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="37" source="KellyH" target="EdwinZ">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="38" source="BobC" target="EdwinZ">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="39" source="MichaelR" target="JakeU">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="40" source="MichaelR" target="AronB">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="41" source="JakeU" target="AronB">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="42" source="FredS" target="InWooP">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="43" source="FredS" target="PoC">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="45" source="RomanN" target="StephenP">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="46" source="RomanN" target="AaronK">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="47" source="StephenP" target="AaronK">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="48" source="DanielT" target="ArbyB">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="49" source="DanielT" target="SheenaT">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="50" source="ArbyB" target="SheenaT">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="51" source="JohnD" target="RileyM">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="52" source="JohnD" target="ManaluN">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="53" source="RileyM" target="ManaluN">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="54" source="AlexW" target="NormanO">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="55" source="AlexW" target="KeahiahiL">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="56" source="NormanO" target="KeahiahiL">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="57" source="PaulineW" target="SydneyC">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="58" source="PaulineW" target="WeiH">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="59" source="SydneyC" target="WeiH">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="60" source="TarynT" target="JustinH">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="61" source="TarynT" target="YiwenC">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="62" source="JustinH" target="YiwenC">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="63" source="JustinM" target="FranzA">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="64" source="JustinM" target="DarleneA">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="65" source="FranzA" target="DarleneA">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="66" source="JesseM" target="LiamH">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="67" source="JesseM" target="GraysonL">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+<edge id="68" source="LiamH" target="GraysonL">
+<data key="weight">1.0</data>
+<data key="day">2</data>
+</edge>
+</graph>
+</graphml>

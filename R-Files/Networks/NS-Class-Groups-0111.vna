@@ -1,0 +1,48 @@
+*Tie data
+from to Weight Day
+BobC FredS 1 1
+BobC JakeU 1 1
+FredS JakeU 1 1
+
+KikoW DarleneA 1 1
+KikoW KeahiahiL 1 1
+DarleneA KeahiahiL 1 1
+
+AronB JustinM 1 1
+AronB RomanN 1 1
+JustinM RomanN 1 1
+
+DanielT NormanO 1 1
+DanielT RileyM 1 1
+NormanO RileyM 1 1
+
+GraysonL StephenP 1 1
+GraysonL WeiH 1 1
+StephenP WeiH 1 1
+
+ManaluN SydneyC 1 1 
+ManaluN TarynT 1 1
+SydneyC TarynT 1 1
+
+JohnD KellyH 1 1
+JohnD FranzA 1 1
+KellyH FranzA 1 1
+
+AlexW LiamH 1 1
+AlexW EdwinZ 1 1
+LiamH EdwinZ 1 1
+
+BrennanL JustinH 1 1
+BrennanL JesseM 1 1
+JustinH JesseM 1 1
+
+MichaelR SheenaT 1 1
+MichaelR PoC 1 1
+MichaelR InWooP 1 1
+SheenaT PoC 1 1
+SheenaT InWooP 1 1
+PoC InWooP 1 1
+
+PaulineW ArbyB 1 1
+PaulineW YiwenC 1 1
+ArbyB YiwenC 1 1 

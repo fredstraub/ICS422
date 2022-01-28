@@ -1,0 +1,2653 @@
+<?xml version="1.0" encoding="UTF-8"?><graphml xmlns="http://graphml.graphdrawing.org/xmlns">
+<key attr.name="label" attr.type="string" for="node" id="label"/>
+<key attr.name="Edge Label" attr.type="string" for="edge" id="edgelabel"/>
+<key attr.name="weight" attr.type="double" for="edge" id="weight"/>
+<key attr.name="r" attr.type="int" for="node" id="r"/>
+<key attr.name="g" attr.type="int" for="node" id="g"/>
+<key attr.name="b" attr.type="int" for="node" id="b"/>
+<key attr.name="x" attr.type="float" for="node" id="x"/>
+<key attr.name="y" attr.type="float" for="node" id="y"/>
+<key attr.name="size" attr.type="float" for="node" id="size"/>
+<key attr.name="&quot;time&quot;" attr.type="string" for="node" id="&quot;time&quot;"/>
+<key attr.name="&quot;actor&quot;" attr.type="string" for="node" id="&quot;actor&quot;"/>
+<key attr.name="&quot;contribution&quot;" attr.type="string" for="node" id="&quot;contribution&quot;"/>
+<graph edgedefault="directed">
+<node id="177">
+<data key="label">177</data>
+<data key="&quot;time&quot;">17:22:40</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">so how do you develop these skills?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">238.10454</data>
+<data key="y">32.887325</data>
+</node>
+<node id="178">
+<data key="label">178</data>
+<data key="&quot;time&quot;">17:23:01</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">how do you learn to be a mentor?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-34.756363</data>
+<data key="y">-435.56808</data>
+</node>
+<node id="179">
+<data key="label">179</data>
+<data key="&quot;time&quot;">17:23:09</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">experience</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">317.67453</data>
+<data key="y">37.917416</data>
+</node>
+<node id="180">
+<data key="label">180</data>
+<data key="&quot;time&quot;">17:23:13</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">for some people these skilss occur naturally, others have to work at them</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">356.25082</data>
+<data key="y">293.45227</data>
+</node>
+<node id="181">
+<data key="label">181</data>
+<data key="&quot;time&quot;">17:23:22</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">very true</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-396.0365</data>
+<data key="y">-57.187534</data>
+</node>
+<node id="182">
+<data key="label">182</data>
+<data key="&quot;time&quot;">17:23:29</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">yeah depends on your personality</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">209.68504</data>
+<data key="y">-410.74396</data>
+</node>
+<node id="183">
+<data key="label">183</data>
+<data key="&quot;time&quot;">17:23:30</data>
+<data key="&quot;actor&quot;">Joseph</data>
+<data key="&quot;contribution&quot;">I think that as you spend time teaching kids you gan more confidence in mentoring adults</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">142.30193</data>
+<data key="y">1.8882406</data>
+</node>
+<node id="184">
+<data key="label">184</data>
+<data key="&quot;time&quot;">17:23:35</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">are all good teachers good mentors?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-18.79085</data>
+<data key="y">61.46722</data>
+</node>
+<node id="185">
+<data key="label">185</data>
+<data key="&quot;time&quot;">17:23:38</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">some people will take a while to get to that point</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-184.98174</data>
+<data key="y">67.11236</data>
+</node>
+<node id="186">
+<data key="label">186</data>
+<data key="&quot;time&quot;">17:23:42</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">No..not all</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-336.4479</data>
+<data key="y">67.52221</data>
+</node>
+<node id="187">
+<data key="label">187</data>
+<data key="&quot;time&quot;">17:23:51</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">definitely not</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">438.00638</data>
+<data key="y">378.1021</data>
+</node>
+<node id="188">
+<data key="label">188</data>
+<data key="&quot;time&quot;">17:23:55</data>
+<data key="&quot;actor&quot;">Helen</data>
+<data key="&quot;contribution&quot;">Training can help, but I think some is personality</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">67.95055</data>
+<data key="y">192.03137</data>
+</node>
+<node id="189">
+<data key="label">189</data>
+<data key="&quot;time&quot;">17:24:09</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">some people are excellent teachers but are horrible mentors</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">197.11131</data>
+<data key="y">-32.90601</data>
+</node>
+<node id="190">
+<data key="label">190</data>
+<data key="&quot;time&quot;">17:24:09</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">some great teachers can not hold a decent conversation with an adult</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">6.2754965</data>
+<data key="y">52.492916</data>
+</node>
+<node id="191">
+<data key="label">191</data>
+<data key="&quot;time&quot;">17:24:11</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">i had to co-ops who would be awful mentors</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-187.08702</data>
+<data key="y">245.44489</data>
+</node>
+<node id="192">
+<data key="label">192</data>
+<data key="&quot;time&quot;">17:24:24</data>
+<data key="&quot;actor&quot;">Helen</data>
+<data key="&quot;contribution&quot;">Nods</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">253.148</data>
+<data key="y">-226.2034</data>
+</node>
+<node id="193">
+<data key="label">193</data>
+<data key="&quot;time&quot;">17:24:27</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">That is an interesting question Maria,  ... I would probably say 'yes' first off, and then wonder some more</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">30.496565</data>
+<data key="y">-320.9573</data>
+</node>
+<node id="194">
+<data key="label">194</data>
+<data key="&quot;time&quot;">17:24:42</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">it is something I have thought about often Lisa</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">453.47787</data>
+<data key="y">17.900143</data>
+</node>
+<node id="195">
+<data key="label">195</data>
+<data key="&quot;time&quot;">17:24:47</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">I think its alot of personality</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-354.94485</data>
+<data key="y">457.07684</data>
+</node>
+<node id="196">
+<data key="label">196</data>
+<data key="&quot;time&quot;">17:25:17</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">one thing a mentor has to know is how to operate with a peer, and ow to be intentional about handing over, or encouraging greater independence</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">333.24612</data>
+<data key="y">155.25739</data>
+</node>
+<node id="197">
+<data key="label">197</data>
+<data key="&quot;time&quot;">17:25:18</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">observation has made me think that it takes an extra 'special ingredient' to tip the scales</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">294.67886</data>
+<data key="y">-288.0618</data>
+</node>
+<node id="198">
+<data key="label">198</data>
+<data key="&quot;time&quot;">17:25:34</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">I think if you have the passion for teaching you will want everyone else to feel the same</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-330.01926</data>
+<data key="y">21.02081</data>
+</node>
+<node id="199">
+<data key="label">199</data>
+<data key="&quot;time&quot;">17:25:35</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">agree</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-321.55884</data>
+<data key="y">157.58813</data>
+</node>
+<node id="200">
+<data key="label">200</data>
+<data key="&quot;time&quot;">17:25:37</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">just because someone is a great teacher doesn't mean that they have great skills that are needed to be a good mentor.  some adults spend so much time talking to children that they can't talk to adults.</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">484.26108</data>
+<data key="y">-288.26138</data>
+</node>
+<node id="201">
+<data key="label">201</data>
+<data key="&quot;time&quot;">17:25:51</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">but some have a strong passion but just keep to themselves</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-309.0972</data>
+<data key="y">-20.442295</data>
+</node>
+<node id="202">
+<data key="label">202</data>
+<data key="&quot;time&quot;">17:26:08</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">having the passion isn't always enough, it's how you convey your passion</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-175.28221</data>
+<data key="y">47.209652</data>
+</node>
+<node id="203">
+<data key="label">203</data>
+<data key="&quot;time&quot;">17:26:15</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">agree Ashley</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">203.4099</data>
+<data key="y">431.80725</data>
+</node>
+<node id="204">
+<data key="label">204</data>
+<data key="&quot;time&quot;">17:26:32</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">cuz one teacher I worked with very strong passion..but couldnt convey it</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">336.37766</data>
+<data key="y">-352.6435</data>
+</node>
+<node id="205">
+<data key="label">205</data>
+<data key="&quot;time&quot;">17:26:48</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">you can have a passion about fighting cancer, but if you don't relay your feelings and ideas to others it's useless.  same for teaching</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-131.92879</data>
+<data key="y">-126.00242</data>
+</node>
+<node id="206">
+<data key="label">206</data>
+<data key="&quot;time&quot;">17:26:48</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">part of being a good mentor will be being able to share your practice thinking: what are the decisions you are making and why, when you are dealing wiht a particular child and learning problem</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-474.16336</data>
+<data key="y">55.42114</data>
+</node>
+<node id="207">
+<data key="label">207</data>
+<data key="&quot;time&quot;">17:27:22</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">yes!  very similar to the strategy called Think Aloud that we use we kids</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">372.0579</data>
+<data key="y">-82.70612</data>
+</node>
+<node id="208">
+<data key="label">208</data>
+<data key="&quot;time&quot;">17:27:22</data>
+<data key="&quot;actor&quot;">Joseph</data>
+<data key="&quot;contribution&quot;">I think the reasons for making the decisions you do is one of the most important things a mentor can pass on</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">266.62576</data>
+<data key="y">-23.516087</data>
+</node>
+<node id="209">
+<data key="label">209</data>
+<data key="&quot;time&quot;">17:27:36</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">part of being a good mentor will involve being able to ask the questions that helps another talk about their own decision making and thinking</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">27.875593</data>
+<data key="y">-62.35541</data>
+</node>
+<node id="210">
+<data key="label">210</data>
+<data key="&quot;time&quot;">17:27:37</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">with kids</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-375.73056</data>
+<data key="y">494.25098</data>
+</node>
+<node id="211">
+<data key="label">211</data>
+<data key="&quot;time&quot;">17:28:17</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">back to communication Lisa - but now you are talking about a specific strategy that can be learned!</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">449.51816</data>
+<data key="y">462.5464</data>
+</node>
+<node id="212">
+<data key="label">212</data>
+<data key="&quot;time&quot;">17:28:54</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">i learned in a graduate counseling course that i took that asking questions is not always the best way to get others to talk about themselves</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-477.08417</data>
+<data key="y">79.251396</data>
+</node>
+<node id="213">
+<data key="label">213</data>
+<data key="&quot;time&quot;">17:29:10</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">what is..</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">334.91873</data>
+<data key="y">-159.3717</data>
+</node>
+<node id="214">
+<data key="label">214</data>
+<data key="&quot;time&quot;">17:29:12</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">all communication is learned too Maria, and there are strategies to learn how to communicate better</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">124.054245</data>
+<data key="y">308.02954</data>
+</node>
+<node id="215">
+<data key="label">215</data>
+<data key="&quot;time&quot;">17:29:30</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">what other ways were suggested Ashley?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">51.8723</data>
+<data key="y">162.95673</data>
+</node>
+<node id="216">
+<data key="label">216</data>
+<data key="&quot;time&quot;">17:30:03</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">sometimes just nodding, acive listening, maybe jsut repeating important points and stressing them in you voice.</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">42.71599</data>
+<data key="y">475.61505</data>
+</node>
+<node id="217">
+<data key="label">217</data>
+<data key="&quot;time&quot;">17:30:34</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">eye contact</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-192.38814</data>
+<data key="y">-379.21466</data>
+</node>
+<node id="218">
+<data key="label">218</data>
+<data key="&quot;time&quot;">17:30:47</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">that is about talking about themselves and their feelings, in mentoring we are also trying to share practice craft skills and craft thinking</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-312.31223</data>
+<data key="y">-297.50317</data>
+</node>
+<node id="219">
+<data key="label">219</data>
+<data key="&quot;time&quot;">17:30:53</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">non verbal cues..body language</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-328.52255</data>
+<data key="y">356.54224</data>
+</node>
+<node id="220">
+<data key="label">220</data>
+<data key="&quot;time&quot;">17:30:54</data>
+<data key="&quot;actor&quot;">Helen</data>
+<data key="&quot;contribution&quot;">I suppose one could learn to ask the questions, but is it possible a mentor might do this, but not ask these questions about his/her own practices?  Could this person be a good mentor?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">79.65117</data>
+<data key="y">-287.47748</data>
+</node>
+<node id="221">
+<data key="label">221</data>
+<data key="&quot;time&quot;">17:31:12</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">we also learned that just saying things like, 'and this makes you feel...' or 'so you tried that and it didn't work, i'm wondering how it would have been differnt if you tried...'</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-384.37375</data>
+<data key="y">393.16766</data>
+</node>
+<node id="222">
+<data key="label">222</data>
+<data key="&quot;time&quot;">17:31:55</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">good question Helen</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">474.7916</data>
+<data key="y">189.59235</data>
+</node>
+<node id="223">
+<data key="label">223</data>
+<data key="&quot;time&quot;">17:31:56</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">getting out emotions is important in some areas of interaction and helping caring work</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">40.48845</data>
+<data key="y">411.4875</data>
+</node>
+<node id="224">
+<data key="label">224</data>
+<data key="&quot;time&quot;">17:32:05</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">I have heard that before</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">1.30638</data>
+<data key="y">508.70844</data>
+</node>
+<node id="225">
+<data key="label">225</data>
+<data key="&quot;time&quot;">17:32:05</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">i'm not saying not to ask questions, questions are ok, but sometimes it feels like a quiz instead of open communication</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-40.31804</data>
+<data key="y">-13.875095</data>
+</node>
+<node id="226">
+<data key="label">226</data>
+<data key="&quot;time&quot;">17:32:14</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">TRUE</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">302.37204</data>
+<data key="y">-319.11087</data>
+</node>
+<node id="227">
+<data key="label">227</data>
+<data key="&quot;time&quot;">17:32:37</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">just not drill and kill</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">133.35777</data>
+<data key="y">387.52594</data>
+</node>
+<node id="228">
+<data key="label">228</data>
+<data key="&quot;time&quot;">17:32:51</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">I am aware alos, that there are 'good' kinds of questions for getting information, and 'bad' or 'poor' questions</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-128.48592</data>
+<data key="y">-448.34955</data>
+</node>
+<node id="229">
+<data key="label">229</data>
+<data key="&quot;time&quot;">17:32:54</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">i think part of being a good teacher is to self evaluate your practices and reasons for doing things</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-40.546463</data>
+<data key="y">210.99316</data>
+</node>
+<node id="230">
+<data key="label">230</data>
+<data key="&quot;time&quot;">17:33:04</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">so does a mentor need to be aware of their own learning/metacognition in order to elicit that in others?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">364.95633</data>
+<data key="y">-350.7956</data>
+</node>
+<node id="231">
+<data key="label">231</data>
+<data key="&quot;time&quot;">17:33:25</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">yes</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-140.90688</data>
+<data key="y">-96.80714</data>
+</node>
+<node id="232">
+<data key="label">232</data>
+<data key="&quot;time&quot;">17:33:27</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">yes</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-319.59152</data>
+<data key="y">-408.78278</data>
+</node>
+<node id="233">
+<data key="label">233</data>
+<data key="&quot;time&quot;">17:33:33</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">absolutely</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">225.37535</data>
+<data key="y">-277.57928</data>
+</node>
+<node id="234">
+<data key="label">234</data>
+<data key="&quot;time&quot;">17:33:33</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">and that all sorts of questioning needs to be used, and different questions at different stages to get out the craft knowledge</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">2.884566</data>
+<data key="y">-372.0823</data>
+</node>
+<node id="235">
+<data key="label">235</data>
+<data key="&quot;time&quot;">17:33:42</data>
+<data key="&quot;actor&quot;">Helen</data>
+<data key="&quot;contribution&quot;">When a district is assigning mentors, how will they know if the mentor self-reflects?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-255.94484</data>
+<data key="y">-209.01804</data>
+</node>
+<node id="236">
+<data key="label">236</data>
+<data key="&quot;time&quot;">17:33:44</data>
+<data key="&quot;actor&quot;">Betty</data>
+<data key="&quot;contribution&quot;">That is an excellent point.  We get better at our craft when we take the time to examine what we do and the results.</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">335.5264</data>
+<data key="y">-275.46048</data>
+</node>
+<node id="237">
+<data key="label">237</data>
+<data key="&quot;time&quot;">17:33:57</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">good question Helen</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">40.12657</data>
+<data key="y">-323.6377</data>
+</node>
+<node id="238">
+<data key="label">238</data>
+<data key="&quot;time&quot;">17:34:32</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">I am also aware that the kind of questions that I ask can 'feel' to be 'interrogatory', when they are only information seeking</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">257.04044</data>
+<data key="y">-432.47214</data>
+</node>
+<node id="239">
+<data key="label">239</data>
+<data key="&quot;time&quot;">17:34:41</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">unless the district requires teacher to turn in some sort of self evaluation my guess is that there is no definite way of checking to see if teachers and mentors are doing it</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">156.07549</data>
+<data key="y">372.4353</data>
+</node>
+<node id="240">
+<data key="label">240</data>
+<data key="&quot;time&quot;">17:34:45</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">we were taught to self reflect constantly</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-222.76244</data>
+<data key="y">16.635677</data>
+</node>
+<node id="241">
+<data key="label">241</data>
+<data key="&quot;time&quot;">17:34:58</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">which is the difference between assigned/structured programs and a natural development of the mentoring relationship</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">325.57785</data>
+<data key="y">-357.22675</data>
+</node>
+<node id="242">
+<data key="label">242</data>
+<data key="&quot;time&quot;">17:35:07</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">as a teacher you almost automatically reflect on lessons and think about how you can improve</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">198.30064</data>
+<data key="y">-181.02023</data>
+</node>
+<node id="243">
+<data key="label">243</data>
+<data key="&quot;time&quot;">17:35:13</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">can you plase elaborate Maria?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-129.32298</data>
+<data key="y">435.19885</data>
+</node>
+<node id="244">
+<data key="label">244</data>
+<data key="&quot;time&quot;">17:35:33</data>
+<data key="&quot;actor&quot;">Patricia</data>
+<data key="&quot;contribution&quot;">i agree andrea</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-168.21605</data>
+<data key="y">-148.67719</data>
+</node>
+<node id="245">
+<data key="label">245</data>
+<data key="&quot;time&quot;">17:35:39</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">sorry..thinking 'out loud'</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-179.0194</data>
+<data key="y">480.03412</data>
+</node>
+<node id="246">
+<data key="label">246</data>
+<data key="&quot;time&quot;">17:35:43</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">assigned I think could be having a student teacher and naturally woiuld be working with a team inside your grade level or even school wide</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">269.9852</data>
+<data key="y">-236.70734</data>
+</node>
+<node id="247">
+<data key="label">247</data>
+<data key="&quot;time&quot;">17:35:53</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">please think out loud some more then!</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">30.177534</data>
+<data key="y">244.07489</data>
+</node>
+<node id="248">
+<data key="label">248</data>
+<data key="&quot;time&quot;">17:36:18</data>
+<data key="&quot;actor&quot;">Betty</data>
+<data key="&quot;contribution&quot;">I wish that were true Andrea, but sometimes there are teachers who have 'done it that way for years' who fail to see the need to self-evaluate or self-reflect.</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-334.7891</data>
+<data key="y">-343.05518</data>
+</node>
+<node id="249">
+<data key="label">249</data>
+<data key="&quot;time&quot;">17:36:28</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">oh yes..</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">148.18016</data>
+<data key="y">128.13824</data>
+</node>
+<node id="250">
+<data key="label">250</data>
+<data key="&quot;time&quot;">17:36:29</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">but wouldn't it be interesting to measure success of 'assigned' mentors against mentoring relationships that develop out of need or naturally</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">131.58946</data>
+<data key="y">357.02075</data>
+</node>
+<node id="251">
+<data key="label">251</data>
+<data key="&quot;time&quot;">17:36:36</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">Im sure there are</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-203.54204</data>
+<data key="y">168.10162</data>
+</node>
+<node id="252">
+<data key="label">252</data>
+<data key="&quot;time&quot;">17:36:44</data>
+<data key="&quot;actor&quot;">Joseph</data>
+<data key="&quot;contribution&quot;">That would be an interesting study</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-48.529648</data>
+<data key="y">-98.55155</data>
+</node>
+<node id="253">
+<data key="label">253</data>
+<data key="&quot;time&quot;">17:36:58</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">yeah that would</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-310.36584</data>
+<data key="y">-472.3282</data>
+</node>
+<node id="254">
+<data key="label">254</data>
+<data key="&quot;time&quot;">17:37:04</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">In our district we are required to be evaluated by the PDAS.  part of the evaluation is self reflecting on our practices</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-257.9215</data>
+<data key="y">113.07781</data>
+</node>
+<node id="255">
+<data key="label">255</data>
+<data key="&quot;time&quot;">17:37:26</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">I am sure that relationships that develop out of need are more sucessful than those that are structurally formalised!</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">248.17613</data>
+<data key="y">-244.30756</data>
+</node>
+<node id="256">
+<data key="label">256</data>
+<data key="&quot;time&quot;">17:37:33</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">my eyes have been opened wide at how some teachers 'teach'</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">117.97746</data>
+<data key="y">501.33905</data>
+</node>
+<node id="257">
+<data key="label">257</data>
+<data key="&quot;time&quot;">17:37:33</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">yes i think our district does that as well</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">455.01743</data>
+<data key="y">121.61968</data>
+</node>
+<node id="258">
+<data key="label">258</data>
+<data key="&quot;time&quot;">17:37:38</data>
+<data key="&quot;actor&quot;">Helen</data>
+<data key="&quot;contribution&quot;">Teaching is traditionally isolating (close the door and teach).  I'd be curious to see how often mentoring relationships actually grow naturally</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-328.9733</data>
+<data key="y">286.45654</data>
+</node>
+<node id="259">
+<data key="label">259</data>
+<data key="&quot;time&quot;">17:37:48</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">yes Helen!</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">323.20773</data>
+<data key="y">339.86523</data>
+</node>
+<node id="260">
+<data key="label">260</data>
+<data key="&quot;time&quot;">17:37:56</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">great corollary question</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">281.90244</data>
+<data key="y">39.04675</data>
+</node>
+<node id="261">
+<data key="label">261</data>
+<data key="&quot;time&quot;">17:38:31</data>
+<data key="&quot;actor&quot;">Helen</data>
+<data key="&quot;contribution&quot;">I had a natural mentor, but we were forced to do so.</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">362.1943</data>
+<data key="y">-352.9737</data>
+</node>
+<node id="262">
+<data key="label">262</data>
+<data key="&quot;time&quot;">17:38:38</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">I think you have to be open to new ideas and not an 'i know everything' attitude</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-124.11778</data>
+<data key="y">284.37433</data>
+</node>
+<node id="263">
+<data key="label">263</data>
+<data key="&quot;time&quot;">17:38:45</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">absolutely</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-142.904</data>
+<data key="y">505.59326</data>
+</node>
+<node id="264">
+<data key="label">264</data>
+<data key="&quot;time&quot;">17:38:47</data>
+<data key="&quot;actor&quot;">Betty</data>
+<data key="&quot;contribution&quot;">My district's mentoring plan calls for the attempt to match personalities.</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-259.52155</data>
+<data key="y">433.23444</data>
+</node>
+<node id="265">
+<data key="label">265</data>
+<data key="&quot;time&quot;">17:38:55</data>
+<data key="&quot;actor&quot;">Helen</data>
+<data key="&quot;contribution&quot;">It was the first year the 6th grade moved to middle school concept and we had to make our team work</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-391.65973</data>
+<data key="y">173.54437</data>
+</node>
+<node id="266">
+<data key="label">266</data>
+<data key="&quot;time&quot;">17:39:03</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">I am afraid I let my bias show though...having been a member of both an assigned mentoring relationship and one that grew up naturally...I have a definite preference for the 'natural' method</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">433.63803</data>
+<data key="y">-429.62335</data>
+</node>
+<node id="267">
+<data key="label">267</data>
+<data key="&quot;time&quot;">17:39:34</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">it is more comfortable right?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">18.289839</data>
+<data key="y">1.3092611</data>
+</node>
+<node id="268">
+<data key="label">268</data>
+<data key="&quot;time&quot;">17:39:41</data>
+<data key="&quot;actor&quot;">Helen</data>
+<data key="&quot;contribution&quot;">We all wanted it to be a success and so we formed a strong professional community.  I'm not sure that would have happened otherwise.</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">128.60661</data>
+<data key="y">-43.42081</data>
+</node>
+<node id="269">
+<data key="label">269</data>
+<data key="&quot;time&quot;">17:39:46</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">matching personalities for mentoring... sort of like online dating  lol</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">56.993332</data>
+<data key="y">-404.09833</data>
+</node>
+<node id="270">
+<data key="label">270</data>
+<data key="&quot;time&quot;">17:39:50</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">I was talking of 'sure' from my experience of computer mediated discussions</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-34.808243</data>
+<data key="y">-418.07095</data>
+</node>
+<node id="271">
+<data key="label">271</data>
+<data key="&quot;time&quot;">17:39:51</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">smiles</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-309.04584</data>
+<data key="y">-73.40711</data>
+</node>
+<node id="272">
+<data key="label">272</data>
+<data key="&quot;time&quot;">17:40:11</data>
+<data key="&quot;actor&quot;">Betty</data>
+<data key="&quot;contribution&quot;">matching personalities works well, when it happens.</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-392.9603</data>
+<data key="y">-254.4422</data>
+</node>
+<node id="273">
+<data key="label">273</data>
+<data key="&quot;time&quot;">17:40:13</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">they work best when someone offers a real problem for discussion</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-183.1829</data>
+<data key="y">37.317623</data>
+</node>
+<node id="274">
+<data key="label">274</data>
+<data key="&quot;time&quot;">17:40:17</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">how are the personalities matched?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-259.3262</data>
+<data key="y">431.0291</data>
+</node>
+<node id="275">
+<data key="label">275</data>
+<data key="&quot;time&quot;">17:40:37</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">yes Lisa...or at least one with lots of common interest...like we have tonight</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-393.86874</data>
+<data key="y">278.07422</data>
+</node>
+<node id="276">
+<data key="label">276</data>
+<data key="&quot;time&quot;">17:40:48</data>
+<data key="&quot;actor&quot;">Sharon</data>
+<data key="&quot;contribution&quot;">. o O ( I notice teachers mentoring informally as they go about their teaching day .. ) </data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-305.5738</data>
+<data key="y">196.76819</data>
+</node>
+<node id="277">
+<data key="label">277</data>
+<data key="&quot;time&quot;">17:40:56</data>
+<data key="&quot;actor&quot;">Betty</data>
+<data key="&quot;contribution&quot;">We try to meet informally at first, and spend some time together, getting to know one another.</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">437.8564</data>
+<data key="y">-129.09879</data>
+</node>
+<node id="278">
+<data key="label">278</data>
+<data key="&quot;time&quot;">17:41:14</data>
+<data key="&quot;actor&quot;">Joseph</data>
+<data key="&quot;contribution&quot;">I think the informal meetings are a huge plus</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-295.9734</data>
+<data key="y">407.37</data>
+</node>
+<node id="279">
+<data key="label">279</data>
+<data key="&quot;time&quot;">17:41:20</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">How would you describe that Sharon?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">272.03574</data>
+<data key="y">185.5835</data>
+</node>
+<node id="280">
+<data key="label">280</data>
+<data key="&quot;time&quot;">17:41:24</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">i think it is a great idea</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-393.50534</data>
+<data key="y">-105.68256</data>
+</node>
+<node id="281">
+<data key="label">281</data>
+<data key="&quot;time&quot;">17:41:59</data>
+<data key="&quot;actor&quot;">Sharon</data>
+<data key="&quot;contribution&quot;">just sharing stratergies that work..or ideas on implementing a skill, Lisa</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">401.06723</data>
+<data key="y">316.0603</data>
+</node>
+<node id="282">
+<data key="label">282</data>
+<data key="&quot;time&quot;">17:42:15</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">nods</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-94.88457</data>
+<data key="y">-446.41388</data>
+</node>
+<node id="283">
+<data key="label">283</data>
+<data key="&quot;time&quot;">17:42:21</data>
+<data key="&quot;actor&quot;">Sharon</data>
+<data key="&quot;contribution&quot;">goes on constantly throughout the school day</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">4.264144</data>
+<data key="y">420.57855</data>
+</node>
+<node id="284">
+<data key="label">284</data>
+<data key="&quot;time&quot;">17:42:29</data>
+<data key="&quot;actor&quot;">Sharon</data>
+<data key="&quot;contribution&quot;">lunch hour chatting</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">215.66093</data>
+<data key="y">-37.191715</data>
+</node>
+<node id="285">
+<data key="label">285</data>
+<data key="&quot;time&quot;">17:42:36</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">that's good Sharon...so an extension to our question would be 'what situations foster the natural mentoring process?'</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-173.09904</data>
+<data key="y">-183.04477</data>
+</node>
+<node id="286">
+<data key="label">286</data>
+<data key="&quot;time&quot;">17:42:56</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">maybe not situations...</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">77.65196</data>
+<data key="y">-167.88715</data>
+</node>
+<node id="287">
+<data key="label">287</data>
+<data key="&quot;time&quot;">17:43:10</data>
+<data key="&quot;actor&quot;">Joseph</data>
+<data key="&quot;contribution&quot;">Lunch hour chatting unfortunately seems to bgripe more of a gripe session than a positive thing</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-393.29953</data>
+<data key="y">8.881893</data>
+</node>
+<node id="288">
+<data key="label">288</data>
+<data key="&quot;time&quot;">17:43:15</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">what of the 'whole mentoring role' gets missed in that informal approach Sharon?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-5.661027</data>
+<data key="y">-9.545231</data>
+</node>
+<node id="289">
+<data key="label">289</data>
+<data key="&quot;time&quot;">17:43:19</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">everyday situations offer a chance to 'mentor'</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-421.27405</data>
+<data key="y">-339.97327</data>
+</node>
+<node id="290">
+<data key="label">290</data>
+<data key="&quot;time&quot;">17:43:20</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">thats what i have notice</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">351.2125</data>
+<data key="y">-346.80878</data>
+</node>
+<node id="291">
+<data key="label">291</data>
+<data key="&quot;time&quot;">17:43:38</data>
+<data key="&quot;actor&quot;">Helen</data>
+<data key="&quot;contribution&quot;">School environment that encourages collaboration</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-496.10184</data>
+<data key="y">29.75732</data>
+</node>
+<node id="292">
+<data key="label">292</data>
+<data key="&quot;time&quot;">17:43:40</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">nods to Ashley</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-444.76352</data>
+<data key="y">-83.141365</data>
+</node>
+<node id="293">
+<data key="label">293</data>
+<data key="&quot;time&quot;">17:43:48</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">agrees with Helen</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">186.8665</data>
+<data key="y">-462.37024</data>
+</node>
+<node id="294">
+<data key="label">294</data>
+<data key="&quot;time&quot;">17:43:49</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">I don't know if that's the case in every school</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">335.6315</data>
+<data key="y">-216.4513</data>
+</node>
+<node id="295">
+<data key="label">295</data>
+<data key="&quot;time&quot;">17:43:52</data>
+<data key="&quot;actor&quot;">Betty</data>
+<data key="&quot;contribution&quot;">Unfortunately, I have found that lunch time gripping is extrememely nonproductive and not good for the mentoring situation.</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">375.72122</data>
+<data key="y">-66.64121</data>
+</node>
+<node id="296">
+<data key="label">296</data>
+<data key="&quot;time&quot;">17:43:56</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">when i try to talk about something that  happened in my lesson i sometimes get brushed off for gossip</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-348.0835</data>
+<data key="y">-470.0224</data>
+</node>
+<node id="297">
+<data key="label">297</data>
+<data key="&quot;time&quot;">17:44:19</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">we were told as student teachers to stay away from faculty lounge</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">269.0403</data>
+<data key="y">14.804623</data>
+</node>
+<node id="298">
+<data key="label">298</data>
+<data key="&quot;time&quot;">17:44:23</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">nothing but gossip</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">66.05162</data>
+<data key="y">-94.71226</data>
+</node>
+<node id="299">
+<data key="label">299</data>
+<data key="&quot;time&quot;">17:44:28</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">you guys should read the book How Full is Your Bucket ... it talks about 'filling' and 'dipping' from others buckets by using positive and negetive interactions</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-404.9759</data>
+<data key="y">-41.418186</data>
+</node>
+<node id="300">
+<data key="label">300</data>
+<data key="&quot;time&quot;">17:44:35</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">they want us hip to hip</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-247.09352</data>
+<data key="y">466.8167</data>
+</node>
+<node id="301">
+<data key="label">301</data>
+<data key="&quot;time&quot;">17:44:47</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">us too</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">372.9767</data>
+<data key="y">106.216606</data>
+</node>
+<node id="302">
+<data key="label">302</data>
+<data key="&quot;time&quot;">17:44:49</data>
+<data key="&quot;actor&quot;">Betty</data>
+<data key="&quot;contribution&quot;">Erica, I agree with you.  The lunch time atmosphere is probably not the most conducive to mentoring</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-453.08798</data>
+<data key="y">344.513</data>
+</node>
+<node id="303">
+<data key="label">303</data>
+<data key="&quot;time&quot;">17:45:19</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">Is a group context conducive to mentoring?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">19.15312</data>
+<data key="y">483.349</data>
+</node>
+<node id="304">
+<data key="label">304</data>
+<data key="&quot;time&quot;">17:45:22</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">we were allowed to break away at lunch and disclude ourselves from facultly lounge</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-447.36392</data>
+<data key="y">-137.62576</data>
+</node>
+<node id="305">
+<data key="label">305</data>
+<data key="&quot;time&quot;">17:46:02</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">so if you were a new teacher looking for the perfect school...what would indicate that the school environment was conducive to constructive mentoring?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">416.9962</data>
+<data key="y">420.2954</data>
+</node>
+<node id="306">
+<data key="label">306</data>
+<data key="&quot;time&quot;">17:46:11</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">groups can be conducive to mentoring if it's kept positive and related to to teaching and other school issues not gossip</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-116.84401</data>
+<data key="y">-260.77164</data>
+</node>
+<node id="307">
+<data key="label">307</data>
+<data key="&quot;time&quot;">17:46:23</data>
+<data key="&quot;actor&quot;">Sharon</data>
+<data key="&quot;contribution&quot;">the school I have been in has been going thro' some restructuring .. so there seems to be less griping and more informal collaboration and positive sharing ..thus could it be mentoring</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-63.950882</data>
+<data key="y">389.36078</data>
+</node>
+<node id="308">
+<data key="label">308</data>
+<data key="&quot;time&quot;">17:46:53</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">schools where teachers and kids are happy is a pretty good indicator if the school is a good environment to be in</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">32.484665</data>
+<data key="y">41.373104</data>
+</node>
+<node id="309">
+<data key="label">309</data>
+<data key="&quot;time&quot;">17:47:03</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">Sharon, was the restructuring supported by some other inputs to help deliver on the collaborative atmosphere?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">154.33208</data>
+<data key="y">-422.39502</data>
+</node>
+<node id="310">
+<data key="label">310</data>
+<data key="&quot;time&quot;">17:47:13</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">there is a new school opening real close to the one i am at and we were talking about what kind of teachers to hire to make it effective</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">236.93864</data>
+<data key="y">-333.96423</data>
+</node>
+<node id="311">
+<data key="label">311</data>
+<data key="&quot;time&quot;">17:47:23</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">experience or 1st year?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">215.7343</data>
+<data key="y">-226.65689</data>
+</node>
+<node id="312">
+<data key="label">312</data>
+<data key="&quot;time&quot;">17:47:31</data>
+<data key="&quot;actor&quot;">Joseph</data>
+<data key="&quot;contribution&quot;">You need a mix</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-64.780045</data>
+<data key="y">-102.690865</data>
+</node>
+<node id="313">
+<data key="label">313</data>
+<data key="&quot;time&quot;">17:47:36</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">where teachers are happy as well as kids</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">336.97696</data>
+<data key="y">-139.52359</data>
+</node>
+<node id="314">
+<data key="label">314</data>
+<data key="&quot;time&quot;">17:47:43</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">i so wish eachof you could visit our school... i personally think we have one of the best school environments in our district, but i am biased</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">98.116745</data>
+<data key="y">495.1659</data>
+</node>
+<node id="315">
+<data key="label">315</data>
+<data key="&quot;time&quot;">17:47:48</data>
+<data key="&quot;actor&quot;">Sharon</data>
+<data key="&quot;contribution&quot;">they have acquired some litercy coaches and PD training during school days</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-32.037186</data>
+<data key="y">-413.17746</data>
+</node>
+<node id="316">
+<data key="label">316</data>
+<data key="&quot;time&quot;">17:48:04</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">nods to Sharon, thanks</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-233.89088</data>
+<data key="y">-146.65222</data>
+</node>
+<node id="317">
+<data key="label">317</data>
+<data key="&quot;time&quot;">17:48:12</data>
+<data key="&quot;actor&quot;">Sharon</data>
+<data key="&quot;contribution&quot;">there is a support team for  the school</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-495.1663</data>
+<data key="y">300.9336</data>
+</node>
+<node id="318">
+<data key="label">318</data>
+<data key="&quot;time&quot;">17:49:09</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">Lisa...you are answering my question as you describe your school</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-393.19855</data>
+<data key="y">-6.626805</data>
+</node>
+<node id="319">
+<data key="label">319</data>
+<data key="&quot;time&quot;">17:49:12</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">we also have a support team and each person in our school is on some sort of sommitte related to our school's environment and well being</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">256.81778</data>
+<data key="y">36.46063</data>
+</node>
+<node id="320">
+<data key="label">320</data>
+<data key="&quot;time&quot;">17:49:42</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">judging whether or not teachers and kids are happy can be difficult especially if you are feeling pressure to choose a place and get hired</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-316.0167</data>
+<data key="y">-450.40027</data>
+</node>
+<node id="321">
+<data key="label">321</data>
+<data key="&quot;time&quot;">17:50:05</data>
+<data key="&quot;actor&quot;">Helen</data>
+<data key="&quot;contribution&quot;">very true</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-424.04694</data>
+<data key="y">-336.05606</data>
+</node>
+<node id="322">
+<data key="label">322</data>
+<data key="&quot;time&quot;">17:50:40</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">but maybe it could be made easier by looking at existing structures such as pd programs, cues from the admin, anything else?</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-83.74483</data>
+<data key="y">444.22552</data>
+</node>
+<node id="323">
+<data key="label">323</data>
+<data key="&quot;time&quot;">17:51:43</data>
+<data key="&quot;actor&quot;">Helen</data>
+<data key="&quot;contribution&quot;">During interview, asking about PD structured in learning teams, lesson study, professional development teams could indicate collaborative environment</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-326.96515</data>
+<data key="y">-173.02136</data>
+</node>
+<node id="324">
+<data key="label">324</data>
+<data key="&quot;time&quot;">17:51:47</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">at our school, every person that is interviewed for a job is first interviewed by the principal and asst.  then they are interviewed by the other teacher in the grade or area they are applying for.  we make it a point to make them feel welcome and comfortable</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-104.46263</data>
+<data key="y">-348.69238</data>
+</node>
+<node id="325">
+<data key="label">325</data>
+<data key="&quot;time&quot;">17:52:15</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">Great tips Helen</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-336.36096</data>
+<data key="y">33.0249</data>
+</node>
+<node id="326">
+<data key="label">326</data>
+<data key="&quot;time&quot;">17:52:27</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">sounds wonderful Ashley</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-165.5861</data>
+<data key="y">305.32037</data>
+</node>
+<node id="327">
+<data key="label">327</data>
+<data key="&quot;time&quot;">17:52:56</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">also remember that interviewing doesn't have to be one sided.  ask questions!  in fact most principals would perfer you did, it shows you are interested in the daily workings of the school</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-185.16542</data>
+<data key="y">-421.2962</data>
+</node>
+<node id="328">
+<data key="label">328</data>
+<data key="&quot;time&quot;">17:53:11</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">interviews by the teaching team communicate that teachers' opinions are valued and respected</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">416.1451</data>
+<data key="y">422.47437</data>
+</node>
+<node id="329">
+<data key="label">329</data>
+<data key="&quot;time&quot;">17:53:35</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">which is great</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-203.79695</data>
+<data key="y">-44.76215</data>
+</node>
+<node id="330">
+<data key="label">330</data>
+<data key="&quot;time&quot;">17:53:36</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">I definitely agree Ashley</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">232.31639</data>
+<data key="y">-328.04175</data>
+</node>
+<node id="331">
+<data key="label">331</data>
+<data key="&quot;time&quot;">17:54:16</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">i can remember when i interviewed for the school i'm at.  I was so relieved to be interviewed by someone other than the principal</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-21.956255</data>
+<data key="y">1.7684591</data>
+</node>
+<node id="332">
+<data key="label">332</data>
+<data key="&quot;time&quot;">17:54:45</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">okay..unfortunately I need to start exiting stage right...</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">310.4727</data>
+<data key="y">-40.53513</data>
+</node>
+<node id="333">
+<data key="label">333</data>
+<data key="&quot;time&quot;">17:54:57</data>
+<data key="&quot;actor&quot;">Helen</data>
+<data key="&quot;contribution&quot;">I heard at a recent presentation that new teacher induction actually begins with the interview and how it's structured.</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">465.14822</data>
+<data key="y">352.6001</data>
+</node>
+<node id="334">
+<data key="label">334</data>
+<data key="&quot;time&quot;">17:55:02</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">to me it showed that the teachers had a genuine interest in the person they were possibly going to teach with.  that made me feel like if i got the job these teachers would be there for me when i needed them</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-42.27852</data>
+<data key="y">66.80523</data>
+</node>
+<node id="335">
+<data key="label">335</data>
+<data key="&quot;time&quot;">17:55:02</data>
+<data key="&quot;actor&quot;">Helen</data>
+<data key="&quot;contribution&quot;">Bye Maria.</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-393.71188</data>
+<data key="y">-341.00677</data>
+</node>
+<node id="336">
+<data key="label">336</data>
+<data key="&quot;time&quot;">17:55:04</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">...I have another discussion scheduled in the Teachers in Training room</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-223.83003</data>
+<data key="y">229.11182</data>
+</node>
+<node id="337">
+<data key="label">337</data>
+<data key="&quot;time&quot;">17:55:12</data>
+<data key="&quot;actor&quot;">Joseph</data>
+<data key="&quot;contribution&quot;">Thanks, Maria</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">177.5656</data>
+<data key="y">-343.05286</data>
+</node>
+<node id="338">
+<data key="label">338</data>
+<data key="&quot;time&quot;">17:55:19</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">waves bye</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">242.1942</data>
+<data key="y">325.07526</data>
+</node>
+<node id="339">
+<data key="label">339</data>
+<data key="&quot;time&quot;">17:55:19</data>
+<data key="&quot;actor&quot;">Helen</data>
+<data key="&quot;contribution&quot;">Thanks!</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">302.0367</data>
+<data key="y">399.48547</data>
+</node>
+<node id="340">
+<data key="label">340</data>
+<data key="&quot;time&quot;">17:55:20</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">thanks Maria</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-316.07803</data>
+<data key="y">305.8573</data>
+</node>
+<node id="341">
+<data key="label">341</data>
+<data key="&quot;time&quot;">17:55:27</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">I hope to chat with you all again next month</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">438.522</data>
+<data key="y">-124.72465</data>
+</node>
+<node id="342">
+<data key="label">342</data>
+<data key="&quot;time&quot;">17:55:29</data>
+<data key="&quot;actor&quot;">Nancy</data>
+<data key="&quot;contribution&quot;">thanks all i have learned a lot</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-160.05727</data>
+<data key="y">-405.2362</data>
+</node>
+<node id="343">
+<data key="label">343</data>
+<data key="&quot;time&quot;">17:55:29</data>
+<data key="&quot;actor&quot;">Ashley</data>
+<data key="&quot;contribution&quot;">thanks</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">449.27975</data>
+<data key="y">-205.01556</data>
+</node>
+<node id="344">
+<data key="label">344</data>
+<data key="&quot;time&quot;">17:55:33</data>
+<data key="&quot;actor&quot;">Maria</data>
+<data key="&quot;contribution&quot;">this has been lovely!</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">437.14157</data>
+<data key="y">452.46155</data>
+</node>
+<node id="345">
+<data key="label">345</data>
+<data key="&quot;time&quot;">17:55:36</data>
+<data key="&quot;actor&quot;">Andrea</data>
+<data key="&quot;contribution&quot;">thanks Maria</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-160.77684</data>
+<data key="y">-457.40286</data>
+</node>
+<node id="346">
+<data key="label">346</data>
+<data key="&quot;time&quot;">17:57:37</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">Can I foreshadow that next month's session we will be talking about self-study, self-evaluation and using Tapped In and its Certificate of Participation as a possible tool to develop that, I'd love to see you all here then</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">386.68704</data>
+<data key="y">-278.53595</data>
+</node>
+<node id="347">
+<data key="label">347</data>
+<data key="&quot;time&quot;">17:57:58</data>
+<data key="&quot;actor&quot;">Lisa</data>
+<data key="&quot;contribution&quot;">and o hear what you think about those sorts of issues of professional formation and development</data>
+<data key="size">10.0</data>
+<data key="r">0</data>
+<data key="g">0</data>
+<data key="b">0</data>
+<data key="x">-251.37892</data>
+<data key="y">160.98425</data>
+</node>
+<edge id="195" source="178" target="177">
+<data key="weight">1.0</data>
+</edge>
+<edge id="196" source="183" target="178">
+<data key="weight">1.0</data>
+</edge>
+<edge id="197" source="184" target="183">
+<data key="weight">1.0</data>
+</edge>
+<edge id="198" source="184" target="178">
+<data key="weight">1.0</data>
+</edge>
+<edge id="199" source="185" target="180">
+<data key="weight">1.0</data>
+</edge>
+<edge id="200" source="186" target="184">
+<data key="weight">1.0</data>
+</edge>
+<edge id="201" source="187" target="186">
+<data key="weight">1.0</data>
+</edge>
+<edge id="202" source="188" target="185">
+<data key="weight">1.0</data>
+</edge>
+<edge id="203" source="188" target="182">
+<data key="weight">1.0</data>
+</edge>
+<edge id="204" source="188" target="180">
+<data key="weight">1.0</data>
+</edge>
+<edge id="205" source="189" target="184">
+<data key="weight">1.0</data>
+</edge>
+<edge id="206" source="189" target="185">
+<data key="weight">1.0</data>
+</edge>
+<edge id="207" source="189" target="180">
+<data key="weight">1.0</data>
+</edge>
+<edge id="208" source="190" target="189">
+<data key="weight">1.0</data>
+</edge>
+<edge id="209" source="190" target="183">
+<data key="weight">1.0</data>
+</edge>
+<edge id="210" source="191" target="189">
+<data key="weight">1.0</data>
+</edge>
+<edge id="211" source="193" target="184">
+<data key="weight">1.0</data>
+</edge>
+<edge id="212" source="194" target="193">
+<data key="weight">1.0</data>
+</edge>
+<edge id="213" source="195" target="188">
+<data key="weight">1.0</data>
+</edge>
+<edge id="214" source="195" target="182">
+<data key="weight">1.0</data>
+</edge>
+<edge id="215" source="196" target="191">
+<data key="weight">1.0</data>
+</edge>
+<edge id="216" source="197" target="193">
+<data key="weight">1.0</data>
+</edge>
+<edge id="217" source="198" target="190">
+<data key="weight">1.0</data>
+</edge>
+<edge id="218" source="200" target="189">
+<data key="weight">1.0</data>
+</edge>
+<edge id="219" source="200" target="190">
+<data key="weight">1.0</data>
+</edge>
+<edge id="220" source="201" target="200">
+<data key="weight">1.0</data>
+</edge>
+<edge id="221" source="202" target="201">
+<data key="weight">1.0</data>
+</edge>
+<edge id="222" source="203" target="202">
+<data key="weight">1.0</data>
+</edge>
+<edge id="223" source="203" target="199">
+<data key="weight">1.0</data>
+</edge>
+<edge id="224" source="204" target="202">
+<data key="weight">1.0</data>
+</edge>
+<edge id="225" source="204" target="201">
+<data key="weight">1.0</data>
+</edge>
+<edge id="226" source="205" target="204">
+<data key="weight">1.0</data>
+</edge>
+<edge id="227" source="205" target="202">
+<data key="weight">1.0</data>
+</edge>
+<edge id="228" source="205" target="200">
+<data key="weight">1.0</data>
+</edge>
+<edge id="229" source="206" target="200">
+<data key="weight">1.0</data>
+</edge>
+<edge id="230" source="206" target="196">
+<data key="weight">1.0</data>
+</edge>
+<edge id="231" source="207" target="197">
+<data key="weight">1.0</data>
+</edge>
+<edge id="232" source="207" target="206">
+<data key="weight">1.0</data>
+</edge>
+<edge id="233" source="208" target="183">
+<data key="weight">1.0</data>
+</edge>
+<edge id="234" source="208" target="206">
+<data key="weight">1.0</data>
+</edge>
+<edge id="235" source="209" target="206">
+<data key="weight">1.0</data>
+</edge>
+<edge id="236" source="209" target="208">
+<data key="weight">1.0</data>
+</edge>
+<edge id="237" source="210" target="207">
+<data key="weight">1.0</data>
+</edge>
+<edge id="238" source="211" target="209">
+<data key="weight">1.0</data>
+</edge>
+<edge id="239" source="211" target="207">
+<data key="weight">1.0</data>
+</edge>
+<edge id="240" source="211" target="206">
+<data key="weight">1.0</data>
+</edge>
+<edge id="241" source="212" target="209">
+<data key="weight">1.0</data>
+</edge>
+<edge id="242" source="214" target="211">
+<data key="weight">1.0</data>
+</edge>
+<edge id="243" source="214" target="207">
+<data key="weight">1.0</data>
+</edge>
+<edge id="244" source="215" target="212">
+<data key="weight">1.0</data>
+</edge>
+<edge id="245" source="218" target="212">
+<data key="weight">1.0</data>
+</edge>
+<edge id="246" source="220" target="218">
+<data key="weight">1.0</data>
+</edge>
+<edge id="247" source="220" target="212">
+<data key="weight">1.0</data>
+</edge>
+<edge id="248" source="221" target="220">
+<data key="weight">1.0</data>
+</edge>
+<edge id="249" source="221" target="218">
+<data key="weight">1.0</data>
+</edge>
+<edge id="250" source="221" target="214">
+<data key="weight">1.0</data>
+</edge>
+<edge id="251" source="222" target="220">
+<data key="weight">1.0</data>
+</edge>
+<edge id="252" source="223" target="221">
+<data key="weight">1.0</data>
+</edge>
+<edge id="253" source="223" target="216">
+<data key="weight">1.0</data>
+</edge>
+<edge id="254" source="225" target="221">
+<data key="weight">1.0</data>
+</edge>
+<edge id="255" source="225" target="220">
+<data key="weight">1.0</data>
+</edge>
+<edge id="256" source="228" target="222">
+<data key="weight">1.0</data>
+</edge>
+<edge id="257" source="228" target="220">
+<data key="weight">1.0</data>
+</edge>
+<edge id="258" source="229" target="220">
+<data key="weight">1.0</data>
+</edge>
+<edge id="259" source="230" target="221">
+<data key="weight">1.0</data>
+</edge>
+<edge id="260" source="234" target="228">
+<data key="weight">1.0</data>
+</edge>
+<edge id="261" source="235" target="230">
+<data key="weight">1.0</data>
+</edge>
+<edge id="262" source="235" target="229">
+<data key="weight">1.0</data>
+</edge>
+<edge id="263" source="235" target="222">
+<data key="weight">1.0</data>
+</edge>
+<edge id="264" source="236" target="234">
+<data key="weight">1.0</data>
+</edge>
+<edge id="265" source="237" target="235">
+<data key="weight">1.0</data>
+</edge>
+<edge id="266" source="237" target="228">
+<data key="weight">1.0</data>
+</edge>
+<edge id="267" source="238" target="228">
+<data key="weight">1.0</data>
+</edge>
+<edge id="268" source="238" target="234">
+<data key="weight">1.0</data>
+</edge>
+<edge id="269" source="239" target="235">
+<data key="weight">1.0</data>
+</edge>
+<edge id="270" source="239" target="229">
+<data key="weight">1.0</data>
+</edge>
+<edge id="271" source="240" target="239">
+<data key="weight">1.0</data>
+</edge>
+<edge id="272" source="240" target="235">
+<data key="weight">1.0</data>
+</edge>
+<edge id="273" source="241" target="230">
+<data key="weight">1.0</data>
+</edge>
+<edge id="274" source="242" target="240">
+<data key="weight">1.0</data>
+</edge>
+<edge id="275" source="243" target="241">
+<data key="weight">1.0</data>
+</edge>
+<edge id="276" source="244" target="242">
+<data key="weight">1.0</data>
+</edge>
+<edge id="277" source="245" target="243">
+<data key="weight">1.0</data>
+</edge>
+<edge id="278" source="246" target="242">
+<data key="weight">1.0</data>
+</edge>
+<edge id="279" source="246" target="241">
+<data key="weight">1.0</data>
+</edge>
+<edge id="280" source="247" target="245">
+<data key="weight">1.0</data>
+</edge>
+<edge id="281" source="248" target="242">
+<data key="weight">1.0</data>
+</edge>
+<edge id="282" source="248" target="240">
+<data key="weight">1.0</data>
+</edge>
+<edge id="283" source="248" target="239">
+<data key="weight">1.0</data>
+</edge>
+<edge id="284" source="249" target="248">
+<data key="weight">1.0</data>
+</edge>
+<edge id="285" source="250" target="241">
+<data key="weight">1.0</data>
+</edge>
+<edge id="286" source="251" target="248">
+<data key="weight">1.0</data>
+</edge>
+<edge id="287" source="252" target="250">
+<data key="weight">1.0</data>
+</edge>
+<edge id="288" source="253" target="252">
+<data key="weight">1.0</data>
+</edge>
+<edge id="289" source="254" target="248">
+<data key="weight">1.0</data>
+</edge>
+<edge id="290" source="255" target="250">
+<data key="weight">1.0</data>
+</edge>
+<edge id="291" source="256" target="248">
+<data key="weight">1.0</data>
+</edge>
+<edge id="292" source="257" target="254">
+<data key="weight">1.0</data>
+</edge>
+<edge id="293" source="258" target="250">
+<data key="weight">1.0</data>
+</edge>
+<edge id="294" source="259" target="258">
+<data key="weight">1.0</data>
+</edge>
+<edge id="295" source="261" target="258">
+<data key="weight">1.0</data>
+</edge>
+<edge id="296" source="261" target="259">
+<data key="weight">1.0</data>
+</edge>
+<edge id="297" source="264" target="261">
+<data key="weight">1.0</data>
+</edge>
+<edge id="298" source="265" target="261">
+<data key="weight">1.0</data>
+</edge>
+<edge id="299" source="266" target="258">
+<data key="weight">1.0</data>
+</edge>
+<edge id="300" source="266" target="261">
+<data key="weight">1.0</data>
+</edge>
+<edge id="301" source="268" target="265">
+<data key="weight">1.0</data>
+</edge>
+<edge id="302" source="268" target="261">
+<data key="weight">1.0</data>
+</edge>
+<edge id="303" source="269" target="264">
+<data key="weight">1.0</data>
+</edge>
+<edge id="304" source="270" target="255">
+<data key="weight">1.0</data>
+</edge>
+<edge id="305" source="272" target="264">
+<data key="weight">1.0</data>
+</edge>
+<edge id="306" source="272" target="269">
+<data key="weight">1.0</data>
+</edge>
+<edge id="307" source="273" target="270">
+<data key="weight">1.0</data>
+</edge>
+<edge id="308" source="274" target="272">
+<data key="weight">1.0</data>
+</edge>
+<edge id="309" source="274" target="269">
+<data key="weight">1.0</data>
+</edge>
+<edge id="310" source="274" target="264">
+<data key="weight">1.0</data>
+</edge>
+<edge id="311" source="275" target="273">
+<data key="weight">1.0</data>
+</edge>
+<edge id="312" source="276" target="269">
+<data key="weight">1.0</data>
+</edge>
+<edge id="313" source="276" target="266">
+<data key="weight">1.0</data>
+</edge>
+<edge id="314" source="277" target="276">
+<data key="weight">1.0</data>
+</edge>
+<edge id="315" source="278" target="277">
+<data key="weight">1.0</data>
+</edge>
+<edge id="316" source="279" target="276">
+<data key="weight">1.0</data>
+</edge>
+<edge id="317" source="280" target="278">
+<data key="weight">1.0</data>
+</edge>
+<edge id="318" source="281" target="279">
+<data key="weight">1.0</data>
+</edge>
+<edge id="319" source="282" target="281">
+<data key="weight">1.0</data>
+</edge>
+<edge id="320" source="283" target="276">
+<data key="weight">1.0</data>
+</edge>
+<edge id="321" source="283" target="279">
+<data key="weight">1.0</data>
+</edge>
+<edge id="322" source="284" target="279">
+<data key="weight">1.0</data>
+</edge>
+<edge id="323" source="285" target="276">
+<data key="weight">1.0</data>
+</edge>
+<edge id="324" source="286" target="285">
+<data key="weight">1.0</data>
+</edge>
+<edge id="325" source="288" target="281">
+<data key="weight">1.0</data>
+</edge>
+<edge id="326" source="288" target="285">
+<data key="weight">1.0</data>
+</edge>
+<edge id="327" source="289" target="285">
+<data key="weight">1.0</data>
+</edge>
+<edge id="328" source="289" target="288">
+<data key="weight">1.0</data>
+</edge>
+<edge id="329" source="292" target="289">
+<data key="weight">1.0</data>
+</edge>
+<edge id="330" source="293" target="291">
+<data key="weight">1.0</data>
+</edge>
+<edge id="331" source="294" target="291">
+<data key="weight">1.0</data>
+</edge>
+<edge id="332" source="295" target="287">
+<data key="weight">1.0</data>
+</edge>
+<edge id="333" source="295" target="289">
+<data key="weight">1.0</data>
+</edge>
+<edge id="334" source="298" target="296">
+<data key="weight">1.0</data>
+</edge>
+<edge id="335" source="299" target="292">
+<data key="weight">1.0</data>
+</edge>
+<edge id="336" source="301" target="300">
+<data key="weight">1.0</data>
+</edge>
+<edge id="337" source="301" target="292">
+<data key="weight">1.0</data>
+</edge>
+<edge id="338" source="302" target="300">
+<data key="weight">1.0</data>
+</edge>
+<edge id="339" source="302" target="295">
+<data key="weight">1.0</data>
+</edge>
+<edge id="340" source="303" target="302">
+<data key="weight">1.0</data>
+</edge>
+<edge id="341" source="304" target="297">
+<data key="weight">1.0</data>
+</edge>
+<edge id="342" source="305" target="303">
+<data key="weight">1.0</data>
+</edge>
+<edge id="343" source="305" target="302">
+<data key="weight">1.0</data>
+</edge>
+<edge id="344" source="306" target="305">
+<data key="weight">1.0</data>
+</edge>
+<edge id="345" source="306" target="303">
+<data key="weight">1.0</data>
+</edge>
+<edge id="346" source="306" target="302">
+<data key="weight">1.0</data>
+</edge>
+<edge id="347" source="307" target="306">
+<data key="weight">1.0</data>
+</edge>
+<edge id="348" source="307" target="305">
+<data key="weight">1.0</data>
+</edge>
+<edge id="349" source="308" target="305">
+<data key="weight">1.0</data>
+</edge>
+<edge id="350" source="309" target="307">
+<data key="weight">1.0</data>
+</edge>
+<edge id="351" source="310" target="308">
+<data key="weight">1.0</data>
+</edge>
+<edge id="352" source="310" target="306">
+<data key="weight">1.0</data>
+</edge>
+<edge id="353" source="310" target="305">
+<data key="weight">1.0</data>
+</edge>
+<edge id="354" source="313" target="308">
+<data key="weight">1.0</data>
+</edge>
+<edge id="355" source="314" target="308">
+<data key="weight">1.0</data>
+</edge>
+<edge id="356" source="314" target="305">
+<data key="weight">1.0</data>
+</edge>
+<edge id="357" source="315" target="309">
+<data key="weight">1.0</data>
+</edge>
+<edge id="358" source="316" target="315">
+<data key="weight">1.0</data>
+</edge>
+<edge id="359" source="317" target="315">
+<data key="weight">1.0</data>
+</edge>
+<edge id="360" source="317" target="309">
+<data key="weight">1.0</data>
+</edge>
+<edge id="361" source="317" target="307">
+<data key="weight">1.0</data>
+</edge>
+<edge id="362" source="318" target="317">
+<data key="weight">1.0</data>
+</edge>
+<edge id="363" source="319" target="314">
+<data key="weight">1.0</data>
+</edge>
+<edge id="364" source="319" target="317">
+<data key="weight">1.0</data>
+</edge>
+<edge id="365" source="323" target="322">
+<data key="weight">1.0</data>
+</edge>
+<edge id="366" source="323" target="319">
+<data key="weight">1.0</data>
+</edge>
+<edge id="367" source="324" target="323">
+<data key="weight">1.0</data>
+</edge>
+<edge id="368" source="325" target="323">
+<data key="weight">1.0</data>
+</edge>
+<edge id="369" source="326" target="324">
+<data key="weight">1.0</data>
+</edge>
+<edge id="370" source="327" target="324">
+<data key="weight">1.0</data>
+</edge>
+<edge id="371" source="327" target="326">
+<data key="weight">1.0</data>
+</edge>
+<edge id="372" source="330" target="327">
+<data key="weight">1.0</data>
+</edge>
+<edge id="373" source="331" target="327">
+<data key="weight">1.0</data>
+</edge>
+<edge id="374" source="331" target="330">
+<data key="weight">1.0</data>
+</edge>
+<edge id="375" source="331" target="328">
+<data key="weight">1.0</data>
+</edge>
+<edge id="376" source="333" target="328">
+<data key="weight">1.0</data>
+</edge>
+<edge id="377" source="334" target="333">
+<data key="weight">1.0</data>
+</edge>
+<edge id="378" source="334" target="330">
+<data key="weight">1.0</data>
+</edge>
+<edge id="379" source="335" target="332">
+<data key="weight">1.0</data>
+</edge>
+<edge id="380" source="336" target="328">
+<data key="weight">1.0</data>
+</edge>
+<edge id="381" source="337" target="336">
+<data key="weight">1.0</data>
+</edge>
+<edge id="382" source="338" target="335">
+<data key="weight">1.0</data>
+</edge>
+<edge id="383" source="339" target="337">
+<data key="weight">1.0</data>
+</edge>
+<edge id="384" source="340" target="336">
+<data key="weight">1.0</data>
+</edge>
+<edge id="385" source="341" target="340">
+<data key="weight">1.0</data>
+</edge>
+<edge id="386" source="342" target="340">
+<data key="weight">1.0</data>
+</edge>
+<edge id="387" source="343" target="342">
+<data key="weight">1.0</data>
+</edge>
+<edge id="388" source="344" target="340">
+<data key="weight">1.0</data>
+</edge>
+<edge id="389" source="345" target="344">
+<data key="weight">1.0</data>
+</edge>
+</graph>
+</graphml>

@@ -1,0 +1,2533 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="v_label" for="node" attr.name="label" attr.type="string"/>
+  <key id="v_time" for="node" attr.name="time" attr.type="string"/>
+  <key id="v_actor" for="node" attr.name="actor" attr.type="string"/>
+  <key id="v_contribution" for="node" attr.name="contribution" attr.type="string"/>
+  <key id="v_id" for="node" attr.name="id" attr.type="string"/>
+  <key id="v_indegree" for="node" attr.name="indegree" attr.type="double"/>
+  <key id="v_charcount" for="node" attr.name="charcount" attr.type="double"/>
+  <key id="e_Edge Label" for="edge" attr.name="Edge Label" attr.type="string"/>
+  <key id="e_weight" for="edge" attr.name="weight" attr.type="double"/>
+  <key id="e_id" for="edge" attr.name="id" attr.type="string"/>
+  <graph id="G" edgedefault="directed">
+    <node id="n0">
+      <data key="v_label">so how do you develo</data>
+      <data key="v_time">17:22:40</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">so how do you develop these skills?</data>
+      <data key="v_id">177</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">35</data>
+    </node>
+    <node id="n1">
+      <data key="v_label">how do you learn to </data>
+      <data key="v_time">17:23:01</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">how do you learn to be a mentor?</data>
+      <data key="v_id">178</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">32</data>
+    </node>
+    <node id="n2">
+      <data key="v_label">experience</data>
+      <data key="v_time">17:23:09</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">experience</data>
+      <data key="v_id">179</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">10</data>
+    </node>
+    <node id="n3">
+      <data key="v_label">for some people thes</data>
+      <data key="v_time">17:23:13</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">for some people these skilss occur naturally, others have to work at them</data>
+      <data key="v_id">180</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">73</data>
+    </node>
+    <node id="n4">
+      <data key="v_label">very true</data>
+      <data key="v_time">17:23:22</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">very true</data>
+      <data key="v_id">181</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">9</data>
+    </node>
+    <node id="n5">
+      <data key="v_label">yeah depends on your</data>
+      <data key="v_time">17:23:29</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">yeah depends on your personality</data>
+      <data key="v_id">182</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">32</data>
+    </node>
+    <node id="n6">
+      <data key="v_label">I think that as you </data>
+      <data key="v_time">17:23:30</data>
+      <data key="v_actor">Joseph</data>
+      <data key="v_contribution">I think that as you spend time teaching kids you gan more confidence in mentoring adults</data>
+      <data key="v_id">183</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">88</data>
+    </node>
+    <node id="n7">
+      <data key="v_label">are all good teacher</data>
+      <data key="v_time">17:23:35</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">are all good teachers good mentors?</data>
+      <data key="v_id">184</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">35</data>
+    </node>
+    <node id="n8">
+      <data key="v_label">some people will tak</data>
+      <data key="v_time">17:23:38</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">some people will take a while to get to that point</data>
+      <data key="v_id">185</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">50</data>
+    </node>
+    <node id="n9">
+      <data key="v_label">No..not all</data>
+      <data key="v_time">17:23:42</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">No..not all</data>
+      <data key="v_id">186</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">11</data>
+    </node>
+    <node id="n10">
+      <data key="v_label">definitely not</data>
+      <data key="v_time">17:23:51</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">definitely not</data>
+      <data key="v_id">187</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">14</data>
+    </node>
+    <node id="n11">
+      <data key="v_label">Training can help, b</data>
+      <data key="v_time">17:23:55</data>
+      <data key="v_actor">Helen</data>
+      <data key="v_contribution">Training can help, but I think some is personality</data>
+      <data key="v_id">188</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">50</data>
+    </node>
+    <node id="n12">
+      <data key="v_label">some people are exce</data>
+      <data key="v_time">17:24:09</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">some people are excellent teachers but are horrible mentors</data>
+      <data key="v_id">189</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">59</data>
+    </node>
+    <node id="n13">
+      <data key="v_label">some great teachers </data>
+      <data key="v_time">17:24:09</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">some great teachers can not hold a decent conversation with an adult</data>
+      <data key="v_id">190</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">68</data>
+    </node>
+    <node id="n14">
+      <data key="v_label">i had to co-ops who </data>
+      <data key="v_time">17:24:11</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">i had to co-ops who would be awful mentors</data>
+      <data key="v_id">191</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">42</data>
+    </node>
+    <node id="n15">
+      <data key="v_label">Nods</data>
+      <data key="v_time">17:24:24</data>
+      <data key="v_actor">Helen</data>
+      <data key="v_contribution">Nods</data>
+      <data key="v_id">192</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">4</data>
+    </node>
+    <node id="n16">
+      <data key="v_label">That is an interesti</data>
+      <data key="v_time">17:24:27</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">That is an interesting question Maria,  ... I would probably say &apos;yes&apos; first off, and then wonder some more</data>
+      <data key="v_id">193</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">107</data>
+    </node>
+    <node id="n17">
+      <data key="v_label">it is something I ha</data>
+      <data key="v_time">17:24:42</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">it is something I have thought about often Lisa</data>
+      <data key="v_id">194</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">47</data>
+    </node>
+    <node id="n18">
+      <data key="v_label">I think its alot of </data>
+      <data key="v_time">17:24:47</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">I think its alot of personality</data>
+      <data key="v_id">195</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">31</data>
+    </node>
+    <node id="n19">
+      <data key="v_label">one thing a mentor h</data>
+      <data key="v_time">17:25:17</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">one thing a mentor has to know is how to operate with a peer, and ow to be intentional about handing over, or encouraging greater independence</data>
+      <data key="v_id">196</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">142</data>
+    </node>
+    <node id="n20">
+      <data key="v_label">observation has made</data>
+      <data key="v_time">17:25:18</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">observation has made me think that it takes an extra &apos;special ingredient&apos; to tip the scales</data>
+      <data key="v_id">197</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">91</data>
+    </node>
+    <node id="n21">
+      <data key="v_label">I think if you have </data>
+      <data key="v_time">17:25:34</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">I think if you have the passion for teaching you will want everyone else to feel the same</data>
+      <data key="v_id">198</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">89</data>
+    </node>
+    <node id="n22">
+      <data key="v_label">agree</data>
+      <data key="v_time">17:25:35</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">agree</data>
+      <data key="v_id">199</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">5</data>
+    </node>
+    <node id="n23">
+      <data key="v_label">just because someone</data>
+      <data key="v_time">17:25:37</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">just because someone is a great teacher doesn&apos;t mean that they have great skills that are needed to be a good mentor.  some adults spend so much time talking to children that they can&apos;t talk to adults.</data>
+      <data key="v_id">200</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">201</data>
+    </node>
+    <node id="n24">
+      <data key="v_label">but some have a stro</data>
+      <data key="v_time">17:25:51</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">but some have a strong passion but just keep to themselves</data>
+      <data key="v_id">201</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">58</data>
+    </node>
+    <node id="n25">
+      <data key="v_label">having the passion i</data>
+      <data key="v_time">17:26:08</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">having the passion isn&apos;t always enough, it&apos;s how you convey your passion</data>
+      <data key="v_id">202</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">72</data>
+    </node>
+    <node id="n26">
+      <data key="v_label">agree Ashley</data>
+      <data key="v_time">17:26:15</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">agree Ashley</data>
+      <data key="v_id">203</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">12</data>
+    </node>
+    <node id="n27">
+      <data key="v_label">cuz one teacher I wo</data>
+      <data key="v_time">17:26:32</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">cuz one teacher I worked with very strong passion..but couldnt convey it</data>
+      <data key="v_id">204</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">72</data>
+    </node>
+    <node id="n28">
+      <data key="v_label">you can have a passi</data>
+      <data key="v_time">17:26:48</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">you can have a passion about fighting cancer, but if you don&apos;t relay your feelings and ideas to others it&apos;s useless.  same for teaching</data>
+      <data key="v_id">205</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">135</data>
+    </node>
+    <node id="n29">
+      <data key="v_label">part of being a good</data>
+      <data key="v_time">17:26:48</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">part of being a good mentor will be being able to share your practice thinking: what are the decisions you are making and why, when you are dealing wiht a particular child and learning problem</data>
+      <data key="v_id">206</data>
+      <data key="v_indegree">4</data>
+      <data key="v_charcount">192</data>
+    </node>
+    <node id="n30">
+      <data key="v_label">yes!  very similar t</data>
+      <data key="v_time">17:27:22</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">yes!  very similar to the strategy called Think Aloud that we use we kids</data>
+      <data key="v_id">207</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">73</data>
+    </node>
+    <node id="n31">
+      <data key="v_label">I think the reasons </data>
+      <data key="v_time">17:27:22</data>
+      <data key="v_actor">Joseph</data>
+      <data key="v_contribution">I think the reasons for making the decisions you do is one of the most important things a mentor can pass on</data>
+      <data key="v_id">208</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">108</data>
+    </node>
+    <node id="n32">
+      <data key="v_label">part of being a good</data>
+      <data key="v_time">17:27:36</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">part of being a good mentor will involve being able to ask the questions that helps another talk about their own decision making and thinking</data>
+      <data key="v_id">209</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">141</data>
+    </node>
+    <node id="n33">
+      <data key="v_label">with kids</data>
+      <data key="v_time">17:27:37</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">with kids</data>
+      <data key="v_id">210</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">9</data>
+    </node>
+    <node id="n34">
+      <data key="v_label">back to communicatio</data>
+      <data key="v_time">17:28:17</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">back to communication Lisa - but now you are talking about a specific strategy that can be learned!</data>
+      <data key="v_id">211</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">99</data>
+    </node>
+    <node id="n35">
+      <data key="v_label">i learned in a gradu</data>
+      <data key="v_time">17:28:54</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">i learned in a graduate counseling course that i took that asking questions is not always the best way to get others to talk about themselves</data>
+      <data key="v_id">212</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">141</data>
+    </node>
+    <node id="n36">
+      <data key="v_label">what is..</data>
+      <data key="v_time">17:29:10</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">what is..</data>
+      <data key="v_id">213</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">9</data>
+    </node>
+    <node id="n37">
+      <data key="v_label">all communication is</data>
+      <data key="v_time">17:29:12</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">all communication is learned too Maria, and there are strategies to learn how to communicate better</data>
+      <data key="v_id">214</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">99</data>
+    </node>
+    <node id="n38">
+      <data key="v_label">what other ways were</data>
+      <data key="v_time">17:29:30</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">what other ways were suggested Ashley?</data>
+      <data key="v_id">215</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">38</data>
+    </node>
+    <node id="n39">
+      <data key="v_label">sometimes just noddi</data>
+      <data key="v_time">17:30:03</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">sometimes just nodding, acive listening, maybe jsut repeating important points and stressing them in you voice.</data>
+      <data key="v_id">216</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">111</data>
+    </node>
+    <node id="n40">
+      <data key="v_label">eye contact</data>
+      <data key="v_time">17:30:34</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">eye contact</data>
+      <data key="v_id">217</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">11</data>
+    </node>
+    <node id="n41">
+      <data key="v_label">that is about talkin</data>
+      <data key="v_time">17:30:47</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">that is about talking about themselves and their feelings, in mentoring we are also trying to share practice craft skills and craft thinking</data>
+      <data key="v_id">218</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">140</data>
+    </node>
+    <node id="n42">
+      <data key="v_label">non verbal cues..bod</data>
+      <data key="v_time">17:30:53</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">non verbal cues..body language</data>
+      <data key="v_id">219</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">30</data>
+    </node>
+    <node id="n43">
+      <data key="v_label">I suppose one could </data>
+      <data key="v_time">17:30:54</data>
+      <data key="v_actor">Helen</data>
+      <data key="v_contribution">I suppose one could learn to ask the questions, but is it possible a mentor might do this, but not ask these questions about his/her own practices?  Could this person be a good mentor?</data>
+      <data key="v_id">220</data>
+      <data key="v_indegree">5</data>
+      <data key="v_charcount">184</data>
+    </node>
+    <node id="n44">
+      <data key="v_label">we also learned that</data>
+      <data key="v_time">17:31:12</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">we also learned that just saying things like, &apos;and this makes you feel...&apos; or &apos;so you tried that and it didn&apos;t work, i&apos;m wondering how it would have been differnt if you tried...&apos;</data>
+      <data key="v_id">221</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">179</data>
+    </node>
+    <node id="n45">
+      <data key="v_label">good question Helen</data>
+      <data key="v_time">17:31:55</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">good question Helen</data>
+      <data key="v_id">222</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">19</data>
+    </node>
+    <node id="n46">
+      <data key="v_label">getting out emotions</data>
+      <data key="v_time">17:31:56</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">getting out emotions is important in some areas of interaction and helping caring work</data>
+      <data key="v_id">223</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">86</data>
+    </node>
+    <node id="n47">
+      <data key="v_label">I have heard that be</data>
+      <data key="v_time">17:32:05</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">I have heard that before</data>
+      <data key="v_id">224</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">24</data>
+    </node>
+    <node id="n48">
+      <data key="v_label">i&apos;m not saying not t</data>
+      <data key="v_time">17:32:05</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">i&apos;m not saying not to ask questions, questions are ok, but sometimes it feels like a quiz instead of open communication</data>
+      <data key="v_id">225</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">119</data>
+    </node>
+    <node id="n49">
+      <data key="v_label">TRUE</data>
+      <data key="v_time">17:32:14</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">TRUE</data>
+      <data key="v_id">226</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">4</data>
+    </node>
+    <node id="n50">
+      <data key="v_label">just not drill and k</data>
+      <data key="v_time">17:32:37</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">just not drill and kill</data>
+      <data key="v_id">227</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">23</data>
+    </node>
+    <node id="n51">
+      <data key="v_label">I am aware alos, tha</data>
+      <data key="v_time">17:32:51</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">I am aware alos, that there are &apos;good&apos; kinds of questions for getting information, and &apos;bad&apos; or &apos;poor&apos; questions</data>
+      <data key="v_id">228</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">112</data>
+    </node>
+    <node id="n52">
+      <data key="v_label">i think part of bein</data>
+      <data key="v_time">17:32:54</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">i think part of being a good teacher is to self evaluate your practices and reasons for doing things</data>
+      <data key="v_id">229</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">100</data>
+    </node>
+    <node id="n53">
+      <data key="v_label">so does a mentor nee</data>
+      <data key="v_time">17:33:04</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">so does a mentor need to be aware of their own learning/metacognition in order to elicit that in others?</data>
+      <data key="v_id">230</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">104</data>
+    </node>
+    <node id="n54">
+      <data key="v_label">yes</data>
+      <data key="v_time">17:33:25</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">yes</data>
+      <data key="v_id">231</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">3</data>
+    </node>
+    <node id="n55">
+      <data key="v_label">yes</data>
+      <data key="v_time">17:33:27</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">yes</data>
+      <data key="v_id">232</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">3</data>
+    </node>
+    <node id="n56">
+      <data key="v_label">absolutely</data>
+      <data key="v_time">17:33:33</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">absolutely</data>
+      <data key="v_id">233</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">10</data>
+    </node>
+    <node id="n57">
+      <data key="v_label">and that all sorts o</data>
+      <data key="v_time">17:33:33</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">and that all sorts of questioning needs to be used, and different questions at different stages to get out the craft knowledge</data>
+      <data key="v_id">234</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">126</data>
+    </node>
+    <node id="n58">
+      <data key="v_label">When a district is a</data>
+      <data key="v_time">17:33:42</data>
+      <data key="v_actor">Helen</data>
+      <data key="v_contribution">When a district is assigning mentors, how will they know if the mentor self-reflects?</data>
+      <data key="v_id">235</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">85</data>
+    </node>
+    <node id="n59">
+      <data key="v_label">That is an excellent</data>
+      <data key="v_time">17:33:44</data>
+      <data key="v_actor">Betty</data>
+      <data key="v_contribution">That is an excellent point.  We get better at our craft when we take the time to examine what we do and the results.</data>
+      <data key="v_id">236</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">116</data>
+    </node>
+    <node id="n60">
+      <data key="v_label">good question Helen</data>
+      <data key="v_time">17:33:57</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">good question Helen</data>
+      <data key="v_id">237</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">19</data>
+    </node>
+    <node id="n61">
+      <data key="v_label">I am also aware that</data>
+      <data key="v_time">17:34:32</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">I am also aware that the kind of questions that I ask can &apos;feel&apos; to be &apos;interrogatory&apos;, when they are only information seeking</data>
+      <data key="v_id">238</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">126</data>
+    </node>
+    <node id="n62">
+      <data key="v_label">unless the district </data>
+      <data key="v_time">17:34:41</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">unless the district requires teacher to turn in some sort of self evaluation my guess is that there is no definite way of checking to see if teachers and mentors are doing it</data>
+      <data key="v_id">239</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">174</data>
+    </node>
+    <node id="n63">
+      <data key="v_label">we were taught to se</data>
+      <data key="v_time">17:34:45</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">we were taught to self reflect constantly</data>
+      <data key="v_id">240</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">41</data>
+    </node>
+    <node id="n64">
+      <data key="v_label">which is the differe</data>
+      <data key="v_time">17:34:58</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">which is the difference between assigned/structured programs and a natural development of the mentoring relationship</data>
+      <data key="v_id">241</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">116</data>
+    </node>
+    <node id="n65">
+      <data key="v_label">as a teacher you alm</data>
+      <data key="v_time">17:35:07</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">as a teacher you almost automatically reflect on lessons and think about how you can improve</data>
+      <data key="v_id">242</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">92</data>
+    </node>
+    <node id="n66">
+      <data key="v_label">can you plase elabor</data>
+      <data key="v_time">17:35:13</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">can you plase elaborate Maria?</data>
+      <data key="v_id">243</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">30</data>
+    </node>
+    <node id="n67">
+      <data key="v_label">i agree andrea</data>
+      <data key="v_time">17:35:33</data>
+      <data key="v_actor">Patricia</data>
+      <data key="v_contribution">i agree andrea</data>
+      <data key="v_id">244</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">14</data>
+    </node>
+    <node id="n68">
+      <data key="v_label">sorry..thinking &apos;out</data>
+      <data key="v_time">17:35:39</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">sorry..thinking &apos;out loud&apos;</data>
+      <data key="v_id">245</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">26</data>
+    </node>
+    <node id="n69">
+      <data key="v_label">assigned I think cou</data>
+      <data key="v_time">17:35:43</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">assigned I think could be having a student teacher and naturally woiuld be working with a team inside your grade level or even school wide</data>
+      <data key="v_id">246</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">138</data>
+    </node>
+    <node id="n70">
+      <data key="v_label">please think out lou</data>
+      <data key="v_time">17:35:53</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">please think out loud some more then!</data>
+      <data key="v_id">247</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">37</data>
+    </node>
+    <node id="n71">
+      <data key="v_label">I wish that were tru</data>
+      <data key="v_time">17:36:18</data>
+      <data key="v_actor">Betty</data>
+      <data key="v_contribution">I wish that were true Andrea, but sometimes there are teachers who have &apos;done it that way for years&apos; who fail to see the need to self-evaluate or self-reflect.</data>
+      <data key="v_id">248</data>
+      <data key="v_indegree">4</data>
+      <data key="v_charcount">159</data>
+    </node>
+    <node id="n72">
+      <data key="v_label">oh yes..</data>
+      <data key="v_time">17:36:28</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">oh yes..</data>
+      <data key="v_id">249</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">8</data>
+    </node>
+    <node id="n73">
+      <data key="v_label">but wouldn&apos;t it be i</data>
+      <data key="v_time">17:36:29</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">but wouldn&apos;t it be interesting to measure success of &apos;assigned&apos; mentors against mentoring relationships that develop out of need or naturally</data>
+      <data key="v_id">250</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">141</data>
+    </node>
+    <node id="n74">
+      <data key="v_label">Im sure there are</data>
+      <data key="v_time">17:36:36</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">Im sure there are</data>
+      <data key="v_id">251</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">17</data>
+    </node>
+    <node id="n75">
+      <data key="v_label">That would be an int</data>
+      <data key="v_time">17:36:44</data>
+      <data key="v_actor">Joseph</data>
+      <data key="v_contribution">That would be an interesting study</data>
+      <data key="v_id">252</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">34</data>
+    </node>
+    <node id="n76">
+      <data key="v_label">yeah that would</data>
+      <data key="v_time">17:36:58</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">yeah that would</data>
+      <data key="v_id">253</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">15</data>
+    </node>
+    <node id="n77">
+      <data key="v_label">In our district we a</data>
+      <data key="v_time">17:37:04</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">In our district we are required to be evaluated by the PDAS.  part of the evaluation is self reflecting on our practices</data>
+      <data key="v_id">254</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">120</data>
+    </node>
+    <node id="n78">
+      <data key="v_label">I am sure that relat</data>
+      <data key="v_time">17:37:26</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">I am sure that relationships that develop out of need are more sucessful than those that are structurally formalised!</data>
+      <data key="v_id">255</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">117</data>
+    </node>
+    <node id="n79">
+      <data key="v_label">my eyes have been op</data>
+      <data key="v_time">17:37:33</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">my eyes have been opened wide at how some teachers &apos;teach&apos;</data>
+      <data key="v_id">256</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">58</data>
+    </node>
+    <node id="n80">
+      <data key="v_label">yes i think our dist</data>
+      <data key="v_time">17:37:33</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">yes i think our district does that as well</data>
+      <data key="v_id">257</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">42</data>
+    </node>
+    <node id="n81">
+      <data key="v_label">Teaching is traditio</data>
+      <data key="v_time">17:37:38</data>
+      <data key="v_actor">Helen</data>
+      <data key="v_contribution">Teaching is traditionally isolating (close the door and teach).  I&apos;d be curious to see how often mentoring relationships actually grow naturally</data>
+      <data key="v_id">258</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">144</data>
+    </node>
+    <node id="n82">
+      <data key="v_label">yes Helen!</data>
+      <data key="v_time">17:37:48</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">yes Helen!</data>
+      <data key="v_id">259</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">10</data>
+    </node>
+    <node id="n83">
+      <data key="v_label">great corollary ques</data>
+      <data key="v_time">17:37:56</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">great corollary question</data>
+      <data key="v_id">260</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">24</data>
+    </node>
+    <node id="n84">
+      <data key="v_label">I had a natural ment</data>
+      <data key="v_time">17:38:31</data>
+      <data key="v_actor">Helen</data>
+      <data key="v_contribution">I had a natural mentor, but we were forced to do so.</data>
+      <data key="v_id">261</data>
+      <data key="v_indegree">4</data>
+      <data key="v_charcount">52</data>
+    </node>
+    <node id="n85">
+      <data key="v_label">I think you have to </data>
+      <data key="v_time">17:38:38</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">I think you have to be open to new ideas and not an &apos;i know everything&apos; attitude</data>
+      <data key="v_id">262</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">80</data>
+    </node>
+    <node id="n86">
+      <data key="v_label">absolutely</data>
+      <data key="v_time">17:38:45</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">absolutely</data>
+      <data key="v_id">263</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">10</data>
+    </node>
+    <node id="n87">
+      <data key="v_label">My district&apos;s mentor</data>
+      <data key="v_time">17:38:47</data>
+      <data key="v_actor">Betty</data>
+      <data key="v_contribution">My district&apos;s mentoring plan calls for the attempt to match personalities.</data>
+      <data key="v_id">264</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">74</data>
+    </node>
+    <node id="n88">
+      <data key="v_label">It was the first yea</data>
+      <data key="v_time">17:38:55</data>
+      <data key="v_actor">Helen</data>
+      <data key="v_contribution">It was the first year the 6th grade moved to middle school concept and we had to make our team work</data>
+      <data key="v_id">265</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">99</data>
+    </node>
+    <node id="n89">
+      <data key="v_label">I am afraid I let my</data>
+      <data key="v_time">17:39:03</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">I am afraid I let my bias show though...having been a member of both an assigned mentoring relationship and one that grew up naturally...I have a definite preference for the &apos;natural&apos; method</data>
+      <data key="v_id">266</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">190</data>
+    </node>
+    <node id="n90">
+      <data key="v_label">it is more comfortab</data>
+      <data key="v_time">17:39:34</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">it is more comfortable right?</data>
+      <data key="v_id">267</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">29</data>
+    </node>
+    <node id="n91">
+      <data key="v_label">We all wanted it to </data>
+      <data key="v_time">17:39:41</data>
+      <data key="v_actor">Helen</data>
+      <data key="v_contribution">We all wanted it to be a success and so we formed a strong professional community.  I&apos;m not sure that would have happened otherwise.</data>
+      <data key="v_id">268</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">132</data>
+    </node>
+    <node id="n92">
+      <data key="v_label">matching personaliti</data>
+      <data key="v_time">17:39:46</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">matching personalities for mentoring... sort of like online dating  lol</data>
+      <data key="v_id">269</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">71</data>
+    </node>
+    <node id="n93">
+      <data key="v_label">I was talking of &apos;su</data>
+      <data key="v_time">17:39:50</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">I was talking of &apos;sure&apos; from my experience of computer mediated discussions</data>
+      <data key="v_id">270</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">75</data>
+    </node>
+    <node id="n94">
+      <data key="v_label">smiles</data>
+      <data key="v_time">17:39:51</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">smiles</data>
+      <data key="v_id">271</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">6</data>
+    </node>
+    <node id="n95">
+      <data key="v_label">matching personaliti</data>
+      <data key="v_time">17:40:11</data>
+      <data key="v_actor">Betty</data>
+      <data key="v_contribution">matching personalities works well, when it happens.</data>
+      <data key="v_id">272</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">51</data>
+    </node>
+    <node id="n96">
+      <data key="v_label">they work best when </data>
+      <data key="v_time">17:40:13</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">they work best when someone offers a real problem for discussion</data>
+      <data key="v_id">273</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">64</data>
+    </node>
+    <node id="n97">
+      <data key="v_label">how are the personal</data>
+      <data key="v_time">17:40:17</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">how are the personalities matched?</data>
+      <data key="v_id">274</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">34</data>
+    </node>
+    <node id="n98">
+      <data key="v_label">yes Lisa...or at lea</data>
+      <data key="v_time">17:40:37</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">yes Lisa...or at least one with lots of common interest...like we have tonight</data>
+      <data key="v_id">275</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">78</data>
+    </node>
+    <node id="n99">
+      <data key="v_label">. o O ( I notice tea</data>
+      <data key="v_time">17:40:48</data>
+      <data key="v_actor">Sharon</data>
+      <data key="v_contribution">. o O ( I notice teachers mentoring informally as they go about their teaching day .. ) </data>
+      <data key="v_id">276</data>
+      <data key="v_indegree">4</data>
+      <data key="v_charcount">88</data>
+    </node>
+    <node id="n100">
+      <data key="v_label">We try to meet infor</data>
+      <data key="v_time">17:40:56</data>
+      <data key="v_actor">Betty</data>
+      <data key="v_contribution">We try to meet informally at first, and spend some time together, getting to know one another.</data>
+      <data key="v_id">277</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">94</data>
+    </node>
+    <node id="n101">
+      <data key="v_label">I think the informal</data>
+      <data key="v_time">17:41:14</data>
+      <data key="v_actor">Joseph</data>
+      <data key="v_contribution">I think the informal meetings are a huge plus</data>
+      <data key="v_id">278</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">45</data>
+    </node>
+    <node id="n102">
+      <data key="v_label">How would you descri</data>
+      <data key="v_time">17:41:20</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">How would you describe that Sharon?</data>
+      <data key="v_id">279</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">35</data>
+    </node>
+    <node id="n103">
+      <data key="v_label">i think it is a grea</data>
+      <data key="v_time">17:41:24</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">i think it is a great idea</data>
+      <data key="v_id">280</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">26</data>
+    </node>
+    <node id="n104">
+      <data key="v_label">just sharing strater</data>
+      <data key="v_time">17:41:59</data>
+      <data key="v_actor">Sharon</data>
+      <data key="v_contribution">just sharing stratergies that work..or ideas on implementing a skill, Lisa</data>
+      <data key="v_id">281</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">74</data>
+    </node>
+    <node id="n105">
+      <data key="v_label">nods</data>
+      <data key="v_time">17:42:15</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">nods</data>
+      <data key="v_id">282</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">4</data>
+    </node>
+    <node id="n106">
+      <data key="v_label">goes on constantly t</data>
+      <data key="v_time">17:42:21</data>
+      <data key="v_actor">Sharon</data>
+      <data key="v_contribution">goes on constantly throughout the school day</data>
+      <data key="v_id">283</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">44</data>
+    </node>
+    <node id="n107">
+      <data key="v_label">lunch hour chatting</data>
+      <data key="v_time">17:42:29</data>
+      <data key="v_actor">Sharon</data>
+      <data key="v_contribution">lunch hour chatting</data>
+      <data key="v_id">284</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">19</data>
+    </node>
+    <node id="n108">
+      <data key="v_label">that&apos;s good Sharon..</data>
+      <data key="v_time">17:42:36</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">that&apos;s good Sharon...so an extension to our question would be &apos;what situations foster the natural mentoring process?&apos;</data>
+      <data key="v_id">285</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">117</data>
+    </node>
+    <node id="n109">
+      <data key="v_label">maybe not situations</data>
+      <data key="v_time">17:42:56</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">maybe not situations...</data>
+      <data key="v_id">286</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">23</data>
+    </node>
+    <node id="n110">
+      <data key="v_label">Lunch hour chatting </data>
+      <data key="v_time">17:43:10</data>
+      <data key="v_actor">Joseph</data>
+      <data key="v_contribution">Lunch hour chatting unfortunately seems to bgripe more of a gripe session than a positive thing</data>
+      <data key="v_id">287</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">95</data>
+    </node>
+    <node id="n111">
+      <data key="v_label">what of the &apos;whole m</data>
+      <data key="v_time">17:43:15</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">what of the &apos;whole mentoring role&apos; gets missed in that informal approach Sharon?</data>
+      <data key="v_id">288</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">80</data>
+    </node>
+    <node id="n112">
+      <data key="v_label">everyday situations </data>
+      <data key="v_time">17:43:19</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">everyday situations offer a chance to &apos;mentor&apos;</data>
+      <data key="v_id">289</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">46</data>
+    </node>
+    <node id="n113">
+      <data key="v_label">thats what i have no</data>
+      <data key="v_time">17:43:20</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">thats what i have notice</data>
+      <data key="v_id">290</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">24</data>
+    </node>
+    <node id="n114">
+      <data key="v_label">School environment t</data>
+      <data key="v_time">17:43:38</data>
+      <data key="v_actor">Helen</data>
+      <data key="v_contribution">School environment that encourages collaboration</data>
+      <data key="v_id">291</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">48</data>
+    </node>
+    <node id="n115">
+      <data key="v_label">nods to Ashley</data>
+      <data key="v_time">17:43:40</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">nods to Ashley</data>
+      <data key="v_id">292</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">14</data>
+    </node>
+    <node id="n116">
+      <data key="v_label">agrees with Helen</data>
+      <data key="v_time">17:43:48</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">agrees with Helen</data>
+      <data key="v_id">293</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">17</data>
+    </node>
+    <node id="n117">
+      <data key="v_label">I don&apos;t know if that</data>
+      <data key="v_time">17:43:49</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">I don&apos;t know if that&apos;s the case in every school</data>
+      <data key="v_id">294</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">47</data>
+    </node>
+    <node id="n118">
+      <data key="v_label">Unfortunately, I hav</data>
+      <data key="v_time">17:43:52</data>
+      <data key="v_actor">Betty</data>
+      <data key="v_contribution">Unfortunately, I have found that lunch time gripping is extrememely nonproductive and not good for the mentoring situation.</data>
+      <data key="v_id">295</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">123</data>
+    </node>
+    <node id="n119">
+      <data key="v_label">when i try to talk a</data>
+      <data key="v_time">17:43:56</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">when i try to talk about something that  happened in my lesson i sometimes get brushed off for gossip</data>
+      <data key="v_id">296</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">101</data>
+    </node>
+    <node id="n120">
+      <data key="v_label">we were told as stud</data>
+      <data key="v_time">17:44:19</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">we were told as student teachers to stay away from faculty lounge</data>
+      <data key="v_id">297</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">65</data>
+    </node>
+    <node id="n121">
+      <data key="v_label">nothing but gossip</data>
+      <data key="v_time">17:44:23</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">nothing but gossip</data>
+      <data key="v_id">298</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">18</data>
+    </node>
+    <node id="n122">
+      <data key="v_label">you guys should read</data>
+      <data key="v_time">17:44:28</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">you guys should read the book How Full is Your Bucket ... it talks about &apos;filling&apos; and &apos;dipping&apos; from others buckets by using positive and negetive interactions</data>
+      <data key="v_id">299</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">160</data>
+    </node>
+    <node id="n123">
+      <data key="v_label">they want us hip to </data>
+      <data key="v_time">17:44:35</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">they want us hip to hip</data>
+      <data key="v_id">300</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">23</data>
+    </node>
+    <node id="n124">
+      <data key="v_label">us too</data>
+      <data key="v_time">17:44:47</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">us too</data>
+      <data key="v_id">301</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">6</data>
+    </node>
+    <node id="n125">
+      <data key="v_label">Erica, I agree with </data>
+      <data key="v_time">17:44:49</data>
+      <data key="v_actor">Betty</data>
+      <data key="v_contribution">Erica, I agree with you.  The lunch time atmosphere is probably not the most conducive to mentoring</data>
+      <data key="v_id">302</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">99</data>
+    </node>
+    <node id="n126">
+      <data key="v_label">Is a group context c</data>
+      <data key="v_time">17:45:19</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">Is a group context conducive to mentoring?</data>
+      <data key="v_id">303</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">42</data>
+    </node>
+    <node id="n127">
+      <data key="v_label">we were allowed to b</data>
+      <data key="v_time">17:45:22</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">we were allowed to break away at lunch and disclude ourselves from facultly lounge</data>
+      <data key="v_id">304</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">82</data>
+    </node>
+    <node id="n128">
+      <data key="v_label">so if you were a new</data>
+      <data key="v_time">17:46:02</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">so if you were a new teacher looking for the perfect school...what would indicate that the school environment was conducive to constructive mentoring?</data>
+      <data key="v_id">305</data>
+      <data key="v_indegree">5</data>
+      <data key="v_charcount">150</data>
+    </node>
+    <node id="n129">
+      <data key="v_label">groups can be conduc</data>
+      <data key="v_time">17:46:11</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">groups can be conducive to mentoring if it&apos;s kept positive and related to to teaching and other school issues not gossip</data>
+      <data key="v_id">306</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">120</data>
+    </node>
+    <node id="n130">
+      <data key="v_label">the school I have be</data>
+      <data key="v_time">17:46:23</data>
+      <data key="v_actor">Sharon</data>
+      <data key="v_contribution">the school I have been in has been going thro&apos; some restructuring .. so there seems to be less griping and more informal collaboration and positive sharing ..thus could it be mentoring</data>
+      <data key="v_id">307</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">184</data>
+    </node>
+    <node id="n131">
+      <data key="v_label">schools where teache</data>
+      <data key="v_time">17:46:53</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">schools where teachers and kids are happy is a pretty good indicator if the school is a good environment to be in</data>
+      <data key="v_id">308</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">113</data>
+    </node>
+    <node id="n132">
+      <data key="v_label">Sharon, was the rest</data>
+      <data key="v_time">17:47:03</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">Sharon, was the restructuring supported by some other inputs to help deliver on the collaborative atmosphere?</data>
+      <data key="v_id">309</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">109</data>
+    </node>
+    <node id="n133">
+      <data key="v_label">there is a new schoo</data>
+      <data key="v_time">17:47:13</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">there is a new school opening real close to the one i am at and we were talking about what kind of teachers to hire to make it effective</data>
+      <data key="v_id">310</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">136</data>
+    </node>
+    <node id="n134">
+      <data key="v_label">experience or 1st ye</data>
+      <data key="v_time">17:47:23</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">experience or 1st year?</data>
+      <data key="v_id">311</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">23</data>
+    </node>
+    <node id="n135">
+      <data key="v_label">You need a mix</data>
+      <data key="v_time">17:47:31</data>
+      <data key="v_actor">Joseph</data>
+      <data key="v_contribution">You need a mix</data>
+      <data key="v_id">312</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">14</data>
+    </node>
+    <node id="n136">
+      <data key="v_label">where teachers are h</data>
+      <data key="v_time">17:47:36</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">where teachers are happy as well as kids</data>
+      <data key="v_id">313</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">40</data>
+    </node>
+    <node id="n137">
+      <data key="v_label">i so wish eachof you</data>
+      <data key="v_time">17:47:43</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">i so wish eachof you could visit our school... i personally think we have one of the best school environments in our district, but i am biased</data>
+      <data key="v_id">314</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">142</data>
+    </node>
+    <node id="n138">
+      <data key="v_label">they have acquired s</data>
+      <data key="v_time">17:47:48</data>
+      <data key="v_actor">Sharon</data>
+      <data key="v_contribution">they have acquired some litercy coaches and PD training during school days</data>
+      <data key="v_id">315</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">74</data>
+    </node>
+    <node id="n139">
+      <data key="v_label">nods to Sharon, than</data>
+      <data key="v_time">17:48:04</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">nods to Sharon, thanks</data>
+      <data key="v_id">316</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">22</data>
+    </node>
+    <node id="n140">
+      <data key="v_label">there is a support t</data>
+      <data key="v_time">17:48:12</data>
+      <data key="v_actor">Sharon</data>
+      <data key="v_contribution">there is a support team for  the school</data>
+      <data key="v_id">317</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">39</data>
+    </node>
+    <node id="n141">
+      <data key="v_label">Lisa...you are answe</data>
+      <data key="v_time">17:49:09</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">Lisa...you are answering my question as you describe your school</data>
+      <data key="v_id">318</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">64</data>
+    </node>
+    <node id="n142">
+      <data key="v_label">we also have a suppo</data>
+      <data key="v_time">17:49:12</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">we also have a support team and each person in our school is on some sort of sommitte related to our school&apos;s environment and well being</data>
+      <data key="v_id">319</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">136</data>
+    </node>
+    <node id="n143">
+      <data key="v_label">judging whether or n</data>
+      <data key="v_time">17:49:42</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">judging whether or not teachers and kids are happy can be difficult especially if you are feeling pressure to choose a place and get hired</data>
+      <data key="v_id">320</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">138</data>
+    </node>
+    <node id="n144">
+      <data key="v_label">very true</data>
+      <data key="v_time">17:50:05</data>
+      <data key="v_actor">Helen</data>
+      <data key="v_contribution">very true</data>
+      <data key="v_id">321</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">9</data>
+    </node>
+    <node id="n145">
+      <data key="v_label">but maybe it could b</data>
+      <data key="v_time">17:50:40</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">but maybe it could be made easier by looking at existing structures such as pd programs, cues from the admin, anything else?</data>
+      <data key="v_id">322</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">124</data>
+    </node>
+    <node id="n146">
+      <data key="v_label">During interview, as</data>
+      <data key="v_time">17:51:43</data>
+      <data key="v_actor">Helen</data>
+      <data key="v_contribution">During interview, asking about PD structured in learning teams, lesson study, professional development teams could indicate collaborative environment</data>
+      <data key="v_id">323</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">149</data>
+    </node>
+    <node id="n147">
+      <data key="v_label">at our school, every</data>
+      <data key="v_time">17:51:47</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">at our school, every person that is interviewed for a job is first interviewed by the principal and asst.  then they are interviewed by the other teacher in the grade or area they are applying for.  we make it a point to make them feel welcome and comfortable</data>
+      <data key="v_id">324</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">259</data>
+    </node>
+    <node id="n148">
+      <data key="v_label">Great tips Helen</data>
+      <data key="v_time">17:52:15</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">Great tips Helen</data>
+      <data key="v_id">325</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">16</data>
+    </node>
+    <node id="n149">
+      <data key="v_label">sounds wonderful Ash</data>
+      <data key="v_time">17:52:27</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">sounds wonderful Ashley</data>
+      <data key="v_id">326</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">23</data>
+    </node>
+    <node id="n150">
+      <data key="v_label">also remember that i</data>
+      <data key="v_time">17:52:56</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">also remember that interviewing doesn&apos;t have to be one sided.  ask questions!  in fact most principals would perfer you did, it shows you are interested in the daily workings of the school</data>
+      <data key="v_id">327</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">188</data>
+    </node>
+    <node id="n151">
+      <data key="v_label">interviews by the te</data>
+      <data key="v_time">17:53:11</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">interviews by the teaching team communicate that teachers&apos; opinions are valued and respected</data>
+      <data key="v_id">328</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">92</data>
+    </node>
+    <node id="n152">
+      <data key="v_label">which is great</data>
+      <data key="v_time">17:53:35</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">which is great</data>
+      <data key="v_id">329</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">14</data>
+    </node>
+    <node id="n153">
+      <data key="v_label">I definitely agree A</data>
+      <data key="v_time">17:53:36</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">I definitely agree Ashley</data>
+      <data key="v_id">330</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">25</data>
+    </node>
+    <node id="n154">
+      <data key="v_label">i can remember when </data>
+      <data key="v_time">17:54:16</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">i can remember when i interviewed for the school i&apos;m at.  I was so relieved to be interviewed by someone other than the principal</data>
+      <data key="v_id">331</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">129</data>
+    </node>
+    <node id="n155">
+      <data key="v_label">okay..unfortunately </data>
+      <data key="v_time">17:54:45</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">okay..unfortunately I need to start exiting stage right...</data>
+      <data key="v_id">332</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">58</data>
+    </node>
+    <node id="n156">
+      <data key="v_label">I heard at a recent </data>
+      <data key="v_time">17:54:57</data>
+      <data key="v_actor">Helen</data>
+      <data key="v_contribution">I heard at a recent presentation that new teacher induction actually begins with the interview and how it&apos;s structured.</data>
+      <data key="v_id">333</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">119</data>
+    </node>
+    <node id="n157">
+      <data key="v_label">to me it showed that</data>
+      <data key="v_time">17:55:02</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">to me it showed that the teachers had a genuine interest in the person they were possibly going to teach with.  that made me feel like if i got the job these teachers would be there for me when i needed them</data>
+      <data key="v_id">334</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">207</data>
+    </node>
+    <node id="n158">
+      <data key="v_label">Bye Maria.</data>
+      <data key="v_time">17:55:02</data>
+      <data key="v_actor">Helen</data>
+      <data key="v_contribution">Bye Maria.</data>
+      <data key="v_id">335</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">10</data>
+    </node>
+    <node id="n159">
+      <data key="v_label">...I have another di</data>
+      <data key="v_time">17:55:04</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">...I have another discussion scheduled in the Teachers in Training room</data>
+      <data key="v_id">336</data>
+      <data key="v_indegree">2</data>
+      <data key="v_charcount">71</data>
+    </node>
+    <node id="n160">
+      <data key="v_label">Thanks, Maria</data>
+      <data key="v_time">17:55:12</data>
+      <data key="v_actor">Joseph</data>
+      <data key="v_contribution">Thanks, Maria</data>
+      <data key="v_id">337</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">13</data>
+    </node>
+    <node id="n161">
+      <data key="v_label">waves bye</data>
+      <data key="v_time">17:55:19</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">waves bye</data>
+      <data key="v_id">338</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">9</data>
+    </node>
+    <node id="n162">
+      <data key="v_label">Thanks!</data>
+      <data key="v_time">17:55:19</data>
+      <data key="v_actor">Helen</data>
+      <data key="v_contribution">Thanks!</data>
+      <data key="v_id">339</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">7</data>
+    </node>
+    <node id="n163">
+      <data key="v_label">thanks Maria</data>
+      <data key="v_time">17:55:20</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">thanks Maria</data>
+      <data key="v_id">340</data>
+      <data key="v_indegree">3</data>
+      <data key="v_charcount">12</data>
+    </node>
+    <node id="n164">
+      <data key="v_label">I hope to chat with </data>
+      <data key="v_time">17:55:27</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">I hope to chat with you all again next month</data>
+      <data key="v_id">341</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">44</data>
+    </node>
+    <node id="n165">
+      <data key="v_label">thanks all i have le</data>
+      <data key="v_time">17:55:29</data>
+      <data key="v_actor">Nancy</data>
+      <data key="v_contribution">thanks all i have learned a lot</data>
+      <data key="v_id">342</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">31</data>
+    </node>
+    <node id="n166">
+      <data key="v_label">thanks</data>
+      <data key="v_time">17:55:29</data>
+      <data key="v_actor">Ashley</data>
+      <data key="v_contribution">thanks</data>
+      <data key="v_id">343</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">6</data>
+    </node>
+    <node id="n167">
+      <data key="v_label">this has been lovely</data>
+      <data key="v_time">17:55:33</data>
+      <data key="v_actor">Maria</data>
+      <data key="v_contribution">this has been lovely!</data>
+      <data key="v_id">344</data>
+      <data key="v_indegree">1</data>
+      <data key="v_charcount">21</data>
+    </node>
+    <node id="n168">
+      <data key="v_label">thanks Maria</data>
+      <data key="v_time">17:55:36</data>
+      <data key="v_actor">Andrea</data>
+      <data key="v_contribution">thanks Maria</data>
+      <data key="v_id">345</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">12</data>
+    </node>
+    <node id="n169">
+      <data key="v_label">Can I foreshadow tha</data>
+      <data key="v_time">17:57:37</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">Can I foreshadow that next month&apos;s session we will be talking about self-study, self-evaluation and using Tapped In and its Certificate of Participation as a possible tool to develop that, I&apos;d love to see you all here then</data>
+      <data key="v_id">346</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">222</data>
+    </node>
+    <node id="n170">
+      <data key="v_label">and o hear what you </data>
+      <data key="v_time">17:57:58</data>
+      <data key="v_actor">Lisa</data>
+      <data key="v_contribution">and o hear what you think about those sorts of issues of professional formation and development</data>
+      <data key="v_id">347</data>
+      <data key="v_indegree">0</data>
+      <data key="v_charcount">95</data>
+    </node>
+    <edge source="n1" target="n0">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">263</data>
+    </edge>
+    <edge source="n6" target="n1">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">264</data>
+    </edge>
+    <edge source="n7" target="n6">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">265</data>
+    </edge>
+    <edge source="n7" target="n1">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">266</data>
+    </edge>
+    <edge source="n8" target="n3">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">267</data>
+    </edge>
+    <edge source="n9" target="n7">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">268</data>
+    </edge>
+    <edge source="n10" target="n9">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">269</data>
+    </edge>
+    <edge source="n11" target="n8">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">270</data>
+    </edge>
+    <edge source="n11" target="n5">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">271</data>
+    </edge>
+    <edge source="n11" target="n3">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">272</data>
+    </edge>
+    <edge source="n12" target="n7">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">273</data>
+    </edge>
+    <edge source="n12" target="n8">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">274</data>
+    </edge>
+    <edge source="n12" target="n3">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">275</data>
+    </edge>
+    <edge source="n13" target="n12">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">276</data>
+    </edge>
+    <edge source="n13" target="n6">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">277</data>
+    </edge>
+    <edge source="n14" target="n12">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">278</data>
+    </edge>
+    <edge source="n16" target="n7">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">279</data>
+    </edge>
+    <edge source="n17" target="n16">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">280</data>
+    </edge>
+    <edge source="n18" target="n11">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">281</data>
+    </edge>
+    <edge source="n18" target="n5">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">282</data>
+    </edge>
+    <edge source="n19" target="n14">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">283</data>
+    </edge>
+    <edge source="n20" target="n16">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">284</data>
+    </edge>
+    <edge source="n21" target="n13">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">285</data>
+    </edge>
+    <edge source="n23" target="n12">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">286</data>
+    </edge>
+    <edge source="n23" target="n13">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">287</data>
+    </edge>
+    <edge source="n24" target="n23">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">288</data>
+    </edge>
+    <edge source="n25" target="n24">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">289</data>
+    </edge>
+    <edge source="n26" target="n25">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">290</data>
+    </edge>
+    <edge source="n26" target="n22">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">291</data>
+    </edge>
+    <edge source="n27" target="n25">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">292</data>
+    </edge>
+    <edge source="n27" target="n24">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">293</data>
+    </edge>
+    <edge source="n28" target="n27">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">294</data>
+    </edge>
+    <edge source="n28" target="n25">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">295</data>
+    </edge>
+    <edge source="n28" target="n23">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">296</data>
+    </edge>
+    <edge source="n29" target="n23">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">297</data>
+    </edge>
+    <edge source="n29" target="n19">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">298</data>
+    </edge>
+    <edge source="n30" target="n20">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">299</data>
+    </edge>
+    <edge source="n30" target="n29">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">300</data>
+    </edge>
+    <edge source="n31" target="n6">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">301</data>
+    </edge>
+    <edge source="n31" target="n29">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">302</data>
+    </edge>
+    <edge source="n32" target="n29">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">303</data>
+    </edge>
+    <edge source="n32" target="n31">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">304</data>
+    </edge>
+    <edge source="n33" target="n30">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">305</data>
+    </edge>
+    <edge source="n34" target="n32">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">306</data>
+    </edge>
+    <edge source="n34" target="n30">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">307</data>
+    </edge>
+    <edge source="n34" target="n29">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">308</data>
+    </edge>
+    <edge source="n35" target="n32">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">309</data>
+    </edge>
+    <edge source="n37" target="n34">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">310</data>
+    </edge>
+    <edge source="n37" target="n30">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">311</data>
+    </edge>
+    <edge source="n38" target="n35">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">312</data>
+    </edge>
+    <edge source="n41" target="n35">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">313</data>
+    </edge>
+    <edge source="n43" target="n41">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">314</data>
+    </edge>
+    <edge source="n43" target="n35">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">315</data>
+    </edge>
+    <edge source="n44" target="n43">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">316</data>
+    </edge>
+    <edge source="n44" target="n41">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">317</data>
+    </edge>
+    <edge source="n44" target="n37">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">318</data>
+    </edge>
+    <edge source="n45" target="n43">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">319</data>
+    </edge>
+    <edge source="n46" target="n44">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">320</data>
+    </edge>
+    <edge source="n46" target="n39">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">321</data>
+    </edge>
+    <edge source="n48" target="n44">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">322</data>
+    </edge>
+    <edge source="n48" target="n43">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">323</data>
+    </edge>
+    <edge source="n51" target="n45">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">324</data>
+    </edge>
+    <edge source="n51" target="n43">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">325</data>
+    </edge>
+    <edge source="n52" target="n43">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">326</data>
+    </edge>
+    <edge source="n53" target="n44">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">327</data>
+    </edge>
+    <edge source="n57" target="n51">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">328</data>
+    </edge>
+    <edge source="n58" target="n53">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">329</data>
+    </edge>
+    <edge source="n58" target="n52">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">330</data>
+    </edge>
+    <edge source="n58" target="n45">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">331</data>
+    </edge>
+    <edge source="n59" target="n57">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">332</data>
+    </edge>
+    <edge source="n60" target="n58">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">333</data>
+    </edge>
+    <edge source="n60" target="n51">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">334</data>
+    </edge>
+    <edge source="n61" target="n51">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">335</data>
+    </edge>
+    <edge source="n61" target="n57">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">336</data>
+    </edge>
+    <edge source="n62" target="n58">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">337</data>
+    </edge>
+    <edge source="n62" target="n52">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">338</data>
+    </edge>
+    <edge source="n63" target="n62">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">339</data>
+    </edge>
+    <edge source="n63" target="n58">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">340</data>
+    </edge>
+    <edge source="n64" target="n53">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">341</data>
+    </edge>
+    <edge source="n65" target="n63">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">342</data>
+    </edge>
+    <edge source="n66" target="n64">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">343</data>
+    </edge>
+    <edge source="n67" target="n65">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">344</data>
+    </edge>
+    <edge source="n68" target="n66">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">345</data>
+    </edge>
+    <edge source="n69" target="n65">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">346</data>
+    </edge>
+    <edge source="n69" target="n64">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">347</data>
+    </edge>
+    <edge source="n70" target="n68">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">348</data>
+    </edge>
+    <edge source="n71" target="n65">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">349</data>
+    </edge>
+    <edge source="n71" target="n63">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">350</data>
+    </edge>
+    <edge source="n71" target="n62">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">351</data>
+    </edge>
+    <edge source="n72" target="n71">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">352</data>
+    </edge>
+    <edge source="n73" target="n64">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">353</data>
+    </edge>
+    <edge source="n74" target="n71">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">354</data>
+    </edge>
+    <edge source="n75" target="n73">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">355</data>
+    </edge>
+    <edge source="n76" target="n75">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">356</data>
+    </edge>
+    <edge source="n77" target="n71">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">357</data>
+    </edge>
+    <edge source="n78" target="n73">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">358</data>
+    </edge>
+    <edge source="n79" target="n71">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">359</data>
+    </edge>
+    <edge source="n80" target="n77">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">360</data>
+    </edge>
+    <edge source="n81" target="n73">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">361</data>
+    </edge>
+    <edge source="n82" target="n81">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">362</data>
+    </edge>
+    <edge source="n84" target="n81">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">363</data>
+    </edge>
+    <edge source="n84" target="n82">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">364</data>
+    </edge>
+    <edge source="n87" target="n84">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">365</data>
+    </edge>
+    <edge source="n88" target="n84">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">366</data>
+    </edge>
+    <edge source="n89" target="n81">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">367</data>
+    </edge>
+    <edge source="n89" target="n84">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">368</data>
+    </edge>
+    <edge source="n91" target="n88">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">369</data>
+    </edge>
+    <edge source="n91" target="n84">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">370</data>
+    </edge>
+    <edge source="n92" target="n87">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">371</data>
+    </edge>
+    <edge source="n93" target="n78">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">372</data>
+    </edge>
+    <edge source="n95" target="n87">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">373</data>
+    </edge>
+    <edge source="n95" target="n92">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">374</data>
+    </edge>
+    <edge source="n96" target="n93">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">375</data>
+    </edge>
+    <edge source="n97" target="n95">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">376</data>
+    </edge>
+    <edge source="n97" target="n92">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">377</data>
+    </edge>
+    <edge source="n97" target="n87">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">378</data>
+    </edge>
+    <edge source="n98" target="n96">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">379</data>
+    </edge>
+    <edge source="n99" target="n92">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">380</data>
+    </edge>
+    <edge source="n99" target="n89">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">381</data>
+    </edge>
+    <edge source="n100" target="n99">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">382</data>
+    </edge>
+    <edge source="n101" target="n100">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">383</data>
+    </edge>
+    <edge source="n102" target="n99">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">384</data>
+    </edge>
+    <edge source="n103" target="n101">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">385</data>
+    </edge>
+    <edge source="n104" target="n102">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">386</data>
+    </edge>
+    <edge source="n105" target="n104">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">387</data>
+    </edge>
+    <edge source="n106" target="n99">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">388</data>
+    </edge>
+    <edge source="n106" target="n102">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">389</data>
+    </edge>
+    <edge source="n107" target="n102">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">390</data>
+    </edge>
+    <edge source="n108" target="n99">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">391</data>
+    </edge>
+    <edge source="n109" target="n108">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">392</data>
+    </edge>
+    <edge source="n111" target="n104">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">393</data>
+    </edge>
+    <edge source="n111" target="n108">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">394</data>
+    </edge>
+    <edge source="n112" target="n108">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">395</data>
+    </edge>
+    <edge source="n112" target="n111">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">396</data>
+    </edge>
+    <edge source="n115" target="n112">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">397</data>
+    </edge>
+    <edge source="n116" target="n114">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">398</data>
+    </edge>
+    <edge source="n117" target="n114">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">399</data>
+    </edge>
+    <edge source="n118" target="n110">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">400</data>
+    </edge>
+    <edge source="n118" target="n112">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">401</data>
+    </edge>
+    <edge source="n121" target="n119">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">402</data>
+    </edge>
+    <edge source="n122" target="n115">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">403</data>
+    </edge>
+    <edge source="n124" target="n123">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">404</data>
+    </edge>
+    <edge source="n124" target="n115">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">405</data>
+    </edge>
+    <edge source="n125" target="n123">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">406</data>
+    </edge>
+    <edge source="n125" target="n118">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">407</data>
+    </edge>
+    <edge source="n126" target="n125">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">408</data>
+    </edge>
+    <edge source="n127" target="n120">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">409</data>
+    </edge>
+    <edge source="n128" target="n126">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">410</data>
+    </edge>
+    <edge source="n128" target="n125">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">411</data>
+    </edge>
+    <edge source="n129" target="n128">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">412</data>
+    </edge>
+    <edge source="n129" target="n126">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">413</data>
+    </edge>
+    <edge source="n129" target="n125">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">414</data>
+    </edge>
+    <edge source="n130" target="n129">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">415</data>
+    </edge>
+    <edge source="n130" target="n128">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">416</data>
+    </edge>
+    <edge source="n131" target="n128">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">417</data>
+    </edge>
+    <edge source="n132" target="n130">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">418</data>
+    </edge>
+    <edge source="n133" target="n131">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">419</data>
+    </edge>
+    <edge source="n133" target="n129">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">420</data>
+    </edge>
+    <edge source="n133" target="n128">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">421</data>
+    </edge>
+    <edge source="n136" target="n131">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">422</data>
+    </edge>
+    <edge source="n137" target="n131">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">423</data>
+    </edge>
+    <edge source="n137" target="n128">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">424</data>
+    </edge>
+    <edge source="n138" target="n132">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">425</data>
+    </edge>
+    <edge source="n139" target="n138">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">426</data>
+    </edge>
+    <edge source="n140" target="n138">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">427</data>
+    </edge>
+    <edge source="n140" target="n132">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">428</data>
+    </edge>
+    <edge source="n140" target="n130">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">429</data>
+    </edge>
+    <edge source="n141" target="n140">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">430</data>
+    </edge>
+    <edge source="n142" target="n137">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">431</data>
+    </edge>
+    <edge source="n142" target="n140">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">432</data>
+    </edge>
+    <edge source="n146" target="n145">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">433</data>
+    </edge>
+    <edge source="n146" target="n142">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">434</data>
+    </edge>
+    <edge source="n147" target="n146">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">435</data>
+    </edge>
+    <edge source="n148" target="n146">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">436</data>
+    </edge>
+    <edge source="n149" target="n147">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">437</data>
+    </edge>
+    <edge source="n150" target="n147">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">438</data>
+    </edge>
+    <edge source="n150" target="n149">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">439</data>
+    </edge>
+    <edge source="n153" target="n150">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">440</data>
+    </edge>
+    <edge source="n154" target="n150">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">441</data>
+    </edge>
+    <edge source="n154" target="n153">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">442</data>
+    </edge>
+    <edge source="n154" target="n151">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">443</data>
+    </edge>
+    <edge source="n156" target="n151">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">444</data>
+    </edge>
+    <edge source="n157" target="n156">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">445</data>
+    </edge>
+    <edge source="n157" target="n153">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">446</data>
+    </edge>
+    <edge source="n158" target="n155">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">447</data>
+    </edge>
+    <edge source="n159" target="n151">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">448</data>
+    </edge>
+    <edge source="n160" target="n159">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">449</data>
+    </edge>
+    <edge source="n161" target="n158">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">450</data>
+    </edge>
+    <edge source="n162" target="n160">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">451</data>
+    </edge>
+    <edge source="n163" target="n159">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">452</data>
+    </edge>
+    <edge source="n164" target="n163">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">453</data>
+    </edge>
+    <edge source="n165" target="n163">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">454</data>
+    </edge>
+    <edge source="n166" target="n165">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">455</data>
+    </edge>
+    <edge source="n167" target="n163">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">456</data>
+    </edge>
+    <edge source="n168" target="n167">
+      <data key="e_Edge Label"></data>
+      <data key="e_weight">1</data>
+      <data key="e_id">457</data>
+    </edge>
+  </graph>
+</graphml>
