@@ -11,9 +11,9 @@
 # Jan 27 2022 DS: Updating for spring 2022 class: formatting only. 
 #                 ~21 minutes + 3 minutes = 24 minutes 
 ######################################################################
-getwd()
+
 library(igraph)
-setwd("/Users/frederickstraub/R-Files") # Set to your location
+setwd("~/Desktop/Network-Science-Demos") # Set to your location
 
 ######################################################################
 # French Political Blog 

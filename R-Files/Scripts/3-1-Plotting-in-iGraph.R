@@ -10,12 +10,11 @@
 ######################################################################
 
 library(igraph)
-getwd()
 
 # Set to your base directory, or use Session/Set Working Directory 
 # There should be a subdirectory 'Networks' with the graphs. 
 
-setwd("/Users/frederickstraub/R-Files") 
+setwd("~/Desktop/Network-Science-Demos") 
 
 # Loading sample graph. This graph is from the SAND demo, but has 
 # been upgraded for current igraph with upgrade_graph(g).  

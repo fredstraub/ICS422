@@ -12,10 +12,9 @@
 # Standard preamble 
 # We'll almost always do these at the beginning of every script, but
 # it is not needed if you already did it in this session: 
-getwd()
 
 library(igraph)
-setwd("/Users/frederickstraub/R-Files") # Set to your location
+setwd("~/Desktop/Network-Science-Demos") # Set to your location
 
 ######################################################################
 # Introduction 
@@ -35,7 +34,6 @@ setwd("/Users/frederickstraub/R-Files") # Set to your location
 # the SAND demo). It connects imaginary actors to movies they appear in.
 
 BPG <- read_graph("Networks/actor-movie.graphml", format="graphml")
-
 BPG
 # Note the "B" and 'type' attribute, and the links 
 
