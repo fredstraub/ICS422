@@ -13,11 +13,20 @@
 #   - Other metrics (distances, components, clustering) (45 min)
 #   Numerous improvements in comments, particularly with respect to
 #     discrepancies between Gephi and igraph. 
+<<<<<<< HEAD
 ######################################################################
 getwd()
 
 library(igraph)
 setwd("/Users/frederickstraub/GitHub/ICS422/R-Files") # Set to your location
+=======
+# Feb  4 2022 DS: Resolving the discrepancy between igraph and Gephi 
+#   on local clustering coefficient.
+######################################################################
+
+library(igraph)
+setwd("~/Desktop/Network-Science-Demos") # Set to your location
+>>>>>>> ce55f0201bcf2fdf8a3e208aa1a19833611874ef
 
 ######################################################################
 # Reading Graphs we will use 
@@ -64,6 +73,10 @@ mean_distance(JC, directed=FALSE)
 
 # Diameter 
 
+<<<<<<< HEAD
+=======
+?diameter
+>>>>>>> ce55f0201bcf2fdf8a3e208aa1a19833611874ef
 diameter(NS) 
 # ***** Why is this different from Gephi? 
 #       Try to get igraph to give the same result. (Try NULL and NA) 
@@ -120,7 +133,11 @@ plot(NS.cd,
      main="Network Science Component Sizes v1", 
      xlab="Nc", ylab="p(Nc)")
 
+<<<<<<< HEAD
 # We need to do our NA tick to not plot 0 values.
+=======
+# We need to do our NA trick to not plot 0 values.
+>>>>>>> ce55f0201bcf2fdf8a3e208aa1a19833611874ef
 
 plot(ifelse(NS.cd==0, NA, NS.cd), 
      main="Network Science Component Sizes v2", 
@@ -149,6 +166,10 @@ plot(0:(length(NS.cd)-1),
 
 NS.c <- components(NS)
 names(NS.c)
+<<<<<<< HEAD
+=======
+NS.c$no
+>>>>>>> ce55f0201bcf2fdf8a3e208aa1a19833611874ef
 JC.c <- components(JC, mode="strong")
 
 # Make tables (frequency counts) of sizes: these are sometimes easier
@@ -246,23 +267,37 @@ plot(degree(JC.und), transitivity(JC.und, type="local"),
 # environments.
 
 # Give each vertex its local transitivity (clustering coefficient): 
+<<<<<<< HEAD
 # (We will ignore the directed graph warning to use comparables.)
 
 V(JC)$local_cc <- transitivity(JC, type="local") 
 V(NS)$local_cc <- transitivity(NS, type="local")
+=======
+# Although Gephi implies it can compute directed transitivity, we
+# use undirected so we know that igraph's are correct. 
+
+V(NS)$local_cc <- transitivity(NS, type="local")
+V(JC.und)$local_cc <- transitivity(JC.und, type="local")
+>>>>>>> ce55f0201bcf2fdf8a3e208aa1a19833611874ef
 
 # To see what we assigned: 
 
 summary(NS)
 head(V(NS)$local_cc)
+<<<<<<< HEAD
 summary(JC)
 head(V(JC)$local_cc) 
+=======
+summary(JC.und)
+head(V(JC.und)$local_cc)
+>>>>>>> ce55f0201bcf2fdf8a3e208aa1a19833611874ef
 
 # Here is the pattern you use for other attributes: 
 #   V(graph)$attribute <- expression_to_compute_attribute(graph)
 
 # Write them out to read into Gephi ... 
 
+<<<<<<< HEAD
 write_graph(JC, "java-classes_with_cc.graphml", format="graphml")
 write_graph(NS, "netscience_with_cc.graphml", format="graphml")
 
@@ -270,6 +305,59 @@ write_graph(NS, "netscience_with_cc.graphml", format="graphml")
 # Compute Gephi's Avg. Clustering Coefficient. Then the local cc
 # vertex attributes in Data Laboratory. Sort by the values to see NA
 # vs 0.0.
+=======
+write_graph(JC.und, "java_classes_und_with_cc.graphml", format="graphml")
+write_graph(NS,     "netscience_with_cc.graphml", format="graphml")
+
+# Open the graphml of both JC and NS in Gephi. No need to do layout.
+# Compute Gephi's Avg. Clustering Coefficient. Then view the results
+# and compare to the igraph local_cc vertex attributes in Data
+# Laboratory. Sort by the values to compare.
+
+# When examining the results for NS, note that some values of 0.0
+# computed by Gephi correspond to blanks in the local_cc column: these
+# are the NaN. Therefore Gephi does not distinguish the two situations
+# (having a CC of 0.0 vs. CC being undefined.)
+
+# ------ Might leave out of class, or edit to simpler resolution ----- 
+# Examining the results for JC, the values are different. Why? 
+# (This was not in the class demo, and may be TMI: the take-home 
+#  message is that we should trust igraph on undirected graphs.)
+# * In igraph we used type="local": the documentation says this is
+#   for an undirected graph. 
+# * In Gephi, save the results by copying to a new column, and 
+#   recompute "Avg. Clustering Coefficient" as undirected and compare. 
+# * The results are closer, but not the same! Rounding error? Or a
+#   different assumption? (Recommend you copy these values to 
+#   another column before going on.)
+# * If you have the Clustering Coefficient plug-in, run it but use
+#   "Basic Methods". They are the same as "Avg. Clustering Coefficient" 
+#   undirected, but different from igraph local transitivity. 
+# * Take a look again at transitivity documentation. What else can 
+#   we change in igraph that might make them the same? 
+#   - there are no weights
+#   - change isolates to "zero": this does not solve it. 
+#   - but there is a warning that we should use undirected graphs 
+
+library('tibble')
+cc <- tibble (local_dir_NaN  = transitivity(JC, type="local"),
+              local_dir_zero = transitivity(JC, type="local", 
+                                            isolates="zero"),
+              local_und_NaN  = transitivity(JC.und, type="local"),
+              local_und_zero  = transitivity(JC.und, type="local", 
+                                             isolates="zero"))
+View(cc)
+
+# It turns out that the only way to get the results the same is to
+# convert the network to undirected in igraph, and to use undirected
+# in Gephi. I don't know whether the directed transitivity results in
+# Gephi are correct, but given that igraph warns that directed
+# transitivity may be incorrect and that Gephi is not as well vetted,
+# I do not trust the directed local transitivity values in Gephi. The
+# Gephi results window references a paper, but this paper says it is
+# only for undirected graphs, so we don't even know what definition
+# (if any) of directed transitivity Gephi is using.
+>>>>>>> ce55f0201bcf2fdf8a3e208aa1a19833611874ef
 
 ######################################################################
 # Degree Assortativity
