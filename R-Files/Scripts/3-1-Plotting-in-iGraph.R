@@ -8,13 +8,13 @@
 # Jan 27 2022 DS: Updating for spring 2022 class: formatting only. 
 #                 ~17 minutes. 
 ######################################################################
-
+getwd()
 library(igraph)
 
 # Set to your base directory, or use Session/Set Working Directory 
 # There should be a subdirectory 'Networks' with the graphs. 
 
-setwd("~/Desktop/Network-Science-Demos") 
+setwd("/Users/fred/Github/ICS422/R-Files") 
 
 # Loading sample graph. This graph is from the SAND demo, but has 
 # been upgraded for current igraph with upgrade_graph(g).  
