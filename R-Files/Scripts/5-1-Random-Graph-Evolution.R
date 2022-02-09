@@ -13,7 +13,7 @@
 ######################################################################
 
 library(igraph)
-setwd("~/Desktop/Network-Science-Demos") # Set to yours 
+setwd("/Users/fred/Github/ICS422/R-Files") # Set to yours 
 
 # For clean plots 
 
@@ -247,7 +247,7 @@ plot(degree_domain(gnp),
 # If you have not been running the above demo run this now: 
 
 library(igraph)
-setwd("~/Desktop/Network-Science-Demos") # Set to yours 
+setwd("/Users/fred/Github/ICS422/R-Files") # Set to yours 
 source("Utility/degree_domain.R")
 source("Utility/nonzero_degree_distribution.R")
 
@@ -258,11 +258,20 @@ NS <- read_graph("Networks/netscience.graphml", format="graphml")
 WA <- read_graph("Networks/EuroSiS-WebAtlas-Simplified.graphml", 
                  format="graphml")
 
-NS_gnm <- sample_gnm(vcount(NS), ecount(NS)) # just pass N, M
+NS_gnm <- sample_gnm(vcount(1589), ecount(2742)) # just pass N, M
 summary(NS)
 summary(NS_gnm)
-
+par(mfrow=c(2,2))
+plot(degree_distribution(NS))
+plot(degree_distribution(NS_gnm))
 # ***** You do WA 
+
+WA_gnm <- sample_gnm(vcount(1285), ecount(6462)) # just pass N, M
+summary(WA)
+summary(WA_gnm)
+par(mfrow=c(2,2))
+plot(degree_distribution(WA))
+plot(degree_distribution(WA_gnm))
 
 # Predict regime (subcritical, critical, supercritical, connected)
 # by comparing mean degree to 1 and natural log of |V| = N 
