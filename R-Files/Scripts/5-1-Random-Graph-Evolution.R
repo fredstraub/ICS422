@@ -8,12 +8,8 @@
 # Feb  1 2020 DS Minor revisions for 2020 self study students. 
 # Feb  9 2021 Revisions for ICS 422/622 Spring 2021
 # Feb  8 2022 Minor revisions for ICS 422/622 Spring 2022. 
-<<<<<<< HEAD
 #   This demo is stable and in good shape. Can do in about 20 min 
 #   excluding Gephi part. 
-=======
-# (This demo is stable and in good shape. Can do in less than 30 min.)
->>>>>>> ce55f0201bcf2fdf8a3e208aa1a19833611874ef
 ######################################################################
 
 library(igraph)
@@ -131,16 +127,10 @@ plot(gnm_100_400, vertex.label=NA, vertex.size=3,
 # Review of R and igraph used here as needed (decompose is new)
 
 ?igraph::decompose
-<<<<<<< HEAD
 head(decompose(gnm_100_50), 2) # It's a list of graphs 
 ?vcount  # for how many vertices in each graph 
 ?sapply  # to map the above across the list 
 ?table   # to make frequency table of sizes 
-=======
-?vcount
-?sapply
-?table
->>>>>>> ce55f0201bcf2fdf8a3e208aa1a19833611874ef
 
 # Doing it: 
 
@@ -185,11 +175,7 @@ transitivity(gnm_100_400, type="global")
 # it is hard to see until we get to denser graphs.) 
 
 # new_window("Degree Distributions", 9, 9) # Could run in same window 
-<<<<<<< HEAD
 # par(mfrow=c(2,2)) # still active if in same window 
-=======
-# par(mfrow=c(2,2))
->>>>>>> ce55f0201bcf2fdf8a3e208aa1a19833611874ef
 
 plot(degree_domain(gnm_100_25), 
      nonzero_degree_distribution(gnm_100_25), 
@@ -225,14 +211,9 @@ par(mfrow=c(1,1))
 
 # making G(n,p) and G(n,m) 
 
-<<<<<<< HEAD
 gnm <- sample_gnm(100, 500)  # If modeling known number of edges
 gnp <- sample_gnp(100, 0.01) # We'll examine this one 
 
-=======
-gnp <- sample_gnp(100, 0.01)
-gnm <- sample_gnm(100, 500)
->>>>>>> ce55f0201bcf2fdf8a3e208aa1a19833611874ef
 
 # Initial inspection 
 
