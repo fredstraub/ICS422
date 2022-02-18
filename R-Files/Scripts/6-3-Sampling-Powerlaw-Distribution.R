@@ -17,7 +17,7 @@
 # If you haven't done it yet today ... 
 
 library(igraph)
-setwd("~/Desktop/Network-Science-Demos") # Set to yours 
+setwd("/Users/frederickstraub/GitHub/ICS422/R-Files") # Set to yours 
 source("Utility/new_window.R")
 source("Utility/degree_domain.R")
 IR <- read_graph("Networks/internet_routers-22july06.gml", format="gml")

@@ -22,7 +22,7 @@
 
 library(igraph)
 library(tibble)
-setwd("~/Desktop/Network-Science-Demos")
+setwd("/Users/frederickstraub/GitHub/ICS422/R-Files")
 source("Utility/degree_domain.R")
 
 #######################################################################

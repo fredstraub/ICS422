@@ -57,13 +57,13 @@ plot(nonzero_degree_distribution(HEP),
      xlab="k", ylab="p(k)")
 
 # Is the adjustment needed in this case? Why or why not? 
-
+# not really? The scale is so big you cant notice the difference, but its a good idea
 ######################################################################
 # Make log-log plots with and without degree_domain 
 
 
 # Is the adjustment needed in this case? Why or why not? 
-
+# yes, its shifted over, there are no zero degree nodes due to the NA
 ######################################################################
 # Make Cumulative Degree Distribution plot
 
