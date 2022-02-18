@@ -13,7 +13,7 @@
 # Only needed if you have not already run the class script: 
 
 library(igraph)
-setwd("~/Desktop/Network-Science-Demos") # Set to yours 
+setwd("/Users/frederickstraub/GitHub/ICS422/R-Files") # Set to yours 
 source("Utility/new_window.R")
 source("Utility/degree_domain.R")
 source("Utility/binned_histogram.R")
@@ -41,12 +41,20 @@ summary(HEP)
 
 ######################################################################
 # Compute degree distribution and nonzero degree domain 
+head(degree_distribution(HEP))
 
-
+head(sort(unique(nonzero_degree_distribution(HEP))), 3)
 ######################################################################
 # Make a linear plot with and without degree_domain to see how much
 # degree_domain matters
 
+plot(degree_distribution(HEP), 
+     main="Arxiv HEP-TH Degree Dist Lin Lin", 
+     xlab="k", ylab="p(k)")
+
+plot(nonzero_degree_distribution(HEP), 
+     main="Arxiv HEP-TH Nonzero Degree Dist Lin Lin", 
+     xlab="k", ylab="p(k)")
 
 # Is the adjustment needed in this case? Why or why not? 
 
