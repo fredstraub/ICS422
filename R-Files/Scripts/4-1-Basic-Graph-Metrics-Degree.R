@@ -14,7 +14,7 @@
 ######################################################################
 
 library(igraph)
-setwd("~/Desktop/Network-Science-Demos") # Set to your location
+setwd("/Users/fred/Github/ICS422/R-Files") # Set to your location
 
 ######################################################################
 # Reading Graphs we will use 
