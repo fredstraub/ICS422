@@ -14,7 +14,7 @@
 ######################################################################
 
 library(igraph)
-setwd("~/Desktop/Network-Science-Demos") # Set to yours 
+setwd("/Users/fred/Github/ICS422/R-Files") # Set to yours 
 source("Utility/degree_domain.R")
 source("Utility/nonzero_degree_distribution.R")
 

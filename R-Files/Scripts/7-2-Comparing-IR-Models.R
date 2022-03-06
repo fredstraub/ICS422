@@ -27,7 +27,7 @@
 library(igraph)
 library(tibble) # load this
 
-setwd("~/Desktop/Network-Science-Demos") # Set to yours 
+setwd("/Users/fred/Github/ICS422/R-Files") # Set to yours 
 source("Utility/new_window.R")
 source("Utility/degree_domain.R")
 
