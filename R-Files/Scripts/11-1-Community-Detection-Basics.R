@@ -21,7 +21,7 @@
 # Setup
 
 library(igraph)
-setwd("~/Desktop/Network-Science-Demos") # Set to yours 
+setwd("/Users/frederickstraub/GitHub/ICS422/R-Files") # Set to yours 
 
 ###########
 # Networks 

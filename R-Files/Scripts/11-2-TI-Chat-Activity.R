@@ -6,7 +6,7 @@
 
 library(igraph)
 library(tibble)
-setwd("~/Desktop/Network-Science-Demos") # Set to yours 
+setwd("/Users/frederickstraub/GitHub/ICS422/R-Files") # Set to yours 
 TI <- read.graph("Networks/TI-Chats-Week-of-060401.graphml", format="graphml")
 
 ######################################################################
