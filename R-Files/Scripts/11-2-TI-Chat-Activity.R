@@ -13,23 +13,25 @@ TI <- read.graph("Networks/TI-Chats-Week-of-060401.graphml", format="graphml")
 # 1. Do community analysis for the TI Chats sociogram 
 # Try cluster_louvain and cluster_infomap (you may also try others) 
 #   --> There will be a problem you should solve
-
+is_directed(TI)
 # Louvain 
-
-
+TI.louvain <- cluster_louvain(TI)
+TI.louvain <- cluster_louvain(as.undirected(TI, mode="collapse"))
+modularity(TI.louvain)
 # Infomap 
-
+TI.infomap <- cluster_infomap(TI)
 
 # ----------
 # Show modularity, number of communities, and table of community sizes 
 
-
+modularity(TI.infomap)
 # Interpret this in terms of known limitations of Louvain and Infomap
 
+## The graph is directed and these algorithms don't work.
 
 # -----
 # Assign community membership as vertex attribute V(TI)$... 
-
+TIM <- membership <-
 
 # -----
 # Write out this graph for reading into Gephi
