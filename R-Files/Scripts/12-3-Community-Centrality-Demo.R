@@ -219,6 +219,9 @@ g_edges <- as_edgelist(g)
 # if weighted 
 g_edges <- cbind(g_edges, E(g)$weight)
 
+
+#********* COMPUTE g_lc
+
 # Node centralities based on weighted count of community membership.
 getCommunityCentrality(g_lc, type="commweight") 
 

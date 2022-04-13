@@ -10,24 +10,24 @@
 library(igraph)
 library(linkcomm)
 
-setwd("~/Desktop/Network-Science-Demos") # Set to yours 
+setwd("/Users/frederickstraub/GitHub/ICS422/R-Files") # Set to yours 
 TI <- read.graph("Networks/TI-Chats-Week-of-060401.graphml", format="graphml")
 summary(TI)
 
 ######################################################################
 # Make edgelist representation 
-TI.edges <- 
-TI.edges <- 
+TI.edges <- as_edgelist(TI)
+TI.edges <- cbind(TI.edges, E(TI)$weight)
 head(TI.edges)
 
 # Compute and check link communities 
-TI.lc <- 
+TI.lc <- getLinkCommunities(TI.edges, hcmethod="average",directed = TRUE, plot=FALSE)
 print(TI.lc)
 
 ######################################################################
 # reify_link_communities
-
-# Compute centralities befor we mess with the graph
+comm_label(TI, TI.lc)
+# Compute centralities before we mess with the graph
 
 # Make the reified link community graph 
 
