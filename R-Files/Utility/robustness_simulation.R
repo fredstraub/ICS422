@@ -14,9 +14,9 @@
 #
 # Examples: 
 #  Deleting first 5% of vertices over 10 trials, with no meandist
-#  ./robustness_simulation.R "graph.gml" "gml" "MyGraph" 0.05 10 0
-#  Deleting first 10% of vertices over 3 trials with mean distances 
-#  ./robustness_simulation.R "Networks/power_grid.gml" "gml" "PowerGrid" 0.10 3 1
+#  ./robustness_simulation.R graph.gml "gml" "MyGraph" 0.05 10 0
+#  Deleting first 10% of vertices over 5 trials with mean distances 
+#  ./robustness_simulation.R power_grid.gml "gml" "PowerGrid" 0.10 5 1
 #
 # Output: 
 # - file paste0(name, "RobustnessSimulation.png") 
@@ -289,9 +289,10 @@ plot_robustness_results(g.attack.metrics, paste0(name, " Attack"),
 dev.off()
 cat(filename, "written\n")
 
-filename <- paste0(name, "RobustnessSimulation.RData")
 # Save data 
-save(g, name, cutoff, trials, g.failure.metrics, g.attack.metrics, file=filename)
+filename <- paste0(name, "RobustnessSimulation.RData")
+save(g, name, cutoff, trials, g.failure.metrics, g.attack.metrics, 
+     file=filename)
 cat(filename, "written\n")
 
 ######################################################################
