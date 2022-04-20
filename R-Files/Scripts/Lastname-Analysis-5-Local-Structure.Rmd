@@ -1,0 +1,349 @@
+---
+title: "Lastname Analysis 5 Local Structure"
+author: "Firstname Lastname"
+date: "3/15/2022"
+output:
+  html_notebook: 
+    code_folding: hide
+    df_print: paged
+  html_document:
+    code_folding: hide
+    df_print: paged
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+require("knitr")
+opts_chunk$set(echo = TRUE)
+library(igraph)
+library(tibble)
+# Optional, for including images of these types
+library(jpeg) 
+library(png)
+# Utilities
+source("Utility/topnv.R")
+```
+
+____________________________________________________________
+### Part A: Centrality Metrics
+
+In this section we compare various centrality metrics computed in both igraph and Gephi, and demonstrate their application. 
+
+____________________________________________________________
+#### 1. Computing and Inspecting Centralities in igraph (6 pts)
+
+The demonstration uses a weighted undirected graph we will call NS in which vertices represent authors of papers on Network Science, and edges represent co-authorship relations. Edge weights represent the sum of collaboration credit for all the papers the pair co-authored. The collaboration credit per pair of authors on a single paper is 1/(n-1) where n is the number of authors. For example, if there is 1 co-author, the link to that co-author is credited 1/1; if there are 2 co-authors, the link to each is credited 1/2, etc.
+
+```{r}
+NS <- read.graph("Networks/netscience.graphml", format="graphml")
+summary(NS) 
+```
+
+Selected degree-based centrality metrics (unweighted and weighted) are computed below and added to NS as vertex attributes.
+
+```{r}
+# Unweighted Degree
+# V(NS)$i_degree       <- ______________________________
+# Weighted Degree
+# V(NS)$i_strength     <- ______________________________
+# Unweighted Eigenvector Centrality
+# V(NS)$i_eigen_cent_u <- ______________________________
+# Weighted Eigenvector Centrality
+# V(NS)$i_eigen_cent_w <- ______________________________
+# Unweighted Page Rank
+# V(NS)$i_page_rank_u  <- ______________________________
+# Weighted Page Rank
+# V(NS)$i_page_rank_w  <- ______________________________
+# Check that they are all there and none came out v/x 
+summary(NS)
+```
+
+Since path-based metrics interpret weights as distances, edge weights w indicating closeness are converted to distances d with formula d = 1 + max(w) - w. Histograms demonstrate the change in distribution.  
+
+```{r}
+# The original distribution. 
+hist(E(NS)$weight, breaks=64)
+# Edge weights converted to distances for path-based centralities 
+# E(NS)$distance       <- ____________________ 
+# hist(E(NS)$distance, breaks=64)
+```
+
+Selected path-based centrality metrics (unweighted and weighted by distances) are computed below and added to NS as vertex attributes.
+
+```{r}
+# Normalized Unweighted Betweenness
+# V(NS)$i_between_u    <- ______________________________
+# Normalized Weighted Betweenness using distances
+# V(NS)$i_between_w    <- ______________________________
+# Normalized Unweighted Closeness
+# V(NS)$i_closeness_u  <- ______________________________
+# Normalized Weighted Closeness using distances
+# V(NS)$i_closeness_w  <- ______________________________
+# Check that they are all there.
+summary(NS)
+```
+
+____________________________________________________________
+#### 2. Computing and Visualizing Centralities in Gephi (6 pts)
+
+The above results are written out for inspection in Gephi. 
+
+```{r}
+# write_graph(NS, "netscience-with-metrics.graphml", format="graphml")
+```
+
+##### (a) Computing Centrality Metrics in Gephi (4 pts) 
+
+The following node-level metrics were computed in Gephi with the indicated adjustments: 
+* Eigenvector centrality: 1000 iterations
+* Page Rank: unweighted with epsilon 0.0001 or 1.0E-5 
+* Betweenness and Closeness: normalized
+
+##### (b) Visualizing the Network in Gephi (2 pts) 
+
+The graph is visualized as follows: ___________________
+
+The resulting Gephi project may be found in: _______________
+
+____________________________________________________________
+#### 3. Comparing Gephi and igraph results (18 pts)
+
+We compare selected results between Gephi and igraph below, also taking into account the difference between weighted and unweighted results, to understand differences in how each platform computes these metrics. 
+
+##### (a) Gephi's and igraph's Eigenvector centralities 
+
+**How they differ:** 
+
+**Why they differ:** 
+
+**Which we prefer for what purposes:** 
+
+**Additional Comments:** 
+
+
+##### (b) Gephi's and igraph's Closeness centralities
+
+**How they differ:** 
+
+**Why they differ:** 
+
+**Which we prefer for what purposes:** 
+
+**Additional Comments:** 
+
+##### (c) Gephi's and igraph's Betweenness centralities
+
+**How they differ:** 
+
+**Why they differ:** 
+
+**Which we prefer for what purposes:** 
+
+**Additional Comments:** 
+
+____________________________________________________________
+#### 4. Comparing the Centrality Metrics to each other (20 pts)
+
+Using Network Science as a test case, we compare igraph's versions of the metrics to each other to understand their different meanings. In order to minimize confounding bariables we use normalized values where applicable, and only use weights in the first item below. 
+
+##### a. Comparing Degree and Weighted Degree
+
+Gephi and igraph give identical results on degree and weighted degree: there are no choices to make concerning how to compute these metrics, so we only computed them in igraph.
+
+**How they differ:** 
+
+The top 10 under each metric are below. 
+```{r}
+# Make a table showing topnv names and values for both metrics. 
+```
+
+_Describe the differences_ 
+
+**Explanation and Significance:** 
+
+_Explain the differences_ 
+
+##### b. Comparing Degree and Eigenvector Centrality (unweighted)
+
+**How they differ:** 
+
+The top 10 under each metric are below. 
+```{r}
+# Make a table showing topnv names and values for both metrics. 
+```
+
+_Describe the differences_ 
+
+**Explanation and Significance:** 
+
+_Explain the differences_ 
+
+##### c. Comparing Eigenvector Centrality and Page Rank (unweighted)
+
+**How they differ:** 
+
+The top 10 under each metric are below. 
+```{r}
+# Make a table showing topnv names and values for both metrics. 
+```
+
+_Describe the differences_ 
+
+**Explanation and Significance:** 
+
+_Explain the differences_ 
+
+##### d. Comparing Page Rank and Betweenness (unweighted)
+
+**How they differ:** 
+
+The top 10 under each metric are below. 
+```{r}
+# Make a table showing topnv names and values for both metrics. 
+```
+
+_Describe the differences_ 
+
+**Explanation and Significance:** 
+
+_Explain the differences_ 
+
+____________________________________________________________
+#### 5. Conclusions about Network Science Authors (6 pts)
+
+Now that we understand the meaning of the metrics, we apply them to draw conclusions about the roles of the most prominent researchers in this data set. The discussion is based on the following metric rankings (we now use weights to reflect strength of collaboration): 
+
+```{r}
+# Summarize topnv under the following metrics in a nice table: 
+# Degree 
+# Weighted degree
+# Weighted page rank 
+# Weighted betweenness (using weights adjusted to be distances)
+```
+
+_Your discussion here, which may refer to points made in previous sections._ 
+ 
+____________________________________________________________
+### Reciprocity, Transitivity and Subgraph Extraction
+
+In this section we illustrate two applications of reciprocity and transitivity. First, we interpret reciprocity and transitivity results in terms of the processes they imply in a domain being modeled. Second, we use these metrics as a data integrity check, uncovering a problem that we visualize by extracting a subgraph. 
+
+____________________________________________________________
+#### 6. High Energy Physics Theory Citations (12 pts)
+
+The high energy physics theory citation graph cit-HepTh.gml (in folder HEP-Theory-Citation and copied to the assignment folder) is from the e-print arXiv and covers all the citations within a dataset of 27,770 papers with 352,807 edges for the period from January 1993 to April 2003 (it begins within a few months of the inception of the arXiv). If a paper i cites paper j, the graph contains a directed edge from i to j. If a paper cites, or is cited by, a paper outside the dataset, the graph does not contain any information about this. Here we read in the data: 
+
+```{r}
+HEP <- read_graph("Networks/cit-HepTh.gml", format="gml")
+summary(HEP)
+```
+
+We will compute reciprocity and transitivity for this directed graph, and interpret the results in terms of domain processes with the aid of comparison to random graph models.  
+
+##### (a) Random and Configuration Models for Comparison (3 pts)
+
+We need to consider whether the values differ much from expected at random, and whether the values are a natural consequence of the degree sequence or due at least partially to an independent process. To enable these comparisons we construct two models. 
+
+**G(n,m) Model** 
+
+This model enables us to determine whether observed values on metrics depart from what is expected at random. 
+
+```{r}
+# Replace this comment with your code to generate a G(n,m) model with 
+# sample_gnm and directed=TRUE.
+# summary(HEP.gnm)
+```
+
+**Configuration Model** 
+
+This model enables us to determine the extent to which observed values on metrics (particularly those that *do* depart from the random model) are due to the degree distribution, which itself may be generated by some process we can identify. 
+
+```{r}
+# Replace this comment with your code to generate a configuration model 
+# with sample_degseq, specifying both out.deg and in.deg and using 
+# method 'simple'. 
+# summary(HEP.config)
+```
+
+##### (b) Reciprocity and Transitivity (3 pts)
+
+Below we display reciprocity and global transitivity values for the given natural network and the two random models. 
+
+```{r}
+# Replace this comment with computations of reciprocity and global 
+# transitivity, displayed in tabular form, such as: 
+#   Graph  reciprocity transitivity
+#   HEP    #.######### #.##########
+#   G(n,m) #.######### #.##########
+#   Config #.######### #.##########
+```
+
+##### (c) Interpretation of Reciprocity and Transitivity (6 pts)
+
+Here we compare the results for the natural network to the two random models to draw conclusions about what kinds of processes might be responsible for these local structures. 
+
+**Comparison and Discussion of Reciprocity:**
+
+_____Your discussion here____ 
+
+**Comparison and Discussion of Transitivity:**
+
+_____Your discussion here____ 
+
+
+____________________________________________________________
+#### 7. Comic Hero Network (12 pts)
+
+The third network we examine is derived from the Marvel Social Network Networks of super heroes constructed by Cesc Rosselló, Ricardo Alberich, and Joe Miro from the University of the Balearic Islands (obtained from http://exposedata.com/marvel/ but this site is no longer available). Rosselló et al. offered us a directed bipartite graph of comic book heroes linked to the comic issues they appeared in. Out-degree is the number issues heroes have appeared in, and in-degree is the number of heroes in an issue.  
+
+```{r}
+CH <- read_graph("Networks/comic-hero-network.graphml", format="graphml")
+summary(CH)
+```
+
+##### (a) Predict Reciprocity and Transitivity (2 pts)
+
+If this is a proper bipartite graph, we expect that Reciprocity is ____ because __________; and Global Transitivity is ____ because __________. 
+
+##### (b) Actual Reciprocity and Transitivity (2 pts)
+
+Actual reciprocity: 
+
+```{r}
+
+```
+
+Actual transitivity:
+
+```{r}
+
+```
+
+_____Identify the unexpected result and explain why it is unexpected_____
+
+##### (c) Identify the Error through Subgraph Visualization (8 pts)
+
+In order to localize the error, we compute the relevant metric at the node level and save the results in a vector: 
+
+```{r}
+
+```
+
+Here we construct an induced subgraph consisting precisely of those vertices with erroneous values and the edges between them: 
+
+```{r}
+# construct it 
+# summary(g) after you construct it 
+```
+
+A visualization of this subgraph helps us localize the error more precisely: 
+
+```{r}
+# Plot the induced subgraph, with vertices labeled by $id and colored
+# according to their bipartite $type, and vertex and arrowhead sizes 
+# adjusted for visibility
+```
+
+The above visualization suggests that the error is __________ 
+
+____________________________________________________________
+### Pau 

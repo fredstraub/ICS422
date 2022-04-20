@@ -1,0 +1,499 @@
+---
+title: "Suthers Analysis 5 Local Structure"
+author: "Dan Suthers"
+date: "3/28/2022"
+output:
+  html_document:
+    code_folding: hide
+    df_print: paged
+  html_notebook: 
+    code_folding: hide
+    df_print: paged
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+require("knitr")
+opts_chunk$set(echo = TRUE)
+library(igraph)
+library(tibble)
+# Optional, for including images of these types
+library(jpeg) 
+library(png)
+# Utilities
+source("Utility/topnv.R")
+```
+
+____________________________________________________________
+### Part A: Centrality Metrics
+
+In this section we compare various centrality metrics computed in both igraph and Gephi, and demonstrate their application. 
+
+____________________________________________________________
+#### 1. Computing and Inspecting Centralities in igraph (6 pts)
+
+The demonstration uses a weighted undirected graph we will call NS in which vertices represent authors of papers on Network Science, and edges represent co-authorship relations. Edge weights represent the sum of collaboration credit for all the papers the pair co-authored. The collaboration credit per pair of authors on a single paper is 1/(n-1) where n is the number of authors. For example, if there is 1 co-author, the link to that co-author is credited 1/1; if there are 2 co-authors, the link to each is credited 1/2, etc.
+
+```{r}
+NS <- read.graph("Networks/netscience.graphml", format="graphml")
+summary(NS) 
+```
+
+Selected degree-based centrality metrics (unweighted and weighted) are computed below and added to NS as vertex attributes.
+
+```{r}
+# Unweighted Degree
+V(NS)$i_degree       <- degree(NS)
+# Weighted Degree
+V(NS)$i_strength     <- strength(NS)
+# Unweighted Eigenvector Centrality
+V(NS)$i_eigen_cent_u <- eigen_centrality(NS, weights=NA)$vector
+# Weighted Eigenvector Centrality
+V(NS)$i_eigen_cent_w <- eigen_centrality(NS)$vector
+# Unweighted Page Rank
+V(NS)$i_page_rank_u  <- page_rank(NS, weights=NA)$vector
+# Weighted Page Rank
+V(NS)$i_page_rank_w  <- page_rank(NS)$vector
+# Check that they are all there and none came out v/x 
+summary(NS)
+```
+
+Since path-based metrics interpret weights as distances, edge weights w indicating closeness are converted to distances d with formula d = 1 + max(w) - w. Histograms demonstrate the change in distribution.  
+
+```{r}
+# The original distribution. 
+hist(E(NS)$weight, main="Original Weights", 
+     breaks=length(unique(E(NS)$weight)))
+# Edge weights converted to distances for path-based centralities 
+E(NS)$distance       <- 1 + max(E(NS)$weight) - E(NS)$weight 
+hist(E(NS)$distance, main="Converted Distances", 
+     breaks=length(unique(E(NS)$distance)))
+```
+
+Selected path-based centrality metrics (unweighted and weighted by distances) are computed below and added to NS as vertex attributes.
+
+```{r}
+# Normalized Unweighted Betweenness
+V(NS)$i_between_u    <- betweenness(NS, normalized=TRUE, weights=NA)
+# Normalized Weighted Betweenness using distances
+V(NS)$i_between_w    <- betweenness(NS, normalized=TRUE, 
+                                    weights=E(NS)$distance)
+# Normalized Unweighted Closeness
+V(NS)$i_closeness_u  <- closeness(NS, normalized=TRUE, weights=NA)
+# Normalized Weighted Closeness using distances
+V(NS)$i_closeness_w  <- closeness(NS, normalized=TRUE, 
+                                  weights=E(NS)$distance)
+# Check that they are all there.
+summary(NS)
+```
+
+The warning given for closeness suggests that we should consider values in light of the disconnected structure of the graph. 
+
+____________________________________________________________
+#### 2. Computing and Visualizing Centralities in Gephi (6 pts)
+
+The above results are written out for inspection in Gephi. 
+
+```{r}
+write_graph(NS, "Networks/netscience-with-metrics.graphml", format="graphml")
+```
+
+##### (a) Computing Centrality Metrics in Gephi (4 pts) 
+
+The following node-level metrics were computed in Gephi with the indicated adjustments: 
+
+* Eigenvector centrality: 1000 iterations
+* Page Rank: unweighted with epsilon 0.0001 or 1.0E-5 
+* Betweenness and Closeness: normalized
+
+##### (b) Visualizing the Network in Gephi (2 pts) 
+
+The graph is visualized as follows: Nodes are sized by degree (with size range increased to 10-100 for visibility). Open Ord layout is followed by brief Force Atlas 2 with Gravity = 5 and Prevent Overlap. Connected components were computed and the largest 32 of them colored to make them easy to distinguish. 
+
+The resulting Gephi project may be found in Analysis-5-Local-Structure.gephi. 
+
+____________________________________________________________
+#### 3. Comparing Gephi and igraph results (18 pts)
+
+We compare selected results between Gephi and igraph below, also taking into account the difference between weighted and unweighted results, to understand differences in how each platform computes these metrics. 
+
+##### (a) Gephi's and igraph's Eigenvector centralities 
+
+**How they differ:** 
+
+All three sets of values (Gephi's, igraph unweighted, and igraph weighted) differ from each other. The igraph unweighted and Gephi's rank the nodes similarly (so the visualizations look similar), but igraph's values drop to 0 at the 22nd row in the rank ordering, while Gephi's maintain nonzero values for many more nodes, down to AGRAWAL. When visualized as node size in Overview, both Gephi and unweighted igraph place high values on the isolated cluster of 21 nodes; while weighted igraph looks more reasonable, with larger values in the giant component and involving nodes such as Barabasi (but not as many nodes as I would like). 
+
+**Why they differ:** 
+
+It is clear that Gephi is not using weights, while we can control this in igraph. The two unweighted versions differ because igraph uses the ARPACK matrix package while Gephi uses iterative approximation similar to the method outlined by Newman. (We know this because Gephi lets us specify the number of iterations, and one can also see it in the Gephi code.) So, Gephi may need a lot of iterations to converge on the analytic result from the matrix package. (I later set it to 100000 iterations and it did not converge.) 
+
+**Which we prefer for what purposes:** 
+
+Given that there should be more centrality in the giant component, I trust the weighted igraph version, though I would trust the Gephi version in connected graphs. I like that there is more control in igraph. Gephi's Eigenvector Centrality does not let you specify whether weights are to be used, and does not even tell us whether they are used. If there were no weights, I would still go with igraph as ARPACK probably receives more development effort. (Actually, I would prefer to use PageRank.)
+
+**Additional Comments:** 
+
+*(I don't expect all this in student responses: these are just notes of interest.)* 
+
+When we rank nodes in Data Laboratory by Gephi's version of Eigenvector Centrality, Uetz, Cagney and Mansfield get top ranking at 1.0. Using Select on Overview, we find that they are part of an isolated cluster of 21 nodes, and are the only 3 nodes connected to every other node in this cluster. The rest connect to all but "Glot", but are the next highest ranked nodes, above Barabasi and the rest. But surely these 21 are not the most important actors in the network science literature! The unweighted metrics are apparently computing centrality within each connected component, and then scaling all nodes' values across all components. This penalizes Barabasi as he is not connected to _everyone_ in his component. In contrast, igraph's version is a better model for the lesser importance of disconnected components. 
+
+Some students have speculated that Gephi is making the Katz adjustment. The Gephi code gives everyone "1" to start with as in Newman's conceptual introduction. This may give Katz-like results as we don't run to infinity; but this is not the same as adding a Katz adjustment every step.
+
+##### (b) Gephi's and igraph's Closeness centralities
+
+**How they differ:** 
+
+_Weights_: At first look, igraph's unweighted and weighted versions appear to be identical, so one might think weights are not used. But further investigation revealed that they do differ very slightly. Here are the maximum values under unweighted and weighted, respectively: 
+
+```{r}
+tibble(
+  Max_Unweighted = max(V(NS)$i_closeness_u),
+  Max_Weighted = max(V(NS)$i_closeness_w),
+) 
+```
+
+_Gephi vs igraph_: The Gephi and igraph rankings are almost the opposite of each other! In igraph's version, the members of the giant component have much higher closeness centrality than the others (Holme, Newman, Jeong), while in Gephi, the values for the giant component are small and the values for the small clusters large.
+
+**Why they differ:** 
+
+_Normalization_: Gephi values are normalized for the maximum value to be 1; while igraph's values are normalized "by multiplying the raw closeness by n-1, where n is the number of vertices in the graph." (closeness documentation): this does not sum to 1. But this is not the most salient difference ... 
+
+_Gephi vs igraph_: It appears that Gephi is computing closeness within each cluster, and not adjusting for cluster size. In the giant component, there are nodes that are farther away than (for example) in a fully connected component of several nodes. Igraph is giving more credit for reaching more nodes. It is interesting that igraph gives the warning about disconnected graphs but arguably does a better job on them (see below). 
+
+**Which we prefer for what purposes:** 
+
+If you think closeness should mean close to many nodes in the entire network, not just a few, igraph’s is much better. However, the argument can be made that one might be interested in closeness in "close-knit" groups, which Gephi captures well. I prefer igraph’s because I much prefer the former interpretation, and igraph gives more control and better documentation: As with eigenvector, igraph lets one control the use of edge weights (default is that 'weight' is used). The dialog that comes up in Gephi to compute distance-based metrics says that every link is considered a distance of 1. 
+
+**Additional Comments:** 
+
+In both igraphs' version (largest value 0.000825) and Gephi's version (largest value 1.0), there are a large number of nodes with the largest value. Newman points out that the range of values for closeness centrality is small, so closeness is not as useful for discriminating nodes as the other centrality metrics: this is an example of that claim.
+
+##### (c) Gephi's and igraph's Betweenness centralities
+
+**How they differ:** 
+
+Gephi's and igraph's unweighted give identical values, while igraph's weighted version gives different results. The difference is slight, for example, weighted gives Newman, Pastorsatorras Sole, Moreno, Boccaletti and Barabasi, highest betweenness; while unweighted and Gephi give Newman, Pastorsatorras, Moreno, Sole, Boccaletti and Jeong the highest ranking. 
+
+**Why they differ:** 
+
+As noted above, the Gephi documentation says that each edge is a distance of 1, while the igraph documentation says weights are used by default. If we compute betweenness in igraph using weights=NA, we get exactly the same results as in Gephi. 
+
+An author who co-authors many times with another author will have higher weight in the original graph, but we have flipped the weights with d = 1 + max(w) - w to account for the fact that weights are interpreted as distances d in this computation. With this adjustment, frequent collaborators will have shortest distances. Thus an author like Barabasi who publishes repeatedly with many others moves up on the list. 
+
+**Which we prefer for what purposes:** 
+
+I trust them both for unweighted, as they are identical. igraph has the advantage of clearer documentation and being able to control use of weights. Gephi has the advantage of computing all of the distance based metrics in one computation of all pairs shortest paths: in igraph we have to rerun all-pairs shortest paths every time we compute one of the path-based metrics (diameter, mean distance, closeness, betweenness). 
+
+Obviously we would use the weighted version if we had a clear interpretation of weights as distances. 
+
+**Additional Comments:** 
+
+None (made above). 
+
+____________________________________________________________
+#### 4. Comparing the Centrality Metrics to each other (20 pts)
+
+Using Network Science as a test case, we compare igraph's versions of the metrics to each other to understand their different meanings. In order to minimize confounding bariables we use normalized values where applicable, and only use weights in the first item below. 
+
+##### a. Comparing Degree and Weighted Degree
+
+Gephi and igraph give identical results on degree and weighted degree: there are no choices to make concerning how to compute these metrics, so we only computed them in igraph.
+
+**How they differ:** 
+
+The top 10 under each metric are below. 
+
+```{r}
+tibble(
+  "Top 10 Degree"    = topnv(NS, V(NS)$i_degree)$label,
+  "Degree"           = topnv(NS, V(NS)$i_degree)$i_degree,
+  "Top 10 Strength"  = topnv(NS, V(NS)$i_strength)$label,
+  "Strength"         = topnv(NS, V(NS)$i_strength)$i_strength
+)
+```
+
+Both lists have recognizable top names in the first five. From Uetz downwards Degree is dominated by members of the isolated group of 21, while they drop out of Strength and other nodes found in the giant component come in.
+
+**Explanation and Significance:** 
+
+Uetz's cluster members have many co-authors in this group on their papers, so they have high degree, but credit for collaboration is divided up among the 20 members, so each pair has low collaboration credit and hence they have low Strength. 
+
+The rise of Pastorsatorras and Vespignani in the Strength rannking suggests that they have multiple publications with their co-authors, because this is required to get weighted degree higher than degree. 
+
+##### b. Comparing Degree and Eigenvector Centrality (unweighted)
+
+**How they differ:** 
+
+```{r}
+tibble(
+  "Top 10 Degree"     = topnv(NS, V(NS)$i_degree)$label,
+  "Degree"            = topnv(NS, V(NS)$i_degree)$i_degree,  
+  "Top 10 Eigen Cent" = topnv(NS, V(NS)$i_eigen_cent_u)$label,
+  "Eigen Cent"        = topnv(NS, V(NS)$i_eigen_cent_u)$i_eigen_cent_u
+)
+```
+It does not make sense to compare numeric values as eigenvector is normalized: we focus on rankings. 
+
+The rankings are dramatically different. There is overlap on only 3 actors. Examining the visualization, all of the top 10 eigenvector centrality authors are in the isolated component of 21 authors, 20 of whom have all authored with each other, and 3 of these (who are also top ranked under degree) authored with GLOT, the 21st person. 
+
+**Explanation and Significance:** 
+
+This shows a problem with eigenvector centrality’s policy of giving all of a node’s centrality to each of its neighbors: all of these nodes (other than Glot) are sharing all of their centrality with each other, and there are no connections to others to ‘leak’ the centrality to other parts of the network, so their values are much larger than for nodes in the rest of the network (which actually converge on 0 when values are normalized to have 1.0 be the top value). 
+
+This problem will be fixed mathematically by Page Rank, which divides up the centrality a node can give to others by the number of others (degree). The group of 20 would also be downgraded even within eigenvector centrality if we used weights, because these authors did not publish much with each other, but that is an artifact of the collaboration in this domain, not a fix to the mathematical problem. 
+
+In previous years I asked students to compare weighted versions. This had the advantage that there was more overlap on the lists, and students could reason about what made the relative adjustments. (Newman dropped down in eigenvector centrality, but is restored by PageRank.) But the above is a more dramatic demonstration of the differences, and why we need to be aware of how graph component structure may affect metrics. 
+
+
+##### c. Comparing Eigenvector Centrality and Page Rank (unweighted)
+
+**How they differ:** 
+
+```{r}
+tibble(
+  "Top 10 Eigen Cent" = topnv(NS, V(NS)$i_eigen_cent_u)$label,
+  "Eigen Cent"        = topnv(NS, V(NS)$i_eigen_cent_u)$i_eigen_cent_u,
+  "Top 10 Page Rank"  = topnv(NS, V(NS)$i_page_rank_u)$label,
+  "Page Rank"         = topnv(NS, V(NS)$i_page_rank_u)$i_page_rank_u
+)
+```
+
+The most obvious effect is that the members of the isolated cluster of 21 dominate the Eigenvector list but have dropped out of the Page Rank list entirely. 
+
+**Explanation and Significance:** 
+
+Page Rank makes two adjustments: dividing node centrality by out/degree so the appropriate fraction is ‘given’ to each neighbor; and the Katz adjustment or damping factor that gives everyone a little centrality for free. Here, the former adjustment is the most important. The group of 20+1 no longer dominates: Since each of them must give 1/19th of its centrality to others, they don’t artificially inflate each other, so this group drops way down the list. 
+
+_Additional Comment:_ Looking at the ranking under Page Rank, we might compare to that for Degree. Even though Barabasi has higher degree because he has published with more colleagues, Newman rises to the top because he has published with some prominent colleagues that give him the edge. (We would also see a similar effect if we were comparing weighted Eigenvector and Page Rank to each other.) 
+
+
+##### d. Comparing Page Rank and Betweenness (unweighted)
+
+**How they differ:** 
+
+```{r}
+tibble(
+  "Top 10 Page Rank"    = topnv(NS, V(NS)$i_page_rank_u)$label,
+  "Page Rank"           = topnv(NS, V(NS)$i_page_rank_u)$i_page_rank_u,
+  "Top 10 Betweenness"  = topnv(NS, V(NS)$i_between_u)$label,
+  "Betweenness"         = topnv(NS, V(NS)$i_between_u)$i_between_u
+)
+```
+
+Although these are entirely different metrics, it is interesting that the top 10 ranked individuals overlap on 5 of them, albeit with change in ordering. 
+
+**Explanation and Significance:** 
+
+Again, Newman is prominent, but we need to be clear that it is for an entirely different reason. While Newman (like Barabasi) had high page rank due to numerous publications with important other authors, Newman’s high betweenness indicates that he is connecting between different regions of the network (sub-communities), so is a local bridge. If we adjust the visualization appropriately (lin log mode; nodes sized by betweenness) and color the ego networks (Barabasi blue, Newman Red) we see that Newman connects to a few others that themselves reach other parts of the network: Sole, Kleinberg, Stauffer ... while Barabasi mostly connects to a well connected group and a side cluster that does not have other connections. In terms of the domain, it appears that Newman is publishing with diverse researchers in different clusters, while Barabasi's collaborators are more constrained to his local network, except for Jeong, who via Holme connects to Newman. 
+
+```{r echo=FALSE, fig.align="center", fig.cap = "Barabasi and Newman Ego Networks In Context"}
+include_graphics("Images/Newman-Barabasi-Ego.jpg")
+```
+
+____________________________________________________________
+#### 5. Conclusions about Network Science Authors (6 pts)
+
+Now that we understand the meaning of the metrics, we apply them to draw conclusions about the roles of the most prominent researchers in this data set. The discussion is based on the following metric rankings (we now use weights to reflect strength of collaboration): 
+
+```{r}
+tibble(
+  "Degree"      = topnv(NS, V(NS)$i_degree)$label,
+  "Strength"    = topnv(NS, V(NS)$i_strength)$label,
+  "Weighted Page Rank"   = topnv(NS, V(NS)$i_page_rank_w)$label,
+  "Weighted Betweenness" = topnv(NS, V(NS)$i_between_w)$label
+)
+```
+
+Degree indicates the number of collaborators. By this measure, the top 5 are not unexpected: Barabasi, Jeong, Newman, Oltvai, and Young. Jeong and Oltvai are members of Barabasi's group. The rest of the top 10 is dominated by members of the group of 20+1, but we should not put too much stock in this: There is ONE paper of 20 co-authors (they have edge weights of 1/19 = 0.05263158) and ONE paper of 3 co-authors with GLOT (edge weights 0.3333). 
+
+Weighted degree, like unweighted degree, reflects the number of other researchers one has directly published with; but it adds two other factors: the number of times one has published with others, and the number of collaborators (inversely related: more collaborators means less credit to a tie). So, nodes with high weighted degree have a lot of publication activity (many other authors, many times) and evidence that the author has stronger collaborative ties. Under this metric, we see that Barabasi, Newman, Jeong, Pastor-Satorras, Vespiginani, Sole, Moreno and others in the giant component are active researchers. Latora is a Barabasi collaborator, and Boccaletti is in a side cluster with 3 links to the giant component. Outside the giant component, Young appears to lead a separate group of researchers.
+
+PageRank does not alter this picture substantially, though many other nodes receive a boost due to their proximity to the above nodes, and Kurths in Boccaletti’s cluster has more prominence. 
+
+Betweenness gives us information about a different kind of role: rather than direct interaction, how does a researcher mediate the flow of ideas across the community? Newman stands out, with Pastor-Satorras, Sole, Moreno, and other familiar names also having high values. Some new names come in: Stauffer and Capocci are also playing bridging roles. These are the actors that indirectly connect diverse parts of the network.  
+
+For fun, I constructed an igraph visualization of the combined ego networks of the top 3 betweenness actors so we can see how they bridge to each other as well as other parts of the network: 
+
+```{r}
+# Get ego nodes 
+N <- V(NS)[which(V(NS)$label=="NEWMAN, M")]
+P <- V(NS)[which(V(NS)$label=="PASTORSATORRAS, R")]
+S <- V(NS)[which(V(NS)$label=="SOLE, R")]
+# Combine vertices in their ego nets 
+elist <- ego(NS, 1, c(N, P, S))  # , M
+nodes <- union(elist[[1]], elist[[2]], elist[[3]]) # , elist[[4]])
+G <- induced_subgraph(NS, nodes)
+plot(G, main="Ego Networks for Top Betweenness Actors", 
+     vertex.size=10, vertex.label.cex=0.4, 
+     vertex.color=(V(G)$label %in% c(N$label, P$label, S$label))) 
+```
+
+ 
+____________________________________________________________
+### Reciprocity, Transitivity and Subgraph Extraction
+
+In this section we illustrate two applications of reciprocity and transitivity. First, we interpret reciprocity and transitivity results in terms of the processes they imply in a domain being modeled. Second, we use these metrics as a data integrity check, uncovering a problem that we visualize by extracting a subgraph. 
+
+____________________________________________________________
+#### 6. High Energy Physics Theory Citations (12 pts)
+
+The high energy physics theory citation graph cit-HepTh.gml is from the e-print arXiv and covers all the citations within a dataset of 27,770 papers with 352,807 edges for the period from January 1993 to April 2003 (it begins within a few months of the inception of the arXiv). If a paper i cites paper j, the graph contains a directed edge from i to j. If a paper cites, or is cited by, a paper outside the dataset, the graph does not contain any information about this. Here we read in the data: 
+
+```{r}
+HEP <- read_graph("Networks/cit-HepTh.gml", format="gml")
+summary(HEP)
+```
+
+We will compute reciprocity and transitivity for this directed graph, and interpret the results in terms of domain processes with the aid of comparison to random graph models.  
+
+##### (a) Random and Configuration Models for Comparison (3 pts)
+
+We need to consider whether the values differ much from expected at random, and whether the values are a natural consequence of the degree sequence or due at least partially to an independent process. To enable these comparisons we construct two models. 
+
+**G(n,m) Model** 
+
+This model enables us to determine whether observed values on metrics depart from what is expected at random. 
+
+```{r}
+HEP.gnm <- sample_gnm(vcount(HEP), ecount(HEP), directed=TRUE) 
+summary(HEP.gnm)
+```
+
+**Configuration Model** 
+
+This model enables us to determine the extent to which observed values on metrics (particularly those that *do* depart from the random model) are due to the degree distribution, which itself may be generated by some process we can identify. 
+
+```{r}
+HEP.config <- sample_degseq(out.deg=degree(HEP, mode="out"), 
+                            in.deg=degree(HEP, mode="in"), 
+                            method="simple")
+summary(HEP.config)
+```
+
+##### (b) Reciprocity and Transitivity (3 pts)
+
+Below we display reciprocity and global transitivity values for the given natural network and the two random models. 
+
+```{r}
+graphs <- list(HEP, HEP.gnm, HEP.config)
+HEP.results <- tibble(
+  Graph        = c("HEP", "G(n,m)", "Config"),
+  reciprocity  = sapply(graphs, reciprocity), 
+  transitivity = sapply(graphs, transitivity, type="global")
+)
+HEP.results
+```
+
+##### (c) Interpretation of Reciprocity and Transitivity (6 pts)
+
+Here we compare the results for the natural network to the two random models to draw conclusions about what kinds of processes might be responsible for these local structures. 
+
+**Comparison and Discussion of Reciprocity:**
+
+Reciprocity is not much higher than random or the configuration model. This is very low reciprocity for a network based on human activity, but it is not at all surprising if we consider what kind of activity this is: This is a citation network, and papers almost always cite only earlier papers, as the future ones have not been published yet. Therefore the graph is almost nearly a DAG (directed acyclic graph), and DAGs have no reciprocity. The small amount of reciprocity in this graph may be due to two papers being published at the same time and citing each other. I have done this when submitting two related papers out at the same time. One example in the Network Science literature is that Ahn et al.'s paper on "Link Communities" and Evans and Lambiotte's paper on "Line Graphs" reference each other, as they both propose methods of overlapping community detection based on the same concept, and they found out about each other just before publication. 
+
+The configuration model has more similar reciprocity to HEP (the former value is ```r round(reciprocity(HEP.config) / reciprocity(HEP)*100, 1)```% of the latter) than the G(n,m) model (```r round(reciprocity(HEP.gnm) / reciprocity(HEP)*100, 1)```%), suggesting that low reciprocity in the domain is reflected in the degree sequence. Consider the proportion of nodes that have no in or out degree: 
+
+```{r}
+tibble( 
+  "HEP p(degree=0)"     = head(degree_distribution(HEP, mode="all"), 1),
+  "HEP p(in-degree=0)"  = head(degree_distribution(HEP, mode="in"), 1),
+  "HEP p(out-degree=0)" = head(degree_distribution(HEP, mode="out"), 1)
+  )
+
+
+```
+
+Because there are no isolates (first column), 16.5% of the nodes have an outgoing edge but no in-degree and 9.7% have an incoming edge but no out-degree. So, about 26% are forced to have no reciprocity by degree sequence (lack of edges in both directions). However, the degree distribution does not *cause* the low reciprocity, but rather is the *result* of the fact that some papers make or receive too few citations to make reciprocity possible. 
+
+
+**Comparison and Discussion of Transitivity:**
+
+Transitivity is *much* higher than random. Here we need to keep in mind that we computed transitivity on the undirected version of the graph. One can easily get an undirected triangle if paper A is published, B cites A, and C cites both A and B, a pattern expected when a group of researchers are working on similar topics. 
+
+The configuration model has moderately more transitivity than the G(n,m) random graph, but here the configuration model is much closer to G(n,m) than HEP, so there is not likely much value in trying to explain how degree distribution enforces some transitivity.
+
+____________________________________________________________
+#### 7. Comic Hero Network (12 pts)
+
+The third network we examine is derived from the Marvel Social Network Networks of super heroes constructed by Cesc Rosselló, Ricardo Alberich, and Joe Miro from the University of the Balearic Islands (obtained from http://exposedata.com/marvel/ but this site is no longer available). Rosselló et al. offered us a directed bipartite graph of comic book heroes linked to the comic issues they appeared in. Out-degree is the number issues heroes have appeared in, and in-degree is the number of heroes in an issue.  
+
+```{r}
+CH <- read_graph("Networks/comic-hero-network.graphml", format="graphml")
+summary(CH)
+```
+
+##### (a) Predict Reciprocity and Transitivity (2 pts)
+
+If this is a proper bipartite graph, we expect that Reciprocity is 0 (zero) because by construction all edges go from heroes to the comic issues they appeared in (and none in the other direction). We also expect that Global Transitivity is 0 (zero) because in a bipartite graph edges can only go from one partition to another: to form a triangle we would need an edge between vertices in the same partition, which is not allowed. 
+
+##### (b) Actual Reciprocity and Transitivity (2 pts)
+
+Actual reciprocity: 
+
+```{r}
+reciprocity(CH)
+```
+
+Actual transitivity:
+
+```{r}
+transitivity(CH, type="global")
+```
+
+Clearly, the reciprocity is as expected but transitivity indicates that there is at least one erroneous link within a partition. 
+
+##### (c) Identify the Error through Subgraph Visualization (8 pts)
+
+In order to localize the error, we compute **local transitivity** or clustering coefficient at the node level and save the results in a vector. This is appropriate because those nodes participating in a triangle induced by an erroneous edge will have nonzero local clustering coefficient. 
+
+```{r}
+# I am not saving it on vertices because I want to clean up this graph, 
+lt <- transitivity(CH, type="local")
+```
+
+Two warnings appear in the Preview but not in the Knit document. The first warning says that "Transitivity works on undirected graphs only. The result might be incorrect if the graph includes mutual edge pairs or multiple edges between the same pair of vertices." We could transform with as.undirected to address this warning, but no need: it is a temporary computation to clean things up. 
+
+The second warning indicates that the graph is not a simple graph, which means there are either redundant edges (which would not cause a triangle) or a self loop (which would), so I expect to find a self loop. 
+
+Here we construct an induced subgraph consisting precisely of those vertices with erroneous values and the edges between them: 
+
+```{r}
+CH.err <- induced_subgraph(CH, V(CH)[which(lt != 0)])
+CH.err$name <- "Nonzero transitivity vertices in CH"
+summary(CH.err)
+```
+
+A visualization of this subgraph helps us localize the error more precisely:
+
+```{r}
+plot(CH.err, 
+     # layout=layout.circle,
+     # layout=layout_with_drl,
+     vertex.label=V(CH.err)$id, 
+     vertex.size=10,
+     vertex.label.cex=0.5, 
+     edge.arrow.size =0.3, 
+     vertex.color = as.factor(V(CH.err)$type))
+```
+
+The above visualization suggests that the error is a self loop from BLADE to BLADE. There may also be something involving King Hannibal/Henry. Let's look at BLADE's ego network: 
+
+```{r}
+blade_ego <- 
+  make_ego_graph(CH, 1, V(CH)[which(V(CH)$id == "BLADE")])[[1]]
+plot(blade_ego, 
+     vertex.label=V(blade_ego)$id, 
+     vertex.size=10,
+     vertex.label.cex=0.5, 
+     edge.arrow.size =0.3, 
+     vertex.color = as.factor(V(blade_ego)$type))
+```
+
+Looking carefully, there are other 'hero' nodes pointing to BLADE. It appears that BLADE is being taken as both a hero and an comic issue, perhaps named after the hero itself. 
+
+It was not required for this assignment, but further investigation in Gephi showed that there is a comic issue "BLADE 1", suggesting that heros that are erroneously linked to BLADE should be linked to BLADE 1.
+
+We will correct this error before further use of this network or its projection in a future assignment. 
+
+____________________________________________________________
+### Pau 

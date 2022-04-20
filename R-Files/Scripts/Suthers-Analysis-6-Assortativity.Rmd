@@ -1,0 +1,342 @@
+---
+title: "Suthers Analysis 6 Assortativity"
+author: "Firstname Lastname"
+date: "4/05/2022"
+output:
+  html_document:
+    code_folding: hide
+    df_print: paged
+  html_notebook: 
+    code_folding: hide
+    df_print: paged
+---
+
+```{r setup, include=FALSE, echo=FALSE}
+require("knitr")
+opts_chunk$set(echo = TRUE)
+library(igraph)
+library(tibble)
+# Optional, for including images of these types
+library(jpeg) 
+library(png)
+# Utilities.
+source("Utility/degree_domain.R")
+source("Utility/nonzero_degree_distribution.R")
+```
+
+____________________________________________________________
+#### Introduction 
+
+In this analysis we compute and interpret various forms of assortativity on a contact network of primary school students and their teachers gathered by RFID tags over two days, specifically the "Cumulative network day 1, GEXF format" and "Cumulative network day 2, GEXF format" available at: 
+http://www.sociopatterns.org/datasets/primary-school-cumulative-networks/ 
+Before doing the primary analysis, we perform some data preparation to address the following issues: 
+
+* The source data is in gexf format, not readable in igraph, so we convert to graphml via Gephi. 
+* We want to combine these two days of data into one network, summing the contact counts and durations on the edges. We can merge graphs in Gephi, but Gephi “Sum” strategy only sums weights, and overwrites count and duration data! Therefore we read a multi-graph and simplify in R/igraph. 
+* We are interested in assortativity of students, but there are teachers in the network that we must remove. 
+* We want to filter out edges for infrequent and short contacts, which may not represent significant interaction.
+* We would like to analyze by grade level, but grade is coded only indirectly in the classname.
+
+We then examine the transitivity, degree distribution, and distributions of the count and duration values. We construct G(n,m) and randomly required versions of the network for comparison. Finally, we compute the assortativities on both the natural and rewired networks, evaluate whether structural assortativity is involved, provide some supporting visualizations, and identify attributes that are predictive of connectivity.  
+
+____________________________________________________________
+#### 1. Preparing the Network
+
+##### (a) Conversion and Simplification 
+
+Gephi was used to convert the gexf file into a format readable by igraph that preserves attributes. We load the converted file below as PS_v1 (version 1) and summarize to show that the data includes 242 vertices and 11438 edges, the vertex attributes (classname and gender) and edge attributes (count and duration) have been preserved, while no layout attributes from Gephi have been added. 
+
+```{r}
+PS_v1 <- read_graph("Networks/sp_data_school_day_1_2_multigraph.graphml", format="graphml")
+# If you don't have have 242 vertices and 11438 edges, or you see 
+#   r (v/n), g (v/n), b (v/n), x (v/n), y (v/n), size (v/n)
+# go back to Gephi and fix it!
+summary(PS_v1)
+```
+
+This is a multigraph: we could not simplify it in Gephi because the "Sum" strategy only sums weights, not other attributes like weight and duration. Here we use simplify with edge.attr.comb set to sum the duration and count attributes as well as weight (which will encode number of days of contact). We print duration and count maximums before and after to ensure they are summed. 
+
+```{r}
+print(paste("Before simplify: max count =", max(E(PS_v1)$count), 
+            "max duration =", max(E(PS_v1)$duration)), 
+      quote=FALSE)
+
+# Using version numbers to enable comparison if needed for debugging. 
+
+PS_v2 <- simplify(PS_v1, edge.attr.comb = list(weight="sum", duration="sum", count="sum", "ignore"))
+
+print(paste("After simplify: max count =", max(E(PS_v2)$count), 
+            "max duration =", max(E(PS_v2)$duration)), 
+      quote=FALSE)
+
+# If you don't have have 242 vertices and 8316 edges, with 
+# max count = 278 max duration = 15280, stop and fix it!  
+summary(PS_v2)
+```
+
+We will return to filtering brief contacts after removing teachers. 
+
+##### (b) Filtering Teachers 
+
+Examining a frequency table of the values for classname below, we found that the network has teachers, but we are interested only in interactions between students.
+
+```{r}
+table(V(PS_v2)$classname)
+```
+
+Below we filter out the teachers, saving the result in a new network PS_v3, and show the resulting network summary:  
+
+```{r}
+PS_v3 <- delete_vertices(PS_v2, V(PS_v2)$classname=="Teachers")
+# Should now have 232 vertices, 7855 edges. 
+summary(PS_v3)
+```
+
+Updated frequency tables for classname and gender are below. 
+
+```{r}
+table(V(PS_v3)$classname)
+table(V(PS_v3)$gender)
+```
+ 
+##### (c) Filtering Incidental Contacts 
+
+Now let's examine the edges, which represent contacts. We construct a frequency table of the number and duration of contacts, and examine the lower portion of this large table: 
+
+```{r}
+interact <- table(count=E(PS_v3)$count, duration=E(PS_v3)$duration)
+interact[1:10,1:12]
+```
+
+Most of the pairs have contact duration of 40 seconds or less. We want to filter them as they may be due to incidental contacts that don't reflect real interaction. We will delete edges with less than 60 seconds duration, which also removes most of the pairs having only 1 or 2 contacts. 
+
+If we delete edges for fewer than 3 contacts we will be removing a few longer duration interactions (up to 160 seconds). Instead, we consider average duration of contact. Values on the diagonal, such as count=3, duration=60; count=4, duration=80, or more generally duration = count\*20 could have been obtained by students passing by each other count number of times for one second (as the RFID tags record a minimum of 20 seconds), and *cannot* involve interactions of more than 20 seconds. To exclude trivial contacts we require that at least one contact have duration greater than 20 seconds, i.e., duration > count\*20. 
+
+Therefore we choose to delete edges with duration less than 60 seconds and with duration <= count\*20, naming the new graph PSF for PS Filtered. (Variations on this policy have been tried with substantially similar results in the subsequent analyses.) 
+
+```{r}
+PSF <- delete_edges(PS_v3, E(PS_v3)[duration < 60])
+PSF <- delete_edges(PSF, E(PSF)[duration <= count*20])
+PSF$name <- "Filtered Primary School Contacts"
+
+# Expecting 232 vertices 3312 edges
+summary(PSF)
+
+# Expecting max count 278 max duration 15280
+print(paste("After filtering: max count =", max(E(PSF)$count), 
+            "max duration =", max(E(PSF)$duration)), 
+      quote=FALSE)
+```
+
+ A frequency table of updated counts and durations is shown below. 
+
+```{r}
+table(count=E(PSF)$count, duration=E(PSF)$duration)[1:10,1:12]
+``` 
+
+##### (d) Adding Grade Attribute 
+
+We would like to analyze by grade level, but grade is coded only indirectly as classname. For example, "2A" and "2B" are the same grade level but different classes: we want to extract "2" as the value for grade. Below we  a new attribute called 'grade' and give it appropriate values by conversion of the 'classname' attribute and provide a frequency table of the new grade attribute. 
+
+```{r}
+V(PSF)$grade <- substr(V(PSF)$classname, 1, 1)
+table(V(PSF)$grade)
+```
+
+____________________________________________________________
+#### 2. Investigating the Network 
+
+Continuing with our filtered and grade-annotated network, we prepare random models for the network, compute some relevant metrics, and plot degree and attribute distributions. 
+
+##### (a) Random Models 
+
+A random G(n,m) graph model is constructed below. 
+
+```{r}
+PSF_gnm  <- sample_gnm(vcount(PSF), ecount(PSF))
+summary(PSF_gnm)
+```
+
+
+A randomly rewired configuration model is constructed below (retaining attribute information). 
+
+```{r}
+PSF_rrw  <- rewire(PSF, with=keeping_degseq(niter = ecount(PSF)*1000))
+PSF_rrw$name <- "Rewired Primary School Contacts"
+summary(PSF_rrw)
+```
+
+##### (b) Transitivity 
+
+Below we compute global transitivity for the filtered network and the two random models, and interpret it taking density of the network into account.
+
+```{r}
+tibble(
+  Network = c("Natural PSF", "G(n,m) for PSF", "Rewired PSF"), 
+  Transitivity = c(
+    transitivity(PSF), transitivity(PSF_gnm), transitivity(PSF_rrw)),
+  )
+print(paste("Density:", edge_density(PSF)), quote=FALSE)
+```
+
+**Discussion:** The global transitivity of the Primary School contact network is typical of social networks. Social networks typically have high transitivity (see Newman 2010 table 8.1), and our computed transitivity of ```r round(transitivity(PSF), 4)``` is high even for social networks.  
+
+The transitivity is clearly not random, as G(n,m) only has transitivity of ```r round(transitivity(PSF_gnm), 4)```. This is almost identical to the graph density of ```r round(edge_density(PSF), 4)```, as density is also the probability that an edge forms between any two vertices (v,u). 
+
+Taking the G(n,m) transitivity into account, rewiring indicates that a very moderate amount of transitivity is forced by the degree distribution, as the difference is only ```r round(transitivity(PSF_rrw)-transitivity(PSF_gnm), 3)```. This may be too small a difference to merit speculation as to process causes, but it suggests that many actors have many partners, rather than a few having many partners as in a scale free network. This motivates looking at the degree distribution. 
+
+##### (c) Degree Distribution 
+
+We plot degree distribution in both lin-lin and log-log forms. 
+
+```{r warning=FALSE}
+plot(degree_domain(PSF), nonzero_degree_distribution(PSF), 
+     main="PS Filtered (Lin-Lin)", xlab="k", ylab="p(k)")
+plot(degree_domain(PSF), degree_distribution(PSF), log="xy", 
+     main="PS Filtered (Log-Log)", xlab="k", ylab="p(k)")
+```
+
+**Discussion:** This is not a heavy tailed distribution. It seems to be a mixture of Gaussian and Uniform distribution, with many degrees in the middle of roughly equal probability but dropping off at the low and high ends. Preferential attachment does *not* seem to be operating with respect to degree: children are *not* more likely to contact those with more contacts. There may be various reasons for this: 
+
+* There is a limit to how many people can crowd around a popular person or to the time a person has available for interaction. 
+* Perhaps childrens' preference for interaction is focused more within friend circles rather everyone than seeking the most popular student. 
+* Also contacts are forced by being in the same classroom, and teachers have some control over contacts through the activities they organize. 
+
+However, degree only counts number of contacts and does not encode any information about frequency and duration of contact. A different analysis would be needed to identify the distributions of frequency and duration, to which we turn. 
+
+##### (d) Attribute Distributions 
+
+Below we plot the frequency distributions of count and duration of contact.
+
+```{r warning=FALSE}
+count.values <- as.integer(names(table(E(PSF)$count)))
+count.frequency <- as.vector(table(E(PSF)$count))
+plot(count.values, count.frequency, 
+     main="Contact Frequency (Lin-Lin)", 
+     xlab="Contacts", ylab="Frequency")
+plot(count.values, count.frequency, 
+     main="Contact Frequency (Log-Log)", 
+     xlab="Contacts", ylab="Frequency", log="xy")
+
+# # Some things we could do wrong:
+# # Works but we want scatter plot ... 
+# plot(table(E(PSF)$count))
+# # Does not work with log-log! 
+# plot(table(E(PSF)$count), log="xy")
+# # Looks OK but the x axis is position in vector not values 
+# plot(count.frequency) 
+# # This is correct 
+# plot(count.values, count.frequency)
+```
+
+
+```{r warning=FALSE}
+duration.values    <- as.integer(names(table(E(PSF)$duration)))
+duration.frequency <- as.vector(table(E(PSF)$duration))
+plot(duration.values, duration.frequency, 
+     main="Contact Duration (Lin-Lin)", 
+     xlab="Duration", ylab="Frequency")
+plot(duration.values, duration.frequency, 
+     main="Contact Duration (Log-Log)", 
+     xlab="Duration", ylab="Frequency", log="xy")
+```
+
+**Discussion:** These are heavy tailed distributions. There are a large number of low frequency and low duration contacts, tapering off to a few high frequency and long duration contacts. We need to be careful about interpreting these in terms of preferential attachment, as these are not degree distributions. **The values are properties of pairs of nodes**, not single nodes. So, the long tail is pairs who interact with each other much more than typical interactions. There are some strong friendships in this data.
+
+We can comment on factors affecting interactions. The children that a child is within RFID range may be selected by non-preferential factors such as lining up in a queue, seating arrangements in the classroom, or teacher directed activities. Degree distribution shows that most students have contacts with a similar number of persons, but popularity is reflected in the amount of time others spend with a child and returning for repeat contact. Perhaps frequency and duration are more under the control of the children than the fact that there is a contact, leading to distributions that remind us of those seen with preferential attachment. High duration is easy to interpret as pairs that like to spend a lot of time together. High frequency is harder for me to interpret, as it means the pair are going in an out of contact many times: what childrens' behavior would lead to this? Some kind of game? 
+
+____________________________________________________________
+#### 3. Assortativities
+
+Now we address the primary question: based on the data available to us, what predicts interactions between primary school students? Interactions may be shaped partly by the environment: students presumably are more likely to be nearby or interact with those in the same classroom. Interactions may also reflect choices made by the students within and outside the classroom, e.g., to associate with students according gender, grade level, or popularity (for which degree is a proxy). 
+
+##### (a) Assortativity Computations 
+
+Below we compute assortativity metrics on various attributes to assess these hypotheses. 
+
+* Degree assortativity assesses the influence of popularity 
+* Nominal assortativity on Gender assesses whether students interact primarily with same or other gender students
+* Nominal assortativity on classname assesses whether students interact primarily with other students in their class. 
+* Ordinal assortativity on grade assesses whether age is a factor by itself in predicting interactions. 
+
+We also compare to the Configuration model (rewired graph) to see whether each given assortativity is structural.
+
+```{r}
+# Code to construct a table of assortativities: 
+# Natural PSF | degree | gender | classname | grade
+# Rewired PSF | degree | gender | classname | grade
+tibble(
+  Network = c("Natural PSF", "Rewired PSF"),
+  "Degree" = c(assortativity_degree(PSF), 
+               assortativity_degree(PSF_rrw)), 
+  "Gender" = 
+    c(assortativity_nominal(PSF, 
+                            as.numeric(as.factor(V(PSF)$gender))),
+      assortativity_nominal(PSF_rrw, 
+                            as.numeric(as.factor(V(PSF_rrw)$gender)))), 
+  
+   "Class" = 
+    c(assortativity_nominal(PSF, 
+                            as.numeric(as.factor(V(PSF)$classname))),
+      assortativity_nominal(PSF_rrw, 
+                            as.numeric(as.factor(V(PSF_rrw)$classname)))), 
+  # Grade is ordinal so we use regular assortativity. Do NOT do 
+  # as.numeric(as.factor( ... )) here: you lose information! 
+   "Grade" = 
+    c(assortativity(PSF, as.integer(V(PSF)$grade)), 
+      assortativity(PSF_rrw, as.integer(V(PSF_rrw)$grade)))
+)
+```
+Note that if we had used nominal assortativity on grade, the value for the natural network would be ```r assortativity_nominal(PSF, as.numeric(as.factor(V(PSF)$grade)))```, which is lower because we don't credit nearby grade interactions (a 4th and 5th grader interacting is as much of a mismatch as a 1st and 5th grader). 
+
+##### (b) Plotting Strongest Assortativity 
+
+Grade has the highest assortativity, so we plot grade by grade to see the distribution. Plotting assortativity by grade is accomplished by treating the grade values at each end of every edge as x,y coordinates. 
+
+The jitter approach demonstrated in class works and will reproduce well in greyscale print media, but looks rather "old-school":
+
+```{r}
+plot(jitter(as.numeric(head_of(PSF, E(PSF))$grade), factor=2), 
+     jitter(as.numeric(tail_of(PSF, E(PSF))$grade), factor=2), 
+      xlab="Grade", ylab="Grade", pch = ".")
+```
+smoothScatter is designed to handle "overplotting" (many values at the same location) with heat maps:
+
+```{r}
+smoothScatter(as.numeric(head_of(PSF, E(PSF))$grade), 
+              as.numeric(tail_of(PSF, E(PSF))$grade),
+              xlab="Grade", ylab="Grade", nrpoints=0)
+```
+In either case, the correlation is clear. 
+
+##### (c) Network Visualization 
+
+We write out the filtered annotated graph to visualize in Gephi, colored by the top two assortative features. 
+
+```{r}
+write_graph(PSF, "Networks/Primary-School-Students-Filtered.graphml", format="graphml")
+```
+
+**Colored by Classname**
+```{r  echo=FALSE, fig.align="center", fig.cap = "PS by Classname"}
+include_graphics("Images/PSF-by-classname.png")
+```
+
+**Colored by Grade**
+```{r  echo=FALSE, fig.align="center", fig.cap = "PS by Grade"}
+include_graphics("Images/PSF-by-grade.png")
+```
+It is clear that the force directed layout is finding grade clusters and within these clusters finding classname structures. 
+
+##### (d) Interpretation 
+
+First, none of the assortativities are structural, as the assortativities are all positive (structural cutoffs usually lead to disassortativity), and they go away with random degree preserving rewiring. 
+
+Previously we saw that degree distribution appears to be something between uniform and Poisson (Gaussian or random), while frequency and duration of contact have heavy tailed distributions. We discussed why there may be external (teacher driven) processes determining how many children a given child contacts. Thus it is not surprising that degree assortativity is low, although positive; and we consider other assortativities that may be subject to student agency. 
+
+Gender assortativity is also low, although positive. These are primary school children who are not yet experiencing puberty. We might speculate that assortativity will get stronger, reflecting same-gender interactions for close friends, if we filtered for longer duration. We might also speculate that this assortativity will shift towards neutral or become negative as students mature. 
+
+It is interesting that assortativity by grade level is even stronger than by classname, given that the classroom partition is a finer partition of grade level. This indicates that children seek others of the same grade outside of class (e.g., during recess and lunch) when they have more freedom of association. The visualizations reinforce the conclusion that students are likely to associate with others of a nearby grade (age). Combining this with the degree distribution results, they are choosing to contact and spend more time with members of their class, rather than by popularity, and those of nearby ages. Measures of frequency and time have heavy tailed distribution meaning a few pairs spend a lot of time together.
+
+____________________________________________________________
+### Pau 
