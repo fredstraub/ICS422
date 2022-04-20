@@ -18,7 +18,7 @@
 library(igraph)
 library(tibble)
 
-setwd("~/Desktop/Network-Science-Demos") # Set to yours 
+setwd("/Users/fred/Github/ICS422/R-Files") # Set to yours 
 source("Utility/new_window.R")
 
 NS <- read_graph("Networks/netscience.graphml", format="graphml")
@@ -357,7 +357,7 @@ head(E(NS)[which(crossing(NS_louvain_w, NS))])
 
 # Note I am dropping E(NS)[...] and it still works 
 
-head(ends(NS, which(crossing(NS_louvain_w, NS))))
+head(ends(NS, which(crossing(NS_louvain_w, NS))))[1:1]
 tail(ends(NS, which(crossing(NS_louvain_w, NS))))
 length(ends(NS, which(crossing(NS_louvain_w, NS))))
 
