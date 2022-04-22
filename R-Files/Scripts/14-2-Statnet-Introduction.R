@@ -24,7 +24,7 @@ library(intergraph) # conversion utility between igraph and network
 library(sna)        # analysis methods: notice masking of igraph 
 
 # Set the directory you are working in 
-setwd("~/Desktop/Network-Science-Demos") 
+setwd("/Users/frederickstraub/GitHub/ICS422/R-Files") 
 
 ######################################################################
 # Making Networks 
@@ -39,6 +39,7 @@ setwd("~/Desktop/Network-Science-Demos")
 ?rgraph
 g <- rgraph(20)
 class(g)
+?as.network
 gn <- as.network(g)
 gn
 plot(gn) 
