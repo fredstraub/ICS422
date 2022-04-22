@@ -17,6 +17,8 @@
 # Apr 19 2021 DS Updating for ICS 422/622 spring 2022
 # * Nontrivial improvements to comments and code 
 # * Using same two-day Public School data as we used for Analysis 7
+# Apr 21 2021 DS Updating for ICS 422/622 spring 2022
+# * Added beta variation
 #
 ######################################################################
 
@@ -297,6 +299,31 @@ plot(PS5M_graphs$gnm, vertex.size=3, vertex.label=NA,
 plot(PS5M_graphs$conf, vertex.size=3, vertex.label=NA, 
      main="Primary School 5 minute contacts Config")
 
+###################################################################
+# Lets see the effect of Beta (probability of infection on contact). 
+
+beta <- 0.9
+PS5M_sims <- lapply(PS5M_graphs, sir, beta=beta, gamma=gamma, no.sim=ntrials)
+plot_sims(PS5M_sims, "PS5 Beta 0.9")
+
+beta <- 0.7
+PS5M_sims <- lapply(PS5M_graphs, sir, beta=beta, gamma=gamma, no.sim=ntrials)
+plot_sims(PS5M_sims, "PS5 Beta 0.7")
+
+beta <- 0.5
+PS5M_sims <- lapply(PS5M_graphs, sir, beta=beta, gamma=gamma, no.sim=ntrials)
+plot_sims(PS5M_sims, "PS5 Beta 0.5")
+
+beta <- 0.3
+PS5M_sims <- lapply(PS5M_graphs, sir, beta=beta, gamma=gamma, no.sim=ntrials)
+plot_sims(PS5M_sims, "PS5 Beta 0.3")
+
+beta <- 0.1
+PS5M_sims <- lapply(PS5M_graphs, sir, beta=beta, gamma=gamma, no.sim=ntrials)
+plot_sims(PS5M_sims, "PS5 Beta 0.1")
+
+# ***** Interpretation?
+#       (With a little work we could plot all of them on same axes.)
 
 ######################################################################
 # Network Science: Suppose co-authoring means you also get "infected"
@@ -369,7 +396,7 @@ legend("topright", c("Natural NetSci", "Erdos-Renyi", "Configuration"),
 # Before we leave this topic, let's run last week's cascade algorithm
 # on PS5M 
 
-
+source("Utility/cascading_simulation.R")
 
 PS5M_cs <- cascading_simulation(PS5M, 
                                 ends(PS5M, sample(E(PS5M), 1)),
