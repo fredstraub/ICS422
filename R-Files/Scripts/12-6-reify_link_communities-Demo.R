@@ -21,19 +21,20 @@
 library(igraph)
 library(linkcomm)
 
-setwd("~/Desktop/Network-Science-Demos") # Set to yours 
+setwd("/Users/fred/Github/ICS422/R-Files") # Set to yours 
 LM <- read_graph("Networks/Les-Miserables.graphml", format="graphml")
 
 # Compute the link communities.
 LM_edges <- as_edgelist(LM)
 LM_wedges <- cbind(LM_edges, E(LM)$weight)
 LM_wlc <- getLinkCommunities(LM_wedges, hcmethod="average", plot=FALSE)
-
+?as_edgelist
+?getLinkCommunities
 ######################################################################
 # Compute any metrics we want on the graph.
 # Reason for this: we will be adding nodes to the graph, so should 
 # compute metrics that may be affected before the nodes are added. 
-
+summary(LM)
 V(LM)$degree       <- degree(LM)
 V(LM)$wdegree      <- strength(LM, mode="all")
 V(LM)$pagerank     <- page_rank(LM)$vector
