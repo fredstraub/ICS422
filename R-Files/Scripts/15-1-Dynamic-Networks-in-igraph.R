@@ -33,7 +33,7 @@
 # 
 ######################################################################
 
-setwd("~/Desktop/Network-Science-Demos") # Or yours 
+setwd("/Users/frederickstraub/GitHub/ICS422/R-Files") # Or yours 
 source("Utility/new_window.R")
 
 ######################################################################
@@ -60,7 +60,7 @@ nrow(HC)       # how many contact events
 
 # -------------------- Exercise --------------------
 # P1: Count the number of unique IDs (to be vertices)
-_____________________________________
+# _____________________________________
 
 #===========================================================
 # To count the numbers of each category (ADM, MED, NUR, PAT),
@@ -199,8 +199,8 @@ histogram(~ Time | Status, data=my.HC, xlab="Hours", layout=c(5,2))
 # so we can see the daily patterns in more detail?  Read the breaks
 # and nint documentation in ?histogram. How many intervals do we want? 
 # Note: there are 97 hours in the data. 
-
-____________________________________________________________
+histogram(~ Time | Status, data=my.HC, xlab="Hours", layout=c(5,2),nint=97)
+# ____________________________________________________________
 
 # It might also be useful to plot each day separately. 
 
@@ -305,7 +305,7 @@ summary(E(HC_wsimp)$weight)
 # centrality? (These are important for spreading both information 
 # and disease.)
 
-_____________________________________________________________
+# _____________________________________________________________
 
 # But that loses temporal information. 
 
@@ -341,11 +341,11 @@ sapply(HC_12h, ecount)
 # -------------------- Exercise (easy)-------------------- 
 # P4: Make HC_24h, a graph of 24 hour slices
 
-HC_24h <-  lapply(___,
+HC_24h <-  lapply(1:4,
                   function(i) {
                     g <- subgraph.edges(HC_week,
-                                        E(HC_week)[Time > __ * (i - 1) &
-                                                     Time <= __ * i],
+                                        E(HC_week)[Time > 24 * (i - 1) &
+                                                     Time <= 24 * i],
                                         delete.vertices = FALSE)
                     simplify(g) # weights will be combined
                   })
@@ -356,7 +356,7 @@ sapply(HC_24h, ecount)
 # P5: Does the Status of top betweenness centralities change 
 # over the four days? Other centralities? (apply P3 to P4)
 
-_____________________________________________________________
+# _____________________________________________________________
 
 
 ######################################################################
@@ -415,10 +415,16 @@ for(i in (1:8)) {
 
 # -------------------- Exercise --------------------
 # P6: Try making 4 plots for HC_24h from P4. Reduce edge thickness to 8*
-
+for(i in (1:4)) {
+  plot(HC_12h[[i]], layout=lfr, vertex.size=5,
+       edge.width=8*(E(HC_wsimp)$weight)/1000,
+       vertex.color=v_cols, vertex.label=NA)
+  title(paste(24*(i-1),"to",24*i,"hrs"))
+  legend("topleft", status, col=colors, lty=1, lwd=5, bty="n", cex=0.8)
+}
 # new_window("Hospital Contacts 24 Hour Slices")
 
-__________ Your visualization for loop here __________
+# __________ Your visualization for loop here __________
 
 # Restore parameters. (Produces errors; have not investigated)
 
@@ -544,7 +550,7 @@ V(HC_week)$Status[c(7,15)]
 # -------------------- Exercise --------------------
 # P7: What is the status of the nodes in the top 5 for 3 shifts? 
 
-_____________________________________________________
+# _____________________________________________________
 
 # Are these merely brief contacts, or are they for significant
 # duration? We take the ratio of strength (weighted degree, which

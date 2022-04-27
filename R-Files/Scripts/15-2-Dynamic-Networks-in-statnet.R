@@ -26,7 +26,7 @@
 # If you get an error invoking the library, use install.packages. 
 ######################################################################
 
-setwd("~/Desktop/Network-Science-Demos") # Or yours 
+setwd("/Users/frederickstraub/GitHub/ICS422/R-Files/") # Or yours 
 source("Utility/new_window.R")
 
 #  You may need to run these if you have not already: 
@@ -239,7 +239,7 @@ max_x <- max(HC_df$terminus) # max terminus is x axis limit
 # Create the plotting space but don't plot yet 
 # ann = whether to annotate title and axes; type = don't plot 
 
-new_window("Hospital Contacts Edge Phase Plot", 12, 12) # make it big
+#new_window("Hospital Contacts Edge Phase Plot", 12, 12) # make it big
 plot(c(0,max_x), c(0,max_y), ann=FALSE, type='n') 
 
 # Put in the line segment for onset to terminus. 
@@ -270,11 +270,12 @@ status.pairs <- c("ADM-ADM","MED-MED","NUR-NUR",
 legend("topleft", status.pairs, text.col=e_palette[(1:10)], 
        bg="white", bty="n", cex=1.3)
 
-# Let's spend a little time trying to interpret that plot:
-# Repeated Nurse contact 
-# Initial color shows many NUR-PAT and MED-NUR contacts 
-# Repeated meeting of doctors who met on first day. 
-# Admin meeting on Friday (where is the hour long contact?)
+# Some things you can see in this plot: 
+# * Repeated Nurse contact
+# * Nurse checking on all patients before midnight and in the morning
+# * Initial color shows many NUR-PAT and MED-NUR contacts 
+# * Repeated meeting of doctors who met on first day. 
+# * Admin meeting on Friday (where is the hour long contact?)
 
 # Can we sort vertically by type? "Exercise for the reader!" 
 
@@ -300,7 +301,7 @@ stergm.sim.1
 ######################################################################
 # Static visual summary of the network changes 
 
-new_window("Florentine Marriages: Static", 12, 18)
+#new_window("Florentine Marriages: Static", 12, 18)
 
 ?filmstrip
 filmstrip(stergm.sim.1,displaylabels=FALSE)
@@ -338,7 +339,7 @@ proximity.timeline(stergm.sim.1,
 
 # Render as an animation. Will take a minute (pause video).
 
-new_window("Florentine Marriages: Dynamic", 12, 12)
+#new_window("Florentine Marriages: Dynamic", 12, 12)
 ?render.animation
 render.animation(stergm.sim.1,
                  # Found by experimentation sqrt / 2 gets a good range
